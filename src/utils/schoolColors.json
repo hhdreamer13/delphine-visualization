@@ -1,0 +1,19 @@
+[
+  { "name": "La Poudrière", "color": "#FF5733" },
+  { "name": "EMCA", "color": "#FFC300" },
+  { "name": "ENSAD", "color": "#DAF7A6" },
+  { "name": "Les Gobelins", "color": "#4C4CFF" },
+  { "name": "Atelier de Sèvres", "color": "#00CC99" },
+  { "name": "Rubika", "color": "#454d66" },
+  { "name": "L'Atelier", "color": "#B39CD0" },
+  { "name": "Émile Cohl", "color": "#75448B" },
+  { "name": "ESAAT", "color": "#DAD873" },
+  { "name": "Georges Méliès", "color": "#FF6D00" },
+  { "name": "Ste Geneviève", "color": "#8BC34A" },
+  { "name": "LISAA", "color": "#AD1457" },
+  { "name": "Marie-Curie", "color": "#0098C9" },
+  { "name": "Pivaut", "color": "#6200EA" },
+  { "name": "Estienne", "color": "#283593" },
+  { "name": "EESAB", "color": "#A6A6A6" },
+  { "name": "ECV Bordeaux", "color": "#391C77" }
+]
