@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import * as d3 from "d3";
 import _ from "lodash";
-import Legend from "../SeasonSchoolHeatmap/Legend";
+import Legend from "../Legend";
 import schoColor from "../../utils/schoolColors.json";
 import technicolor from "../../utils/techniqueColors.json";
 

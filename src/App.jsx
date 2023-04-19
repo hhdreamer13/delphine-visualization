@@ -23,16 +23,16 @@ function App() {
       <button className="btn-ghost btn my-10" onClick={handleChange}>
         Change Season: {season}
       </button>
-      {/* <div className="mb-20">
+      <div className="mb-20">
         <SeasonEpisodeHeatmaps data={data} />
       </div>
       <div className="mb-20">
         <SchoolForce data={data} />
-      </div> */}
+      </div>
       <div className="mb-20">
         <FlowerAnimation data={films} />
       </div>
-      {/* <div className="mb-20">
+      <div className="mb-20">
         <TitleWordsRadialSeason data={films} />
       </div>
       <div className="mb-20">
@@ -40,7 +40,7 @@ function App() {
       </div>
       <div className="">
         <EpisodeWordsBarChart data={data} />
-      </div> */}
+      </div>
     </div>
   );
 }
