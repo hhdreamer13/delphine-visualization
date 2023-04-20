@@ -5,7 +5,7 @@ const drawEpisodeWordsBar = (
   data,
   xScale,
   yScale,
-  colorScale,
+  colors,
   width,
   height,
   margin,
@@ -49,7 +49,11 @@ const drawEpisodeWordsBar = (
       .attr("x", (d) => xScale(d.id))
       .attr("y", (d) => yScale(d.words))
       .attr("height", (d) => height - margin.bottom - yScale(d.words))
-      .style("fill", (d) => colorScale(d.words))
+      .attr("fill", (d) => colors(d.words))
+      // .attr(
+      //   "fill",
+      //   (d) => colors.find((obj) => d.technique === obj.technique).color
+      // )
       .attr("stroke", "black")
       .attr("stroke-width", 2);
 

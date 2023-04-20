@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useCallback, useState } from "react";
 import * as d3 from "d3";
 import _ from "lodash";
+import d3ColorExtractor from "../../utils/d3ColorExtractor";
 import drawEpisodeWordsBar from "./drawEpisodeWordsBar";
 import drawEpisodeWordAxes from "./drawEpisodeWordAxes";
 import episodeTooltip from "./episodeTooltip";
@@ -8,6 +9,13 @@ import episodeTooltip from "./episodeTooltip";
 const width = 800;
 const height = 450;
 const margin = { top: 20, right: 5, bottom: 20, left: 35 };
+const techniques = [
+  "Traditionnelle",
+  "Numérique",
+  "Papiers découpés",
+  "Volume",
+  "Variée",
+];
 
 const EpisodeWordsBarChart = ({ data: films }) => {
   const svgRef = useRef(null);
@@ -35,6 +43,16 @@ const EpisodeWordsBarChart = ({ data: films }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [data]
   );
+
+  // Color array based on techniques
+  const colorRange = d3ColorExtractor(d3.interpolateInferno, 5);
+
+  const techniColor = techniques.map((technique, i) => {
+    return {
+      technique: technique,
+      color: colorRange[i],
+    };
+  });
 
   const colorExtent = d3.extent(data, (d) => d.words).reverse();
   const colorScale = d3

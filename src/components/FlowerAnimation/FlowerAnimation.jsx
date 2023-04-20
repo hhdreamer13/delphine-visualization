@@ -288,7 +288,6 @@ const FlowerAnimation = ({ data }) => {
 
   return (
     <div>
-      <h1>Flower Animation</h1>
       <div className={`flex overflow-y-auto overflow-x-hidden`}>
         <svg ref={svgRef} width={width} height={svgHeight}></svg>
         <div
