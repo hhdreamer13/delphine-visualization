@@ -45,7 +45,7 @@ const FlowerWrapper = () => {
           id="season-select"
           value={selectedSeason}
           onChange={handleSeasonChange}
-          className="ml-2 rounded-md border px-2 py-1 shadow-xl outline-none"
+          className="ml-2 rounded-md px-2 py-1 shadow-lg outline-none"
         >
           {seasonsObj.map((season) => (
             <option key={season.number} value={season.number}>
@@ -125,6 +125,7 @@ const FlowerWrapper = () => {
           encore plus attrayante.
         </p>
       </div>
+      <div></div>
     </div>
   );
 };

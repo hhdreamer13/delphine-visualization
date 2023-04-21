@@ -41,7 +41,7 @@ const BarSeasonWrapper = () => {
     <div className="mx-auto my-20 flex w-full flex-col items-center justify-center">
       <div id="description" className="prose mb-20 w-full ">
         <h2 className="text-center text-3xl uppercase tracking-widest">
-          Le Petit Monde
+          La Petite Ville
         </h2>
       </div>
       <div className="mx-auto flex w-full justify-center">
@@ -58,8 +58,8 @@ const BarSeasonWrapper = () => {
           />
         </div>
       </div>
-      <div className="prose -ml-16 text-justify text-lg">
-        <h3>Les Écoles et Techniques à travers les Saisons</h3>
+      <div className="prose text-justify text-lg">
+        <h3>Une petite ville pour chaque saison</h3>
 
         <p>
           La visualisation "Le Petit Monde" présente un graphique à barres

@@ -62,8 +62,10 @@ const RadialSeasonWrapper = () => {
           />
         </div>
       </div>
-      <div className="prose -ml-16 text-justify text-lg">
-        <h3>Les Écoles et Techniques à travers les Saisons</h3>
+      <div className="prose text-justify text-lg">
+        <h3>
+          Un tour du monde des Techniques d'animation à travers les Saisons
+        </h3>
         <p>
           Bienvenue dans "Le Petit Monde", une visualisation circulaire des
           épisodes de la série "En sortant de l'école" axée sur les saisons.

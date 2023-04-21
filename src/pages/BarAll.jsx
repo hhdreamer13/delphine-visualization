@@ -41,8 +41,8 @@ const BarAllWrapper = () => {
           </div>
         </div>
       </div>
-      <div className="prose -ml-16 text-justify text-lg">
-        <h3>Les Écoles et Techniques à travers les Saisons</h3>
+      <div className="prose text-justify text-lg">
+        <h3>Un paysage urban des film d'animation</h3>
 
         <p>
           La visualisation "La Grande Ville" présente un graphique à barres

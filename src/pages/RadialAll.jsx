@@ -46,8 +46,8 @@ const RadialAllWrapper = () => {
           <Legend obj={techniqueColors} />
         </div>
       </div>
-      <div className="prose -ml-16 text-justify text-lg">
-        <h3>Les Écoles et Techniques à travers les Saisons</h3>
+      <div className="prose text-justify text-lg">
+        <h3>Un tour du monde des Techniques d'animation</h3>
         <p>
           La visualisation "Le Grand Monde" offre une perspective circulaire
           unique sur les épisodes de la série "En sortant de l'école". Chaque
