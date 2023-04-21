@@ -15,7 +15,7 @@ const BarAllWrapper = () => {
         </h2>
       </div>
       <div className="mx-auto flex w-full flex-row-reverse justify-center">
-        <div id="buttons" className="mt-20 w-40 justify-center">
+        <div id="buttons" className="mt-20 hidden w-40 justify-center lg:block">
           <button
             onClick={() => setData(_.sortBy(data, (d) => d.words))}
             className="btn-outline btn-sm btn my-2 w-28 normal-case"

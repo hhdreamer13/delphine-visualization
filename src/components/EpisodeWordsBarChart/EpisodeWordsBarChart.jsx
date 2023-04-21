@@ -83,6 +83,10 @@ const EpisodeWordsBarChart = ({ data, width }) => {
 
   const handleMouseOver = useCallback(
     (event, d) => {
+      tooltipRef.current.style.display = "inline-block";
+      d3.select(event.target).style("stroke-width", 0);
+      d3.select(event.target).style("stroke", "#ccc");
+
       updateTooltip(event, d);
     },
     [updateTooltip]
@@ -96,7 +100,9 @@ const EpisodeWordsBarChart = ({ data, width }) => {
   );
 
   const handleMouseLeave = useCallback(() => {
-    tooltipRef.current.style.opacity = 0;
+    d3.select(event.target).style("stroke", "black");
+    d3.select(event.target).style("stroke-width", 2);
+    tooltipRef.current.style.display = "none";
   }, []);
 
   return (

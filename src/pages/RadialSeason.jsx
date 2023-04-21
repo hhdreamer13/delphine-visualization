@@ -47,7 +47,7 @@ const RadialSeasonWrapper = () => {
         </h2>
       </div>
       <div className="mx-auto flex w-full justify-center">
-        <div className="mt-20 w-40">
+        <div className="mt-20 hidden w-40 lg:block">
           <Legend obj={techniqueObj} />
         </div>
         <div>

@@ -28,26 +28,28 @@ const Navbar = () => {
     <>
       <nav className="bg-base-300 p-4">
         <div className=" mx-auto flex items-center justify-between">
-          <div className="text-2xl font-bold">
+          <div className="text-lg font-bold">
             <Link to="/">
-              <h2 className=" uppercase">PoAnimaViz</h2>
+              <p className="">PoAnimaViz</p>
             </Link>
           </div>
-          <div className="space-x-4 md:flex">
+          <div className="mx-6 space-x-8 md:flex">
             {navItems.map((item, index) => (
               <div className="group relative" key={index}>
-                <Link className="btn-ghost btn mx-2 normal-case" to={item.to}>
-                  <p>{item.name}</p>
+                <Link className="mx-2" to={item.to}>
+                  <button className="transition-all duration-300 hover:text-amber-500">
+                    <p>{item.name}</p>
+                  </button>
                 </Link>
                 {item.dropdownItems && (
                   <div className="absolute left-0 hidden space-y-2 rounded-md bg-base-200 p-2 text-base group-hover:block">
                     {item.dropdownItems.map((dropdownItem, dropdownIndex) => (
                       <Link
                         key={dropdownIndex}
-                        className="block rounded-md px-2 py-1 hover:bg-base-100"
+                        className="block rounded-md px-2 py-1 text-sm hover:bg-base-100"
                         to={dropdownItem.to}
                       >
-                        {dropdownItem.name}
+                        <p>{dropdownItem.name}</p>
                       </Link>
                     ))}
                   </div>

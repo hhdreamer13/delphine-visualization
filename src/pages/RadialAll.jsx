@@ -16,8 +16,18 @@ const RadialAllWrapper = () => {
           Le Grand Monde
         </h2>
       </div>
+
       <div className="mx-auto flex w-full justify-center">
-        <div id="buttons" className="mt-20 w-40 justify-center">
+        <div className="mt-20 hidden w-40 lg:block">
+          <Legend obj={techniqueColors} />
+        </div>
+
+        <div id="chart-container">
+          <div className="m-1">
+            <TitleWordsRadialAll data={data} />
+          </div>
+        </div>
+        <div id="buttons" className="mt-20 hidden w-40 justify-center lg:block">
           <button
             onClick={() => setData(_.sortBy(data, (d) => d.words))}
             className="btn-outline btn-sm btn my-2 w-28 normal-case"
@@ -36,14 +46,6 @@ const RadialAllWrapper = () => {
           >
             Décroissant
           </button>
-        </div>
-        <div id="chart-container">
-          <div className="m-1">
-            <TitleWordsRadialAll data={data} />
-          </div>
-        </div>
-        <div className="mt-20 w-40">
-          <Legend obj={techniqueColors} />
         </div>
       </div>
       <div className="prose text-justify text-lg">

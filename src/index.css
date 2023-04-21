@@ -15,3 +15,17 @@ h2 {
 h3 {
   @apply font-sousTitre;
 }
+
+@keyframes rotate-phone {
+  0%,
+  100% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(-70deg);
+  }
+}
+
+.animate-rotate-phone {
+  animation: rotate-phone 3s ease-in-out infinite;
+}
