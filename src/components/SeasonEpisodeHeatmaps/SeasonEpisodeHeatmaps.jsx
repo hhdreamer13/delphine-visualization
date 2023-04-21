@@ -1,7 +1,7 @@
 import { useEffect, useRef, useCallback, useState } from "react";
 import * as d3 from "d3";
 import _, { throttle } from "lodash";
-import LegendInteractive from "./LegendInteractive";
+import LegendInteractive from "../LegendInteractive";
 import ToggleSwitch from "../ToggleSwitch";
 import schoColor from "../../utils/schoolColors.json";
 import technicolor from "../../utils/techniqueColors.json";
@@ -267,6 +267,7 @@ const SeasonEpisodeHeatmaps = ({ data }) => {
             <LegendInteractive
               obj={techniquesObj}
               onLegendClick={handleTechniqueLegendClick}
+              selected={selectedTechnique}
             />
           </div>
           <div
@@ -280,6 +281,7 @@ const SeasonEpisodeHeatmaps = ({ data }) => {
             <LegendInteractive
               obj={schoolsObj}
               onLegendClick={handleSchoolLegendClick}
+              selected={selectedSchool}
             />
           </div>
         </div>

@@ -1,12 +1,12 @@
-import React, { useRef, useEffect, useCallback, useState } from "react";
+import React, { useRef, useEffect, useCallback } from "react";
 import * as d3 from "d3";
-import _ from "lodash";
+// import _ from "lodash";
 import d3ColorExtractor from "../../utils/d3ColorExtractor";
 import drawEpisodeWordsBar from "./drawEpisodeWordsBar";
 import drawEpisodeWordAxes from "./drawEpisodeWordAxes";
 import episodeTooltip from "./episodeTooltip";
 
-const width = 800;
+// const width = 800;
 const height = 450;
 const margin = { top: 20, right: 5, bottom: 20, left: 35 };
 const techniques = [
@@ -17,13 +17,11 @@ const techniques = [
   "Variée",
 ];
 
-const EpisodeWordsBarChart = ({ data: films }) => {
+const EpisodeWordsBarChart = ({ data, width }) => {
   const svgRef = useRef(null);
   const xAxisRef = useRef(null);
   const yAxisRef = useRef(null);
   const tooltipRef = useRef(null);
-
-  const [data, setData] = useState(films);
 
   useEffect(
     () =>
@@ -47,6 +45,7 @@ const EpisodeWordsBarChart = ({ data: films }) => {
   // Color array based on techniques
   const colorRange = d3ColorExtractor(d3.interpolateInferno, 5);
 
+  // eslint-disable-next-line no-unused-vars
   const techniColor = techniques.map((technique, i) => {
     return {
       technique: technique,
@@ -102,27 +101,6 @@ const EpisodeWordsBarChart = ({ data: films }) => {
 
   return (
     <div>
-      <div className="my-10 flex w-full justify-around">
-        <button
-          onClick={() => setData(_.sortBy(data, (d) => d.words))}
-          className="btn-outline btn-sm btn normal-case"
-        >
-          Ascending
-        </button>
-        <button
-          onClick={() => setData(films)}
-          className="btn-outline btn-sm btn normal-case"
-        >
-          Reset
-        </button>
-        <button
-          onClick={() => setData(_.sortBy(data, (d) => d.words).reverse())}
-          className="btn-outline btn-sm btn normal-case"
-        >
-          Descending
-        </button>
-      </div>
-
       <svg width={width} height={height} ref={svgRef}>
         {/* {bars} */}
         <g

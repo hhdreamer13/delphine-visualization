@@ -1,6 +1,6 @@
-import { useEffect, useRef, useCallback, useState } from "react";
+import { useEffect, useRef, useCallback } from "react";
 import * as d3 from "d3";
-import _, { throttle } from "lodash";
+import { throttle } from "lodash";
 import d3ColorExtractor from "../../utils/d3ColorExtractor";
 import drawTitleWordsRadial from "./drawTitleWordsRadial";
 import radialTooltip from "./radialTooltip";
@@ -18,12 +18,10 @@ const techniques = [
   "Variée",
 ];
 
-const TitleWordsRadialAll = ({ data: filteredData }) => {
+const TitleWordsRadialAll = ({ data }) => {
   const svgRef = useRef(null);
   const radialBarRef = useRef(null);
   const tooltipRef = useRef(null);
-
-  const [data, setData] = useState(filteredData);
 
   // Color array based on techniques
   const colorRange = d3ColorExtractor(d3.interpolateInferno, 5);
@@ -126,26 +124,6 @@ const TitleWordsRadialAll = ({ data: filteredData }) => {
 
   return (
     <div className="flex flex-col">
-      <div className="my-10 flex w-full justify-around">
-        <button
-          onClick={() => setData(_.sortBy(data, (d) => d.words))}
-          className="btn-outline btn-sm btn normal-case"
-        >
-          Ascending
-        </button>
-        <button
-          onClick={() => setData(filteredData)}
-          className="btn-outline btn-sm btn normal-case"
-        >
-          Reset
-        </button>
-        <button
-          onClick={() => setData(_.sortBy(data, (d) => d.words).reverse())}
-          className="btn-outline btn-sm btn normal-case"
-        >
-          Descending
-        </button>
-      </div>
       <svg ref={svgRef} width={width} height={height}>
         <g
           ref={radialBarRef}
@@ -156,7 +134,7 @@ const TitleWordsRadialAll = ({ data: filteredData }) => {
         ref={tooltipRef}
         className="absolute w-40 whitespace-pre-line rounded-md border border-slate-900 bg-white p-1 text-xs opacity-0 shadow-lg"
       ></div>
-      <div>
+      {/* <div>
         {techniColor.map((film) => (
           <div key={film.color}>
             <span
@@ -168,7 +146,7 @@ const TitleWordsRadialAll = ({ data: filteredData }) => {
             {film.technique}
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

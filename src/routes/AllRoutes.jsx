@@ -1,13 +1,12 @@
 import { Route } from "react-router-dom";
-import data from "../utils/poanimaDataset.json";
 import Navbar from "../components/Navbar/Navbar";
 import Home from "../components/Home/Home";
-import SeasonEpisodeHeatmaps from "../components/SeasonEpisodeHeatmaps/SeasonEpisodeHeatmaps";
-import SchoolForce from "../components/SchoolForce/SchoolForce";
-import TitleWordsRadialSeason from "../components/TitleWordsRadial/TitleWordsRadialSeason";
-import TitleWordsRadialAll from "../components/TitleWordsRadial/TitleWordsRadialAll";
-import EpisodeWordsBarChart from "../components/EpisodeWordsBarChart/EpisodeWordsBarChart";
 import FlowerWrapper from "../pages/Flower";
+import ForceWrapper from "../pages/Force";
+import HeatmapWrapper from "../pages/Heatmap";
+import RadialBarAllWrapper from "../pages/RadialAll";
+import BarSeasonWrapper from "../pages/BarSeason";
+import BarAllWrapper from "../pages/BarAll";
 import RadialSeasonWrapper from "../pages/RadialSeason";
 
 const AllRoutes = () => {
@@ -15,18 +14,13 @@ const AllRoutes = () => {
     <>
       <Route path="/" element={<Navbar />}>
         <Route index element={<Home />} />
-        <Route
-          path="/heatmap"
-          element={<SeasonEpisodeHeatmaps data={data} />}
-        />
-        <Route path="/force" element={<SchoolForce data={data} />} />
-        <Route path="/flower" element={<FlowerWrapper />} />
-        <Route path="/radial" element={<RadialSeasonWrapper />} />
-        <Route
-          path="/radial-all"
-          element={<TitleWordsRadialAll data={data} />}
-        />
-        <Route path="/bar-all" element={<EpisodeWordsBarChart data={data} />} />
+        <Route path="/matrice" element={<HeatmapWrapper />} />
+        <Route path="/galaxie" element={<ForceWrapper />} />
+        <Route path="/fleure" element={<FlowerWrapper />} />
+        <Route path="/monde/petit" element={<RadialSeasonWrapper />} />
+        <Route path="/monde/grand" element={<RadialBarAllWrapper />} />
+        <Route path="/ville/petit" element={<BarSeasonWrapper />} />
+        <Route path="/ville/grand" element={<BarAllWrapper />} />
       </Route>
     </>
   );

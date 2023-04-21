@@ -1,4 +1,4 @@
-const LegendInteractive = ({ obj, onLegendClick }) => {
+const LegendInteractive = ({ obj, onLegendClick, selected }) => {
   return (
     <div className="mt-2">
       {obj.map((item) => (
@@ -10,7 +10,8 @@ const LegendInteractive = ({ obj, onLegendClick }) => {
         >
           <span
             className={
-              "mr-1 inline-block h-3 w-3 rounded-xl group-hover:ring-2 "
+              "mr-1 inline-block h-3 w-3 rounded-xl group-hover:ring-2" +
+              (selected === item.name ? " ring-2 ring-sky-600" : "")
             }
             style={{
               backgroundColor: item.color,

@@ -135,19 +135,6 @@ const TitleWordsRadialSeason = ({ data: filteredData }) => {
         ref={tooltipRef}
         className="absolute w-40 whitespace-pre-line rounded-md border border-slate-900 bg-white p-1 text-xs opacity-0 shadow-lg"
       ></div>
-      <div>
-        {techniColor.map((film) => (
-          <div key={film.color}>
-            <span
-              className={"mr-1 inline-block h-3 w-3 rounded-xl"}
-              style={{
-                backgroundColor: film.color,
-              }}
-            ></span>
-            {film.technique}
-          </div>
-        ))}
-      </div>
     </div>
   );
 };

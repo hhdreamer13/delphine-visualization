@@ -1,10 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
 import data from "../utils/poanimaDataset.json";
-import TitleWordsRadialSeason from "../components/TitleWordsRadial/TitleWordsRadialSeason";
-import techniqueObj from "../utils/techniqueColors.json";
-import Legend from "../components/Legend";
 import LegendInteractiveSeason from "../components/LegendInteractiveSeason";
+import EpisodeWordsBarChart from "../components/EpisodeWordsBarChart/EpisodeWordsBarChart";
 
 const seasonsObj = [
   { number: 1, name: "1. Prévert", color: "#FEC89A" }, // pastel apricot
@@ -19,7 +17,7 @@ const seasonsObj = [
   { number: 10, name: "10. Amitié", color: "#FFF9B0" }, // pastel gold
 ];
 
-const RadialSeasonWrapper = () => {
+const BarSeasonWrapper = () => {
   const filterData = (seasonNumber) => {
     return data.filter((item) => item.season === seasonNumber);
   };
@@ -35,26 +33,24 @@ const RadialSeasonWrapper = () => {
       setFilteredData(filterData(foundSeason.number));
     } else {
       setSelectedSeason(null);
-      setFilteredData(data);
+      setFilteredData(filteredData);
     }
   };
 
   return (
     <div className="mx-auto my-20 flex w-full flex-col items-center justify-center">
-      <div id="description" className="prose mb-1 w-full">
+      <div id="description" className="prose mb-20 w-full ">
         <h2 className="text-center text-3xl uppercase tracking-widest">
           Le Petit Monde
         </h2>
       </div>
       <div className="mx-auto flex w-full justify-center">
-        <div className="mt-20 w-40">
-          <Legend obj={techniqueObj} />
+        <div className="m-10">
+          <EpisodeWordsBarChart data={filteredData} width="600" />
         </div>
-        <div>
-          <TitleWordsRadialSeason data={filteredData} />
-        </div>
-        <div className="mt-20 w-40">
+        <div className="ml-4 w-40">
           <p className="w-28 rounded-lg border p-2 font-bold">Saisons :</p>
+
           <LegendInteractiveSeason
             obj={seasonsObj}
             onLegendClick={handleSeasonClick}
@@ -64,43 +60,37 @@ const RadialSeasonWrapper = () => {
       </div>
       <div className="prose -ml-16 text-justify text-lg">
         <h3>Les Écoles et Techniques à travers les Saisons</h3>
+
         <p>
-          Bienvenue dans "Le Petit Monde", une visualisation circulaire des
-          épisodes de la série "En sortant de l'école" axée sur les saisons.
-          Chaque segment du cercle représente un épisode, et la couleur de
-          chaque segment correspond à la technique d'animation utilisée dans cet
-          épisode. La particularité de cette visualisation est qu'elle permet de
-          filtrer les épisodes en fonction de la saison sélectionnée, offrant
-          ainsi une vue plus précise des techniques utilisées pour chaque poète.
+          La visualisation "Le Petit Monde" présente un graphique à barres
+          similaire à "La Grande Ville", mais avec une fonctionnalité
+          supplémentaire : la sélection des saisons. Vous pouvez désormais
+          explorer les épisodes d'une saison spécifique en choisissant le nom du
+          poète correspondant dans la légende interactive.
         </p>
-        <p>Pour explorer cette visualisation, suivez ces étapes :</p>
+        <p>Pour profiter de cette visualisation, suivez ces étapes :</p>
         <ol>
           <li>
-            Sélectionnez une saison en cliquant sur le nom du poète dans la
-            légende interactive située à droite de la visualisation. Le cercle
-            se mettra à jour pour afficher uniquement les épisodes de la saison
-            choisie.
+            Sélectionnez un poète dans la légende interactive pour afficher les
+            épisodes de la saison correspondante.
           </li>
           <li>
-            Passez le curseur de votre souris sur un segment pour obtenir des
-            informations détaillées sur l'épisode, notamment le nombre de mots
-            et la technique d'animation utilisée.
-          </li>
-          <li>
-            Consultez la légende à gauche pour identifier les techniques
-            d'animation représentées par les différentes couleurs.
+            Passez le curseur de votre souris sur une barre pour obtenir des
+            informations supplémentaires sur l'épisode, notamment le nombre de
+            mots et les techniques d'animation employées.
           </li>
         </ol>
         <p>
-          En explorant "Le Petit Monde", vous pouvez apprécier la variété des
-          techniques d'animation et comprendre comment elles sont réparties
-          entre les épisodes pour chaque poète. Les couleurs vives et distinctes
-          facilitent l'identification des techniques utilisées et rendent la
-          visualisation encore plus attrayante.
+          "Le Petit Monde" permet de se concentrer sur les épisodes d'une saison
+          en particulier, offrant ainsi une perspective plus approfondie sur les
+          variations narratives et artistiques à l'intérieur d'une saison. Les
+          couleurs des barres représentent toujours l'augmentation du nombre de
+          mots dans l'épisode, permettant de visualiser la densité narrative des
+          adaptations pour chaque saison individuellement.
         </p>
       </div>
     </div>
   );
 };
 
-export default RadialSeasonWrapper;
+export default BarSeasonWrapper;
