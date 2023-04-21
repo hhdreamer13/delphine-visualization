@@ -57,7 +57,7 @@ const EpisodeWordsBarChart = ({ data, width }) => {
   const colorScale = d3
     .scaleSequential()
     .domain(colorExtent)
-    .interpolator(d3.interpolateInferno);
+    .interpolator(d3.interpolateSpectral);
 
   // set domains on the scales
   const xDomain = data.map((d) => d.id);
