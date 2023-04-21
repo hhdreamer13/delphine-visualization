@@ -33,7 +33,7 @@ const Navbar = () => {
               <p className="">PoAnimaViz</p>
             </Link>
           </div>
-          <div className="mx-6 space-x-8 md:flex">
+          <div className="mx-6 flex space-x-8">
             {navItems.map((item, index) => (
               <div className="group relative" key={index}>
                 <Link className="mx-2" to={item.to}>
