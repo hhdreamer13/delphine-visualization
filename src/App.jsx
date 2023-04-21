@@ -12,7 +12,7 @@ const router = createBrowserRouter(createRoutesFromElements(AllRoutes()));
 function App() {
   return (
     <>
-      <div className="hidden transform-gpu transition-transform md:block">
+      <div className="hidden transform-gpu transition-transform sm:block">
         <RouterProvider router={router}>
           <Outlet />
         </RouterProvider>
