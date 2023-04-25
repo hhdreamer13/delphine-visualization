@@ -17,7 +17,7 @@ function App() {
           <Outlet />
         </RouterProvider>
       </div>
-      <div className="flex min-h-screen flex-col items-center justify-center md:hidden">
+      <div className="flex h-screen flex-col items-center justify-around sm:hidden">
         <h2 className="my-14 text-2xl uppercase">PoAnimaViz</h2>
 
         <img

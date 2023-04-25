@@ -1,13 +1,12 @@
 import * as d3 from "d3";
-import { useEffect, useRef, useCallback } from "react";
+import { useEffect, useRef } from "react";
 import _ from "lodash";
-import schoolFlowerTooltip from "./schoolFlowerTooltip";
 import flowerPetalPaths from "../../utils/flowerPetalPaths.json";
 
 const width = 800;
 // const height = 450;
 // const margin = { top: 5, right: 5, bottom: 20, left: 35 };
-const layout = [4, 5, 4]; // Represents rows of 3 films, 3, 3 and 4
+const layout = [5]; // Represents rows of 3 films, 3, 3 and 4
 
 const animationObj = [
   {
@@ -73,9 +72,8 @@ const calculateGridPos = (i, layout) => {
 
 // The component starts from here
 
-const FlowerAnimation = ({ data }) => {
+const LegendFlower = ({ data }) => {
   const svgRef = useRef(null);
-  const tooltipRef = useRef(null);
 
   // eslint-disable-next-line no-unused-vars
   const svgHeight = layout.reduce((sum, row) => sum + pathWidth + 100, 0);
@@ -94,6 +92,7 @@ const FlowerAnimation = ({ data }) => {
         id: d.id,
         title: d.title,
         director: d.director,
+        words: d.words,
         color: animationObj.find((film) => film.technique === d.technique)
           .color,
         path: animationObj.find((film) => film.technique === d.technique).path,
@@ -105,28 +104,6 @@ const FlowerAnimation = ({ data }) => {
     });
   };
 
-  // Tooltip
-  const updateTooltip = schoolFlowerTooltip(tooltipRef, svgRef, 0, 0);
-  // const throttledUpdateTooltip = throttle(updateTooltip, 1000);
-
-  const handleMouseOver = useCallback(
-    (event, d) => {
-      updateTooltip(event, d);
-    },
-    [updateTooltip]
-  );
-
-  const handleMouseMove = useCallback(
-    (event, d) => {
-      updateTooltip(event, d);
-    },
-    [updateTooltip]
-  );
-
-  const handleMouseLeave = useCallback(() => {
-    tooltipRef.current.style.opacity = 0;
-  }, []);
-
   // Draw
 
   const draw = () => {
@@ -134,59 +111,13 @@ const FlowerAnimation = ({ data }) => {
       const svg = d3.select(svgRef.current);
       svg.selectAll("*").remove();
 
-      // Add Gaussian blur filter
-      const filter = svg
-        .append("defs")
-        .append("filter")
-        .attr("id", "blurAndSaturation");
-
-      filter
-        .attr("id", "blur")
-        .append("feGaussianBlur")
-        .attr("stdDeviation", 4); // adjust the blur intensity by changing the stdDeviation value
-
-      filter
-        .append("feColorMatrix")
-        .attr("type", "saturate")
-        .attr("values", 1.7); // adjust saturation
-
       // eslint-disable-next-line no-unused-vars
       const flowers = svg
         .selectAll("g")
         .data(flowersObj(data), (d) => d.id)
         .join(
           (enter) => {
-            const flower = enter
-              .append("g")
-              .attr("opacity", 0)
-              .attr("transform", (d) => `translate(${d.translate})`);
-
-            // Add background circles
-            const circleGroup = flower
-              .append("g")
-              .attr("class", "background-circles");
-            const circleAngles = [0, 72, 144, 216, 288]; // angles for 5 circles around the center
-            const circleRadius = 27; // radius of circles
-
-            circleGroup
-              .selectAll("circle")
-              .data((d) =>
-                circleAngles.map((angle, i) => ({ angle, color: d.palette[i] }))
-              )
-              .join("circle")
-              .attr(
-                "cx",
-                (d) => circleRadius * Math.cos((d.angle * Math.PI) / 180)
-              )
-              .attr(
-                "cy",
-                (d) => circleRadius * Math.sin((d.angle * Math.PI) / 180)
-              )
-              .attr("r", circleRadius)
-              .attr("fill", (d) => d.color)
-              .attr("fill-opacity", 0.5)
-              .attr("stroke", "none")
-              .attr("filter", "url(#blur)"); // apply the blur filter
+            const flower = enter.append("g");
 
             // Draw flower petals
             flower
@@ -204,9 +135,6 @@ const FlowerAnimation = ({ data }) => {
               .attr("fill", "none")
               .attr("stroke", "black")
               .attr("stroke-width", 5)
-              .transition()
-              .delay((d) => d.index * 200)
-              .duration(1000)
               .attr("transform", (d) => `rotate(${d.rotate}) scale(${0.45})`);
 
             // Add text
@@ -216,24 +144,14 @@ const FlowerAnimation = ({ data }) => {
               .attr("text-anchor", "middle")
               .attr("dy", 80)
               .style("font-size", ".7em")
-              .style("font-weight", "bold")
-              .style("font-style", "italic")
-              // .style("text-shadow", "1px 1px 1px rgba(0,0,0,0.5)") // add drop shadow
+              // .style("font-weight", "bold")
+              // .style("font-style", "italic")
+              .style("font-family", "Delius")
               .style("fill", "black") // set text color to white
-              .text((d) => _.truncate(d.title, { length: 20 }));
-
-            circleGroup
-              .attr("opacity", 0)
-              .transition()
-              .delay((d, i) => i * 210)
-              .duration(1000)
-              .attr("opacity", 1);
-            text
-              .attr("opacity", 0)
-              .transition()
-              .delay((d, i) => i * 210)
-              .duration(1000)
-              .attr("opacity", 1);
+              .text(
+                (d) => `${d.words} mots,
+              ${d.numPetals} pétales`
+              );
 
             return flower;
           },
@@ -244,15 +162,7 @@ const FlowerAnimation = ({ data }) => {
         )
         .attr("class", "flower-container")
         .attr("transform", (d) => `translate(${d.translate})`)
-        .transition()
-        .delay((d, i) => i * 200)
-        .duration(1000)
         .attr("opacity", 1);
-
-      d3.selectAll(".flower-container")
-        .on("mouseover", handleMouseOver)
-        .on("mousemove", handleMouseMove)
-        .on("mouseout", handleMouseLeave);
     }
   };
 
@@ -265,13 +175,9 @@ const FlowerAnimation = ({ data }) => {
     <div>
       <div className={`flex overflow-y-auto overflow-x-hidden`}>
         <svg ref={svgRef} width={width} height={svgHeight}></svg>
-        <div
-          ref={tooltipRef}
-          className="absolute whitespace-pre-line rounded-md bg-stone-50 p-2 font-['Caveat'] text-lg opacity-0 shadow-[rgba(0,0,0,0.07)_0px_1px_2px,rgba(0,0,0,0.07)_0px_2px_4px,rgba(0,0,0,0.07)_0px_4px_8px,rgba(0,0,0,0.07)_0px_8px_16px,rgba(0,0,0,0.07)_0px_16px_32px,rgba(0,0,0,0.07)_0px_32px_64px] transition-opacity duration-300 ease-in-out"
-        ></div>
       </div>
     </div>
   );
 };
 
-export default FlowerAnimation;
+export default LegendFlower;
