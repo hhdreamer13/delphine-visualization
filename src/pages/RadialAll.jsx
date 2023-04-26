@@ -30,26 +30,26 @@ const RadialAllWrapper = () => {
         <div id="buttons" className="mt-20 hidden w-40 justify-center lg:block">
           <button
             onClick={() => setData(_.sortBy(data, (d) => d.words))}
-            className="btn-outline btn-sm btn my-2 w-28 normal-case"
+            className="btn-outline btn-sm btn my-2 w-28 font-normal normal-case"
           >
             Croissant
           </button>
           <button
             onClick={() => setData(dataset)}
-            className="btn-outline btn-sm btn my-2 w-28 normal-case"
+            className="btn-secondary btn-sm btn my-2 w-28 font-normal normal-case"
           >
             Réinitialiser
           </button>
           <button
             onClick={() => setData(_.sortBy(data, (d) => d.words).reverse())}
-            className="btn-outline btn-sm btn my-2 w-28 normal-case"
+            className="btn-outline btn-sm btn my-2 w-28 font-normal normal-case"
           >
             Décroissant
           </button>
         </div>
       </div>
       <div className="prose text-justify text-lg">
-        <h3>Un tour du monde des Techniques d'animation</h3>
+        <h3 className="my-5 text-3xl">Un tour du monde des films</h3>
         <p>
           La visualisation "Le Grand Monde" offre une perspective circulaire
           unique sur les épisodes de la série "En sortant de l'école". Chaque

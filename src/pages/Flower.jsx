@@ -87,17 +87,17 @@ const legendData = [
 ];
 
 const filmExample = {
-  id: 708,
-  title: "Chanson d'automne",
-  director: "Jean-Baptiste Marchand",
-  school: "Estienne",
-  technique: "Papiers découpés",
-  palette: ["#534b8e", "#dc8b76", "#e6b7cd", "#d13843", "#312045"],
-  words: 45,
-  poet: "Paul Verlaine",
-  episode: 8,
-  season: 7,
-  year: 2020,
+  id: 902,
+  title: "Le Hibou et l'hirondelle",
+  director: "Gaspar Chabaud",
+  school: "La Poudrière",
+  technique: "Traditionnelle",
+  palette: ["#27312e", "#9acbc8", "#6b9094", "#bf6d5c", "#4e585c"],
+  words: 48,
+  poet: "Claude Roy",
+  episode: 2,
+  season: 9,
+  year: 2022,
 };
 
 const FlowerWrapper = () => {
@@ -129,7 +129,7 @@ const FlowerWrapper = () => {
           id="season-select"
           value={selectedSeason}
           onChange={handleSeasonChange}
-          className="ml-2 rounded-md px-2 py-1 shadow-lg outline-none"
+          className="ml-2 rounded-md border-[0.5px] px-2 py-1 shadow-md outline-none"
         >
           {seasonsObj.map((season) => (
             <option key={season.number} value={season.number}>
@@ -142,9 +142,8 @@ const FlowerWrapper = () => {
         <FlowerAnimation data={filteredData} />
       </div>
       <div className="prose text-justify text-lg">
-        <h3>
-          Poésie florale, inspirée des techniques d'animation, le nombre de mots
-          des poèmes et des palettes de couleurs de films
+        <h3 className="mb-5 text-3xl">
+          Poésie florale des techniques, poèmes et palettes
         </h3>
         <p>
           Inspirée par le travail de Shirley Wu et son projet "Film Flowers",
@@ -247,7 +246,7 @@ const FlowerWrapper = () => {
                   height="1.9"
                 >
                   <feGaussianBlur stdDeviation="5" />
-                  <feColorMatrix type="saturate" values="1.7" />
+                  <feColorMatrix type="saturate" values="1.2" />
                 </filter>
               </defs>
               <circle

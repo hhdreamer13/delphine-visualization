@@ -14,7 +14,9 @@ const HeatmapWrapper = () => {
         <SeasonEpisodeHeatmaps data={data} />
       </div>
       <div className="prose -ml-16 text-justify text-lg">
-        <h3>Les Écoles et Techniques à travers les Saisons</h3>
+        <h3 className="my-5 text-3xl">
+          Les Écoles et Techniques à travers les saisons
+        </h3>
         <p>
           La visualisation Matrice d'animation ci-dessus représente les
           différentes écoles et techniques d'animation utilisées dans chaque

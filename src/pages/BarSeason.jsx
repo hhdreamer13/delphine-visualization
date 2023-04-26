@@ -49,7 +49,9 @@ const BarSeasonWrapper = () => {
           <EpisodeWordsBarChart data={filteredData} width="600" />
         </div>
         <div className="ml-4 w-40">
-          <p className="w-28 rounded-lg border p-2 font-bold">Saisons :</p>
+          <p className="-ml-1 w-28 rounded-lg border p-2 font-bold">
+            Saisons :
+          </p>
 
           <LegendInteractiveSeason
             obj={seasonsObj}
@@ -59,7 +61,9 @@ const BarSeasonWrapper = () => {
         </div>
       </div>
       <div className="prose text-justify text-lg">
-        <h3>Une petite ville pour chaque saison</h3>
+        <h3 className="my-4 text-3xl">
+          Une charmante petite ville pour chaque saison
+        </h3>
 
         <p>
           La visualisation "Le Petit Monde" présente un graphique à barres

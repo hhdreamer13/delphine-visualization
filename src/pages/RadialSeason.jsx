@@ -35,7 +35,7 @@ const RadialSeasonWrapper = () => {
       setFilteredData(filterData(foundSeason.number));
     } else {
       setSelectedSeason(null);
-      setFilteredData(data);
+      setFilteredData(filteredData);
     }
   };
 
@@ -46,11 +46,11 @@ const RadialSeasonWrapper = () => {
           Le Petit Monde
         </h2>
       </div>
-      <div className="mx-auto flex w-full justify-center">
+      <div className="flex w-full justify-center">
         <div className="mt-20 hidden w-40 lg:block">
           <Legend obj={techniqueObj} />
         </div>
-        <div>
+        <div className="">
           <TitleWordsRadialSeason data={filteredData} />
         </div>
         <div className="mt-20 w-40">
@@ -63,9 +63,7 @@ const RadialSeasonWrapper = () => {
         </div>
       </div>
       <div className="prose text-justify text-lg">
-        <h3>
-          Un tour du monde des Techniques d'animation à travers les Saisons
-        </h3>
+        <h3 className="my-5 text-3xl">Un tour du monde saisonnier</h3>
         <p>
           Bienvenue dans "Le Petit Monde", une visualisation circulaire des
           épisodes de la série "En sortant de l'école" axée sur les saisons.

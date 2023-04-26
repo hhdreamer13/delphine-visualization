@@ -184,7 +184,7 @@ const FlowerAnimation = ({ data }) => {
               )
               .attr("r", circleRadius)
               .attr("fill", (d) => d.color)
-              .attr("fill-opacity", 0.5)
+              .attr("fill-opacity", 0.47)
               .attr("stroke", "none")
               .attr("filter", "url(#blur)"); // apply the blur filter
 

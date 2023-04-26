@@ -14,7 +14,9 @@ const ForceWrapper = () => {
         <SchoolForce data={data} />
       </div>
       <div className="prose -ml-16 text-justify text-lg">
-        <h3 className="">Carte cosmique des écoles et des techniques</h3>
+        <h3 className="my-5 text-3xl">
+          Carte cosmique des écoles et des techniques
+        </h3>
         <p className="">
           La visualisation de galaxie ci-dessus illustre les relations entre les
           écoles d'animation et les techniques utilisées dans les films

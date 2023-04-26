@@ -259,7 +259,7 @@ Nombre de films: ${filmCount}`;
   }, [data]);
 
   return (
-    <div className="flex flex-col">
+    <div className="ml-28 flex flex-col">
       <div className="flex">
         <div ref={ref}></div>
         <div className="mt-4">
@@ -268,7 +268,7 @@ Nombre de films: ${filmCount}`;
       </div>
       <div className="mt-8 flex">
         {techniquesObj.map((item) => (
-          <div key={item.name} className="mx-2">
+          <div key={item.name} className="mx-2 font-body drop-shadow-md">
             <span
               className={"mr-1 inline-block h-3 w-3 rounded-xl"}
               style={{

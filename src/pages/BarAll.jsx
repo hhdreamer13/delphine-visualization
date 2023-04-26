@@ -18,19 +18,19 @@ const BarAllWrapper = () => {
         <div id="buttons" className="mt-20 hidden w-40 justify-center lg:block">
           <button
             onClick={() => setData(_.sortBy(data, (d) => d.words))}
-            className="btn-outline btn-sm btn my-2 w-28 normal-case"
+            className="btn-outline btn-sm btn my-2 w-28 rounded-sm font-normal normal-case"
           >
             Croissant
           </button>
           <button
             onClick={() => setData(dataset)}
-            className="btn-outline btn-sm btn my-2 w-28 normal-case"
+            className="btn-secondary btn-sm btn my-2 w-28 rounded-sm font-normal normal-case"
           >
             Réinitialiser
           </button>
           <button
             onClick={() => setData(_.sortBy(data, (d) => d.words).reverse())}
-            className="btn-outline btn-sm btn my-2 w-28 normal-case"
+            className="btn-outline btn-sm btn my-2 w-28 rounded-sm font-normal normal-case"
           >
             Décroissant
           </button>
@@ -42,7 +42,7 @@ const BarAllWrapper = () => {
         </div>
       </div>
       <div className="prose text-justify text-lg">
-        <h3>Un paysage urban des film d'animation</h3>
+        <h3 className="my-4 text-3xl">Un panorama urbain des films</h3>
 
         <p>
           La visualisation "La Grande Ville" présente un graphique à barres

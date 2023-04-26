@@ -64,11 +64,10 @@ const TitleWordsRadialSeason = ({ data: filteredData }) => {
     (event, d) => {
       d3.select(event.target)
         .transition()
-        .duration(150)
-        .style("scale", "0.95")
-        .style("stroke", "black")
-        .style("stroke-width", "2")
-        .style("stroke-width", "2");
+        .duration(200)
+        .style("scale", "0.97")
+        .style("opacity", "0.9");
+      // .style("stroke-width", "2")
 
       tooltipRef.current.style.display = "inline-block";
 
@@ -87,10 +86,12 @@ const TitleWordsRadialSeason = ({ data: filteredData }) => {
   const handleMouseLeave = useCallback(() => {
     d3.select(event.target)
       .transition()
-      .duration(150)
+      .duration(200)
       .style("scale", "1")
-      .style("stroke", "none")
-      .style("stroke-width", "0");
+      .style("opacity", "1");
+
+    // .style("stroke", "none")
+    // .style("stroke-width", "0");
 
     // tooltipRef.current.style.opacity = 0;
     tooltipRef.current.style.display = "none";

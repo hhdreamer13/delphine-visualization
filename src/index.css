@@ -29,3 +29,29 @@ h3 {
 .animate-rotate-phone {
   animation: rotate-phone 3s ease-in-out infinite;
 }
+
+@keyframes wind {
+  0% {
+    transform: translateX(0px) rotateZ(0deg);
+  }
+  50% {
+    transform: translateX(0px) rotateZ(500deg);
+  }
+  100% {
+    transform: translateX(0px) rotateZ(0deg);
+  }
+}
+
+.wind-animation {
+  animation: wind 5s cubic-bezier(0.83, -0.01, 0.17, 1) infinite;
+  /* animation: wind 4s cubic-bezier(.65,-0.01,.27,1) infinite; */
+  transform-origin: center;
+}
+
+.submenu-container {
+  @apply invisible mt-2 opacity-0 transition-opacity delay-[0.3s] duration-[0.3s,visibility];
+  /* Adjust the margin value to your preference */
+}
+.group:hover .submenu-container {
+  @apply visible opacity-100;
+}
