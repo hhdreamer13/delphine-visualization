@@ -7,6 +7,7 @@ import {
 import AllRoutes from "./routes/AllRoutes";
 import rotatePhoneIcon from "./assets/rotate.png";
 import Footer from "./components/Footer/Footer";
+import { ModalProvider } from "./components/ModalContext";
 
 const router = createBrowserRouter(createRoutesFromElements(AllRoutes()));
 
@@ -15,9 +16,11 @@ function App() {
     <>
       <div className="relative min-h-screen">
         <div className="hidden transform-gpu transition-transform sm:block">
-          <RouterProvider router={router}>
-            <Outlet />
-          </RouterProvider>
+          <ModalProvider>
+            <RouterProvider router={router}>
+              <Outlet />
+            </RouterProvider>
+          </ModalProvider>
         </div>
         <div className="flex h-screen flex-col items-center justify-around sm:hidden">
           <h2 className="my-14 text-2xl uppercase">PoAnimaViz</h2>

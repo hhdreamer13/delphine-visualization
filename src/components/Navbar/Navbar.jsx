@@ -1,4 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
+import Modal from "../Modal";
+import { useModalContext } from "../ModalContext";
+
 const navItems = [
   { name: "Intro", to: "/" },
   {
@@ -24,21 +27,14 @@ const navItems = [
 ];
 
 const Navbar = () => {
+  const { showModal, setShowModal } = useModalContext();
+
   return (
     <>
       <div className="flex flex-col items-center justify-center">
         <nav className="relative rounded-b-2xl bg-neutral-200 p-4 shadow-[rgba(128,128,128,0.4)_0px_5px,rgba(192,192,192,0.3)_0px_10px,rgba(224,224,224,0.2)_0px_15px,rgba(240,240,240,0.1)_0px_20px,rgba(255,255,255,0.05)_0px_25px]">
           <div className=" mx-auto flex items-center justify-between">
-            <div className="text-lg font-bold">
-              {/* <Link to="/">
-                <img
-                  className="wind-animation absolute -bottom-5 left-[47%] h-8 w-8"
-                  src="/flower.svg"
-                  alt=""
-                  // style={{ transform: "translate(-50%, 50%)" }}
-                />
-              </Link> */}
-            </div>
+            <div className="text-lg font-bold"></div>
             <div className="mx-6 flex space-x-8">
               {navItems.map((item, index) => (
                 <div className="relative" key={index}>
@@ -77,6 +73,8 @@ const Navbar = () => {
           </div>
         </nav>
         <div className="">
+          <Modal showModal={showModal} setShowModal={setShowModal} />
+
           <Outlet />
         </div>
       </div>

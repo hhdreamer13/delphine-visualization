@@ -13,10 +13,12 @@
   "dependencies": {
     "d3": "^7.8.4",
     "daisyui": "^2.51.5",
+    "framer-motion": "^10.12.4",
     "gsap": "^3.11.5",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
     "react-router-dom": "^6.10.0"
   },
   "devDependencies": {

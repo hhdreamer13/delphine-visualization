@@ -1,12 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { useModalContext } from "../ModalContext";
 
 const Home = () => {
+  const { setShowModal } = useModalContext();
+
   return (
     <div className="mb-40">
       <div className="relative mx-auto mt-20 flex w-full flex-col items-center justify-center p-2 text-lg">
         <div className="relative">
-          <img
+          <motion.img
+            onClick={() => setShowModal(true)}
             className="wind-animation absolute left-4 top-0 h-8 w-8"
             src="/flower.svg"
             alt=""
@@ -41,7 +46,7 @@ const Home = () => {
           réalisateurs et réalisatrices, tout juste sortis des écoles des
           meilleures écoles d'animation françaises. Cette série hors du commun,
           produite par Tant Mieux Production, une maison de production célèbre
-          pour ses films d'animation, vous invite à un voyage poétique et
+          pour cette série d'animation, vous invite à un voyage poétique et
           visuellement éblouissant à travers la poésie et l'art.
         </p>
 
