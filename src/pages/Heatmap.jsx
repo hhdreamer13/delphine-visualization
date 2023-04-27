@@ -1,10 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
+import { useEffect } from "react";
 import SeasonEpisodeHeatmaps from "../components/SeasonEpisodeHeatmaps/SeasonEpisodeHeatmaps";
 import data from "../utils/poanimaDataset.json";
 
 const HeatmapWrapper = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div className="mx-auto my-20 flex w-full flex-col items-center justify-center">
+    <div className="mx-auto my-20 mb-40 flex w-full flex-col items-center justify-center">
       <div id="description" className="prose w-full">
         <h2 className="-ml-16 text-left text-3xl uppercase tracking-widest drop-shadow-md">
           La Matrice

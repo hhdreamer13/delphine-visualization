@@ -10,7 +10,7 @@ const RadialAllWrapper = () => {
   const [data, setData] = useState(dataset);
 
   return (
-    <div className="mx-auto my-20 flex w-full flex-col items-center justify-center">
+    <div className="mx-auto my-20 mb-40 flex w-full flex-col items-center justify-center">
       <div id="description" className="prose mb-10 w-full">
         <h2 className="text-center text-3xl uppercase tracking-widest drop-shadow-md">
           Le Grand Monde

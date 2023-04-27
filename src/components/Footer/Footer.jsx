@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="fixed bottom-0 p-4">
+    <footer className="absolute bottom-0 w-full p-4">
       <div className="flex items-center justify-center gap-4">
         <div className="relative">
           <svg
@@ -13,7 +13,7 @@ const Footer = () => {
           >
             <g
               transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-              fill="#e2e8f0"
+              fill="#374151"
               stroke="none"
             >
               <path
@@ -103,7 +103,7 @@ const Footer = () => {
           >
             <g
               transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-              fill="#e2e8f0"
+              fill="#030712"
               stroke="none"
             >
               <path
@@ -135,7 +135,7 @@ const Footer = () => {
           </svg>
         </div>
 
-        <p className="font-sans text-stone-200">
+        <p className="font-sans text-gray-600 drop-shadow-md">
           Copyright © 2023 <br />
           All rights reserved
         </p>

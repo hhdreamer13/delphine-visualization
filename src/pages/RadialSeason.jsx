@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import data from "../utils/poanimaDataset.json";
 import TitleWordsRadialSeason from "../components/TitleWordsRadial/TitleWordsRadialSeason";
 import techniqueObj from "../utils/techniqueColors.json";
@@ -20,6 +20,10 @@ const seasonsObj = [
 ];
 
 const RadialSeasonWrapper = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const filterData = (seasonNumber) => {
     return data.filter((item) => item.season === seasonNumber);
   };
@@ -40,7 +44,7 @@ const RadialSeasonWrapper = () => {
   };
 
   return (
-    <div className="mx-auto my-20 flex w-full flex-col items-center justify-center">
+    <div className="mx-auto my-20 mb-40 flex w-full flex-col items-center justify-center">
       <div id="description" className="prose mb-1 w-full">
         <h2 className="text-center text-3xl uppercase tracking-widest drop-shadow-md">
           Le Petit Monde

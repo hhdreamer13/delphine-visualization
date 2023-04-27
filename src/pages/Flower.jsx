@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import FlowerAnimation from "../components/FlowerAnimation/FlowerAnimation";
 import data from "../utils/poanimaDataset.json";
 import flowerPetalPaths from "../utils/flowerPetalPaths.json";
@@ -101,6 +101,9 @@ const filmExample = {
 };
 
 const FlowerWrapper = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const filterData = (seasonNumber) => {
     return data.filter((item) => item.season === seasonNumber);
   };
@@ -115,7 +118,7 @@ const FlowerWrapper = () => {
   };
 
   return (
-    <div className="mx-auto my-20 flex w-full flex-col items-center justify-center">
+    <div className="mx-auto my-20 mb-40 flex w-full flex-col items-center justify-center">
       <div id="" className="prose w-full">
         <h2 className="mb-4 text-center text-3xl uppercase tracking-widest drop-shadow-md">
           Les Fleures

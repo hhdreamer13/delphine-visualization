@@ -1,10 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
+import { useEffect } from "react";
 import SchoolForce from "../components/SchoolForce/SchoolForce";
 import data from "../utils/poanimaDataset.json";
 
 const ForceWrapper = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div className="mx-auto my-20 flex w-full flex-col items-center justify-center">
+    <div className="mx-auto my-20 mb-40 flex w-full flex-col items-center justify-center">
       <div id="description" className="prose w-full">
         <h2 className="-ml-16 text-left text-3xl uppercase tracking-widest drop-shadow-md">
           La galaxie
@@ -17,15 +21,6 @@ const ForceWrapper = () => {
         <h3 className="my-5 text-3xl">
           Carte cosmique des écoles et des techniques
         </h3>
-        {/* <p className="">
-          La visualisation "La Galaxie" illustre les relations entre les écoles
-          d'animation et les techniques utilisées dans les films d'animation.
-          Cette visualisation présente les écoles en tant que nœuds dans un
-          graphique, tandis que les films sont également représentés par des
-          nœuds et sont reliés aux écoles auxquelles ils appartiennent. Les
-          couleurs des nœuds indiquent les différentes écoles et techniques
-          d'animation utilisées dans les films.
-        </p> */}
         <p>
           La visualisation "La Galaxie" évoque un cosmos où les écoles
           d'animation et les techniques artistiques gravitent les unes autour

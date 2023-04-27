@@ -16,11 +16,11 @@ const AllRoutes = () => {
         <Route index element={<Home />} />
         <Route path="/matrice" element={<HeatmapWrapper />} />
         <Route path="/galaxie" element={<ForceWrapper />} />
-        <Route path="/fleure" element={<FlowerWrapper />} />
+        <Route path="/fleur" element={<FlowerWrapper />} />
         <Route path="/monde/petit" element={<RadialSeasonWrapper />} />
         <Route path="/monde/grand" element={<RadialBarAllWrapper />} />
-        <Route path="/ville/petit" element={<BarSeasonWrapper />} />
-        <Route path="/ville/grand" element={<BarAllWrapper />} />
+        <Route path="/ville/petite" element={<BarSeasonWrapper />} />
+        <Route path="/ville/grande" element={<BarAllWrapper />} />
       </Route>
     </>
   );

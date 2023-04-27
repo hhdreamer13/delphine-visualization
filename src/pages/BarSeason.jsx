@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import data from "../utils/poanimaDataset.json";
 import LegendInteractiveSeason from "../components/LegendInteractiveSeason";
 import EpisodeWordsBarChart from "../components/EpisodeWordsBarChart/EpisodeWordsBarChart";
@@ -18,6 +18,9 @@ const seasonsObj = [
 ];
 
 const BarSeasonWrapper = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const filterData = (seasonNumber) => {
     return data.filter((item) => item.season === seasonNumber);
   };
@@ -38,7 +41,7 @@ const BarSeasonWrapper = () => {
   };
 
   return (
-    <div className="mx-auto my-20 flex w-full flex-col items-center justify-center">
+    <div className="mx-auto my-20 mb-40 flex w-full flex-col items-center justify-center">
       <div id="description" className="prose mb-20 w-full ">
         <h2 className="text-center text-3xl uppercase tracking-widest drop-shadow-md">
           La Petite Ville
@@ -67,10 +70,10 @@ const BarSeasonWrapper = () => {
         </h3>
 
         <p>
-          Bienvenue dans "La Petite Ville", une visualisation artistique sous
-          forme de graphique en barres, où chaque épisode de la série "En
-          sortant de l'école" se transforme en un bâtiment pittoresque d'une
-          ville animée par les saisons.
+          Bienvenue dans "La Petite Ville", une visualisation sous forme de
+          graphique en barres, où chaque épisode de la série "En sortant de
+          l'école" se transforme en un bâtiment pittoresque d'une ville animée
+          par les saisons.
         </p>
         <ul className="custom-bullet">
           <li>

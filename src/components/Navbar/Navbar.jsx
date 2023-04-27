@@ -3,10 +3,10 @@ const navItems = [
   { name: "Intro", to: "/" },
   {
     name: "Ville",
-    to: "/ville/petit",
+    to: "/ville/petite",
     dropdownItems: [
-      { name: "Petite", to: "/ville/petit" },
-      { name: "Grande", to: "/ville/grand" },
+      { name: "Petite", to: "/ville/petite" },
+      { name: "Grande", to: "/ville/grande" },
     ],
   },
   {
@@ -20,7 +20,7 @@ const navItems = [
 
   { name: "Matrice", to: "/matrice" },
   { name: "Galaxie", to: "/galaxie" },
-  { name: "Fleure", to: "/fleure" },
+  { name: "Fleur", to: "/fleur" },
 ];
 
 const Navbar = () => {
