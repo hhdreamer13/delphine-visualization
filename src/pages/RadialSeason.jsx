@@ -42,7 +42,7 @@ const RadialSeasonWrapper = () => {
   return (
     <div className="mx-auto my-20 flex w-full flex-col items-center justify-center">
       <div id="description" className="prose mb-1 w-full">
-        <h2 className="text-center text-3xl uppercase tracking-widest">
+        <h2 className="text-center text-3xl uppercase tracking-widest drop-shadow-md">
           Le Petit Monde
         </h2>
       </div>
@@ -54,7 +54,7 @@ const RadialSeasonWrapper = () => {
           <TitleWordsRadialSeason data={filteredData} />
         </div>
         <div className="mt-20 w-40">
-          <p className="w-28 rounded-lg border p-2 font-bold">Saisons :</p>
+          <p className="-m-1 w-28 rounded-lg border p-2 font-bold">Saisons :</p>
           <LegendInteractiveSeason
             obj={seasonsObj}
             onLegendClick={handleSeasonClick}
@@ -65,38 +65,64 @@ const RadialSeasonWrapper = () => {
       <div className="prose text-justify text-lg">
         <h3 className="my-5 text-3xl">Un tour du monde saisonnier</h3>
         <p>
-          Bienvenue dans "Le Petit Monde", une visualisation circulaire des
-          épisodes de la série "En sortant de l'école" axée sur les saisons.
-          Chaque segment du cercle représente un épisode, et la couleur de
-          chaque segment correspond à la technique d'animation utilisée dans cet
-          épisode. La particularité de cette visualisation est qu'elle permet de
-          filtrer les épisodes en fonction de la saison sélectionnée, offrant
-          ainsi une vue plus précise des techniques utilisées pour chaque poète.
+          "Le Petit Monde" est une visualisation circulaire unique qui met en
+          lumière les différentes saisons de la série "En sortant de l'école".
+          En explorant cet univers artistique, les épisodes sont présentés selon
+          les techniques d'animation et les poètes.
         </p>
-        <p>Pour explorer cette visualisation, suivez ces étapes :</p>
+        <p>
+          Dans cette visualisation, les couleurs vives et variées illustrent les
+          techniques d'animation utilisées dans chaque épisode, offrant un
+          spectacle visuel époustouflant :
+        </p>
+        <ul className="custom-bullet">
+          <li>
+            Traditionnelle : l'art délicat de l'animation dessinée à la main
+          </li>
+          <li>
+            Numérique : la modernité et la précision de l'animation assistée par
+            ordinateur
+          </li>
+          <li>
+            Papiers découpés : l'ingéniosité de l'animation à partir d'éléments
+            de papier découpé
+          </li>
+          <li>
+            Volume : l'authenticité de l'animation en trois dimensions avec des
+            objets réels ou des maquettes
+          </li>
+          <li>
+            Variée : l'audace de la combinaison de différentes techniques
+            d'animation
+          </li>
+        </ul>
+        <p>
+          Pour explorer les épisodes en fonction des saisons et des poètes, et
+          découvrir comment les techniques d'animation sont mises en œuvre pour
+          rendre hommage à leur art, suivez ces étapes :
+        </p>
         <ol>
           <li>
             Sélectionnez une saison en cliquant sur le nom du poète dans la
-            légende interactive située à droite de la visualisation. Le cercle
-            se mettra à jour pour afficher uniquement les épisodes de la saison
-            choisie.
+            légende interactive à droite de la visualisation.
           </li>
           <li>
-            Passez le curseur de votre souris sur un segment pour obtenir des
-            informations détaillées sur l'épisode, notamment le nombre de mots
-            et la technique d'animation utilisée.
+            Admirez le cercle se transformer pour ne montrer que les épisodes de
+            la saison choisie.
           </li>
           <li>
-            Consultez la légende à gauche pour identifier les techniques
-            d'animation représentées par les différentes couleurs.
+            Survolez un segment pour obtenir un aperçu de l'épisode, y compris
+            le nombre de mots et la technique d'animation employée.
           </li>
         </ol>
         <p>
-          En explorant "Le Petit Monde", vous pouvez apprécier la variété des
-          techniques d'animation et comprendre comment elles sont réparties
-          entre les épisodes pour chaque poète. Les couleurs vives et distinctes
-          facilitent l'identification des techniques utilisées et rendent la
-          visualisation encore plus attrayante.
+          Avec "Le Petit Monde", vous pourrez vous immerger dans la richesse des
+          techniques d'animation et apprécier la manière dont elles sont
+          utilisées pour donner vie aux œuvres de chaque poète. La variété des
+          couleurs et des styles d'animation crée un tableau vivant et dynamique
+          qui célèbre l'art et la poésie. Laissez-vous envoûter par cette
+          expérience artistique unique et explorez les multiples facettes de
+          l'univers de la série "En sortant de l'école".
         </p>
       </div>
     </div>

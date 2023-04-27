@@ -48,10 +48,22 @@ h3 {
   transform-origin: center;
 }
 
-.submenu-container {
-  @apply invisible mt-2 opacity-0 transition-opacity delay-[0.3s] duration-[0.3s,visibility];
-  /* Adjust the margin value to your preference */
+.custom-bullet li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 0.5rem;
 }
-.group:hover .submenu-container {
-  @apply visible opacity-100;
+
+.custom-bullet li::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 7px;
+  /* transform: translateY(-50%); */
+  width: 1rem;
+  height: 1rem;
+  background-image: url("assets/arrow3.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }

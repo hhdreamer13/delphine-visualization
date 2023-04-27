@@ -40,7 +40,7 @@ const BarSeasonWrapper = () => {
   return (
     <div className="mx-auto my-20 flex w-full flex-col items-center justify-center">
       <div id="description" className="prose mb-20 w-full ">
-        <h2 className="text-center text-3xl uppercase tracking-widest">
+        <h2 className="text-center text-3xl uppercase tracking-widest drop-shadow-md">
           La Petite Ville
         </h2>
       </div>
@@ -60,36 +60,49 @@ const BarSeasonWrapper = () => {
           />
         </div>
       </div>
+      {/* <img className="mb-4 w-[710px] rotate-180" src="/Spectral.png" alt="" /> */}
       <div className="prose text-justify text-lg">
         <h3 className="my-4 text-3xl">
           Une charmante petite ville pour chaque saison
         </h3>
 
         <p>
-          La visualisation "Le Petit Monde" présente un graphique à barres
-          similaire à "La Grande Ville", mais avec une fonctionnalité
-          supplémentaire : la sélection des saisons. Vous pouvez désormais
-          explorer les épisodes d'une saison spécifique en choisissant le nom du
-          poète correspondant dans la légende interactive.
+          Bienvenue dans "La Petite Ville", une visualisation artistique sous
+          forme de graphique en barres, où chaque épisode de la série "En
+          sortant de l'école" se transforme en un bâtiment pittoresque d'une
+          ville animée par les saisons.
         </p>
-        <p>Pour profiter de cette visualisation, suivez ces étapes :</p>
-        <ol>
+        <ul className="custom-bullet">
           <li>
-            Sélectionnez un poète dans la légende interactive pour afficher les
-            épisodes de la saison correspondante.
+            <span>chaque barre :</span> une histoire poétique animée
           </li>
           <li>
-            Passez le curseur de votre souris sur une barre pour obtenir des
-            informations supplémentaires sur l'épisode, notamment le nombre de
-            mots et les techniques d'animation employées.
+            <span>hauteur des barres :</span> nombre de mots du poème adapté
+          </li>
+          <li>
+            <span>couleurs :</span> du bleu au rouge, reflétant l'évolution du
+            nombre de mots
+          </li>
+        </ul>
+        <p>
+          Sélectionnez un poète (un thème) dans la légende interactive pour vous
+          aventurer dans les épisodes d'une saison dédiée et percevoir les
+          variations narratives et artistiques qui la caractérisent.
+        </p>
+        <ol>
+          <li>Choisissez un poète dans la légende enchanteresse</li>
+          <li>Contemplez les épisodes de la saison en question</li>
+          <li>
+            Baladez le curseur sur une barre pour dévoiler les secrets de
+            l'épisode
           </li>
         </ol>
         <p>
           "Le Petit Monde" permet de se concentrer sur les épisodes d'une saison
           en particulier, offrant ainsi une perspective plus approfondie sur les
           variations narratives et artistiques à l'intérieur d'une saison. Les
-          couleurs des barres représentent toujours l'augmentation du nombre de
-          mots dans l'épisode, permettant de visualiser la densité narrative des
+          couleurs des barres représentent l'augmentation du nombre de mots dans
+          l'épisode, permettant de visualiser la densité narrative des
           adaptations pour chaque saison individuellement.
         </p>
       </div>

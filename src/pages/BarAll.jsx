@@ -10,7 +10,7 @@ const BarAllWrapper = () => {
   return (
     <div className="mx-auto my-20 flex w-full flex-col items-center justify-center">
       <div id="description" className="prose mb-10 w-full">
-        <h2 className="text-center text-3xl uppercase tracking-widest">
+        <h2 className="text-center text-3xl uppercase tracking-widest drop-shadow-md">
           La Grande Ville
         </h2>
       </div>
@@ -42,39 +42,57 @@ const BarAllWrapper = () => {
         </div>
       </div>
       <div className="prose text-justify text-lg">
-        <h3 className="my-4 text-3xl">Un panorama urbain des films</h3>
-
+        <h3 className="my-4 text-3xl">Un panorama urbain des épisodes</h3>
         <p>
-          La visualisation "La Grande Ville" présente un graphique à barres
-          montrant le nombre de mots pour chaque épisode de la série{" "}
-          <span className="italic">"En sortant de l'école"</span>. Les mots
-          représentés proviennent des poèmes dont les animations sont adaptées.
-          Chaque barre est colorée du plus clair au plus foncé, indiquant
-          l'augmentation du nombre de mots dans l'épisode.
+          "La Grande Ville" est une visualisation ludique et colorée sous forme
+          de graphique en barres qui représente l'ensemble des épisodes de la
+          série "En sortant de l'école" comme les bâtiments d'une ville
+          empreinte de poésie et de créativité.
         </p>
         <p>
-          Pour tirer le meilleur parti de cette visualisation, suivez ces étapes
-          :
+          Cette visualisation invite à un voyage à travers les épisodes de la
+          série "En sortant de l'école", où chaque barre du graphique incarne un
+          épisode animé et sa hauteur témoigne du nombre de mots du poème
+          adapté.
+        </p>
+        <ul className="custom-bullet">
+          <li className="">
+            <span className="">chaque barre :</span> une escale vers un épisode
+            poétique
+          </li>
+          <li className="">
+            <span className="">hauteur des barres :</span> l'intensité du récit
+            en mots
+          </li>
+          <li className="">
+            <span className="">couleurs :</span> du bleu au rouge, reflétant
+            l'évolution du nombre de mots
+          </li>
+        </ul>
+        <p>
+          Les boutons "Croissant", "Décroissant" et "Réinitialiser" permettent
+          d'ajuster l'ordre des barres selon le nombre de mots de chaque
+          épisode. En survolant les barres, des informations supplémentaires sur
+          l'épisode sont dévoilées, telles que le nombre de mots et les
+          techniques d'animation employées.
         </p>
         <ol>
+          <li>Ajustez l'ordre des barres pour explorer les récits</li>
+          <li>Découvrez les épisodes en survolant les barres</li>
           <li>
-            Utilisez les boutons "Croissant", "Décroissant" et "Réinitialiser"
-            pour ajuster l'ordre des barres en fonction du nombre de mots de
-            chaque épisode.
-          </li>
-          <li>
-            Passez le curseur de votre souris sur une barre pour obtenir des
-            informations supplémentaires sur l'épisode, notamment le nombre de
-            mots et les techniques d'animation employées.
+            Baladez le curseur sur une barre pour dévoiler les secrets de
+            l'épisode
           </li>
         </ol>
         <p>
-          Cette visualisation offre une perspective unique sur la variété des
-          approches narratives et artistiques de la série, mettant en évidence
-          les différences et les similitudes entre les épisodes à travers les
-          saisons. Les couleurs des barres permettent d'identifier rapidement
-          les épisodes avec un nombre de mots croissant, offrant ainsi un aperçu
-          visuel de la densité narrative des adaptations.
+          La visualisation "La Grande Ville" offre une fenêtre unique sur la
+          diversité des approches narratives et artistiques de la série, mettant
+          en lumière les différences et les similitudes entre les épisodes au
+          fil des saisons. Les couleurs des barres permettent de repérer
+          rapidement les épisodes avec un nombre de mots croissant, offrant
+          ainsi un aperçu visuel de la richesse narrative des adaptations. Cette
+          ville imaginaire invite à plonger dans l'univers fascinant de la série
+          "En sortant de l'école".
         </p>
       </div>
     </div>

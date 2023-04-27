@@ -33,7 +33,7 @@ const Navbar = () => {
               {/* <Link to="/">
                 <img
                   className="wind-animation absolute -bottom-5 left-[47%] h-8 w-8"
-                  src="/floweryellow.svg"
+                  src="/flower.svg"
                   alt=""
                   // style={{ transform: "translate(-50%, 50%)" }}
                 />
@@ -55,7 +55,7 @@ const Navbar = () => {
                     </Link>
                     <div className="">
                       {item.dropdownItems && (
-                        <div className="absolute left-0 mt-1 hidden space-y-2 rounded-md bg-base-200 p-2 text-base group-hover:block ">
+                        <div className="absolute left-0 mt-1 hidden space-y-2 rounded-md bg-base-200 p-2 text-base shadow-xl group-hover:block ">
                           {item.dropdownItems.map(
                             (dropdownItem, dropdownIndex) => (
                               <Link

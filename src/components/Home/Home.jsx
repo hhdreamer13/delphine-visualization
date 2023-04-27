@@ -6,7 +6,7 @@ const Home = () => {
         <div className="relative">
           <img
             className="wind-animation absolute left-4 top-0 h-8 w-8"
-            src="/floweryellow.svg"
+            src="/flower.svg"
             alt=""
             // style={{ transform: "translate(-50%, 50%)" }}
           />

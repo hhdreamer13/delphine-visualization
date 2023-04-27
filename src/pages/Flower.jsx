@@ -117,7 +117,7 @@ const FlowerWrapper = () => {
   return (
     <div className="mx-auto my-20 flex w-full flex-col items-center justify-center">
       <div id="" className="prose w-full">
-        <h2 className="mb-4 text-center text-3xl uppercase tracking-widest">
+        <h2 className="mb-4 text-center text-3xl uppercase tracking-widest drop-shadow-md">
           Les Fleures
         </h2>
       </div>
@@ -148,58 +148,109 @@ const FlowerWrapper = () => {
         <p>
           Inspirée par le travail de Shirley Wu et son projet "Film Flowers",
           cette visualisation présente un affichage floral unique pour
-          représenter les poèmes adaptés en film. Chaque fleur symbolise un
-          épisode, avec des pétales et des couleurs reflétant les techniques
-          d'animation et les palettes de couleurs spécifiques de chaque film.
+          représenter les poèmes adaptés en film d'animation. Chaque fleur
+          symbolise un épisode, avec des pétales et des couleurs reflétant les
+          techniques d'animation et les palettes de couleurs spécifiques de
+          chaque film.
         </p>
-        <p className="text-black">Pétales</p>
-        <div></div>
+        <p className="text-slate-950 drop-shadow-md">Pétales</p>
         <p>
           Chaque pétale représente une technique d'animation spécifique utilisée
-          dans l'épisode. La combinaison unique des pétales forme un motif de
-          fleur distinct pour chaque épisode, mettant en évidence la diversité
-          des techniques d'animation.
+          dans l'épisode.La forme des pétales indique la technique utilisée. La
+          combinaison unique des pétales forme un motif de fleur distinct pour
+          chaque épisode, mettant en évidence la diversité des techniques
+          d'animation.
         </p>
-
-        <p className="text-black">Nombre de pétales</p>
+        <div id="flower-petal-container" className="flex gap-2">
+          {flowerPetalPaths.map((petal, index) => (
+            <div
+              key={index}
+              className="flex h-48 w-32 flex-col items-center justify-center gap-10 text-sm"
+            >
+              <svg
+                className="h-16 w-16"
+                viewBox="0 0 110 110"
+                preserveAspectRatio="xMidYMid meet"
+                fill="none"
+                stroke="black"
+                strokeWidth="3"
+                transform="rotate(228)"
+              >
+                <path d={petal.path} />
+              </svg>
+              <p className="mt-0">{petal.technique}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-slate-950 drop-shadow-md">Nombre de pétales</p>
         <p>
           Le nombre total de pétales dans chaque fleur reflète le nombre de mots
           des poèmes adaptés. Plus il y a de pétales, plus le poème est long et
-          riche en contenu.
+          riche en contenu. Le nombre de pétales est calculé à l'aide d'une
+          échelle quantitative basée sur l'étendue du nombre de mots dans les
+          poèmes, avec une plage allant de 5 à 13 pétales.
         </p>
-
-        <p className="text-black">Les couleurs derrière les fleurs</p>
+        <div className="-ml-20 h-48">
+          <LegendFlower data={legendData} />
+        </div>
+        <p className="mt-14 text-slate-950 drop-shadow-md">
+          Les couleurs derrière les fleurs
+        </p>
         <p>
-          Les couleurs derrière chaque fleur sont choisies pour mettre en valeur
-          les pétales et faciliter la distinction entre les différentes
-          techniques d'animation. Les couleurs vives et contrastées permettent
-          de mieux apprécier la richesse visuelle de chaque épisode.
+          Chaque fleur est dessinée sur cinq cercles colorés qui représentent la
+          palette des couleurs du film. Les couleurs choisies ajoutent une
+          dimension intéressante à la visualisation.
         </p>
-
-        <p>Comment explorer cette visualisation :</p>
+        <div id="color-palette-circles" className="flex">
+          {filmExample.palette.map((color, index) => (
+            <div key={index} className="h-32 w-32 text-center text-sm">
+              <svg viewBox="0 0 100 100">
+                <defs>
+                  <filter
+                    id={`blurAndSaturation-${index}`}
+                    x="-0.5"
+                    y="-0.5"
+                    width="1.9"
+                    height="1.9"
+                  >
+                    <feGaussianBlur stdDeviation="5" />
+                    <feColorMatrix type="saturate" values="1.2" />
+                  </filter>
+                </defs>
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="30"
+                  fill={color}
+                  filter={`url(#blurAndSaturation-${index})`}
+                />
+              </svg>
+              <p className="mt-0">La couleur {index + 1}</p>
+            </div>
+          ))}
+        </div>
+        <p className="mt-20">Pour explorer ce jardin enchanteur :</p>
         <ol>
           <li>
-            Sélectionnez une saison en utilisant le menu déroulant "Filtrer par
-            saison" situé au-dessus de la visualisation. Les fleurs affichées se
-            mettront à jour pour représenter uniquement les épisodes de la
-            saison sélectionnée.
+            Utilisez le menu déroulant "Choisissez une saison" situé au-dessus
+            de la visualisation. Les fleurs affichées représenteront uniquement
+            les épisodes de la saison sélectionnée.
           </li>
+
           <li>
             Observez les fleurs et leurs pétales pour apprécier la variété des
-            techniques d'animation utilisées dans chaque épisode. Les pétales de
-            différentes couleurs symbolisent les différentes techniques
-            d'animation.
+            techniques d'animation utilisées dans chaque épisode. Les teintes
+            chatoyantes qui entourent chaque fleur illustrent les palettes de
+            couleurs utilisées dans les épisodes.
           </li>
           <li>
-            Immergez-vous dans cette visualisation dynamique et colorée pour
-            découvrir comment les créateurs ont utilisé différentes techniques
-            d'animation pour donner vie à la poésie de chaque saison. Portez une
-            attention particulière aux motifs floraux uniques de chaque épisode
-            pour apprécier la créativité et l'innovation derrière chaque
-            animation.
+            En survolant chaque fleur avec la souris, vous verrez apparaître une
+            fenêtre contextuelle qui dévoile le nom de l'épisode ainsi que le
+            nom du réalisateur ou de la réalisatrice. Vous pourrez ainsi mieux
+            connaître les artistes talentueux à l'origine de ces œuvres d'art
+            animées.
           </li>
         </ol>
-
         <p>
           En explorant les "Film Flowers", vous pouvez apprécier la richesse des
           techniques d'animation et comprendre comment elles sont réparties
@@ -208,58 +259,6 @@ const FlowerWrapper = () => {
           l'identification des techniques utilisées et rendent la visualisation
           encore plus attrayante.
         </p>
-      </div>
-      <div id="flower-petal-container" className="flex gap-2">
-        {flowerPetalPaths.map((petal, index) => (
-          <div
-            key={index}
-            className="flex h-48 w-32 flex-col items-center justify-center gap-10 text-sm"
-          >
-            <svg
-              className="h-16 w-16"
-              viewBox="0 0 110 110"
-              preserveAspectRatio="xMidYMid meet"
-              fill="none"
-              stroke="black"
-              strokeWidth="3"
-              transform="rotate(227)"
-            >
-              <path d={petal.path} />
-            </svg>
-            <p>{petal.technique}</p>
-          </div>
-        ))}
-      </div>
-      <div className="h-48">
-        <LegendFlower data={legendData} />
-      </div>
-      <div id="color-palette-circles" className="flex">
-        {filmExample.palette.map((color, index) => (
-          <div key={index} className="h-32 w-32 text-center text-sm">
-            <svg viewBox="0 0 100 100">
-              <defs>
-                <filter
-                  id={`blurAndSaturation-${index}`}
-                  x="-0.5"
-                  y="-0.5"
-                  width="1.9"
-                  height="1.9"
-                >
-                  <feGaussianBlur stdDeviation="5" />
-                  <feColorMatrix type="saturate" values="1.2" />
-                </filter>
-              </defs>
-              <circle
-                cx="50"
-                cy="50"
-                r="30"
-                fill={color}
-                filter={`url(#blurAndSaturation-${index})`}
-              />
-            </svg>
-            <p>La couleur {index + 1}</p>
-          </div>
-        ))}
       </div>
     </div>
   );

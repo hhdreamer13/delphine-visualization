@@ -6,7 +6,7 @@ const ForceWrapper = () => {
   return (
     <div className="mx-auto my-20 flex w-full flex-col items-center justify-center">
       <div id="description" className="prose w-full">
-        <h2 className="-ml-16 text-left text-3xl uppercase tracking-widest">
+        <h2 className="-ml-16 text-left text-3xl uppercase tracking-widest drop-shadow-md">
           La galaxie
         </h2>
       </div>
@@ -17,33 +17,61 @@ const ForceWrapper = () => {
         <h3 className="my-5 text-3xl">
           Carte cosmique des écoles et des techniques
         </h3>
-        <p className="">
-          La visualisation de galaxie ci-dessus illustre les relations entre les
-          écoles d'animation et les techniques utilisées dans les films
-          d'animation. Cette visualisation présente les écoles en tant que nœuds
-          dans un graphique, tandis que les films sont également représentés par
-          des nœuds et sont reliés aux écoles auxquelles ils appartiennent. Les
+        {/* <p className="">
+          La visualisation "La Galaxie" illustre les relations entre les écoles
+          d'animation et les techniques utilisées dans les films d'animation.
+          Cette visualisation présente les écoles en tant que nœuds dans un
+          graphique, tandis que les films sont également représentés par des
+          nœuds et sont reliés aux écoles auxquelles ils appartiennent. Les
           couleurs des nœuds indiquent les différentes écoles et techniques
           d'animation utilisées dans les films.
+        </p> */}
+        <p>
+          La visualisation "La Galaxie" évoque un cosmos où les écoles
+          d'animation et les techniques artistiques gravitent les unes autour
+          des autres. Les étoiles filantes de cette galaxie sont les éléments
+          suivants:
         </p>
-        <ul className="">
-          <li className="">
-            Pour explorer cette visualisation, il suffit de passer la souris sur
-            les nœuds représentant les écoles ou les films pour afficher les
-            détails de chacun d'entre eux. Les nœuds représentant les écoles
-            sont plus grands que ceux des films.
+        <ul className="custom-bullet">
+          <li>
+            Les écoles d'animation: Représentées par des nœuds chatoyants, elles
+            scintillent au sein du réseau, éclairant les chemins de la
+            créativité et de l'innovation.
           </li>
-          <li className="">
-            La légende située à droite du graphique montre les couleurs
-            associées à chaque école. Les techniques d'animation sont également
-            affichées sous le graphique avec leurs couleurs respectives.
+          <li>
+            Les films d'animation: Tels des satellites, ces nœuds plus petits
+            orbitent autour de leurs écoles respectives, témoignant de la
+            richesse et de la diversité des œuvres de la série.
           </li>
-          <li className="">
-            En interagissant avec cette visualisation, vous pouvez également
-            déplacer les nœuds pour explorer les relations entre les films et
-            les écoles d'animation.
+          <li>
+            Les techniques artistiques: Les couleurs flamboyantes des petits
+            nœuds illustrent les différentes techniques d'animation utilisées
+            dans les films, illuminant la toile de leurs nuances variées.
           </li>
         </ul>
+        Pour naviguer dans cet univers enchanteur :
+        <ol className="">
+          <li className="">
+            Survolez les nœuds avec votre souris pour révéler les mystères de
+            chaque école, film et technique d'animation.
+          </li>
+          <li className="">
+            La légende à droite du graphique dévoile les couleurs associées à
+            chaque école, tandis que les techniques d'animation scintillent en
+            dessous avec leurs teintes respectives.
+          </li>
+          <li className="">
+            Déplacez les nœuds pour mieux explorer les connections entre les
+            écoles et les films d'animation, et percez les secrets de cet
+            univers fascinant.
+          </li>
+        </ol>
+        <p>
+          Plongez dans ce voyage cosmique et découvrez les écoles et les
+          techniques qui ont sculpté le monde de cette série à travers les
+          années. Dans cette odyssée céleste, chaque étoile est une porte
+          ouverte sur l'infini des possibilités créatives et artistiques.
+        </p>
       </div>
     </div>
   );

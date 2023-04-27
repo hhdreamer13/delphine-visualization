@@ -55,7 +55,7 @@ const calculateGridPos = (i, layout) => {
   const topMargin = 20;
   // const rightMargin = 20;
   const interRowMargin = 100;
-  const interColMargin = 20;
+  const interColMargin = 10;
 
   // Calculate horizontal offset for centering each row
   const rowWidth =
@@ -144,14 +144,16 @@ const LegendFlower = ({ data }) => {
               .attr("text-anchor", "middle")
               .attr("dy", 80)
               .style("font-size", ".7em")
-              // .style("font-weight", "bold")
-              // .style("font-style", "italic")
               .style("font-family", "Delius")
-              .style("fill", "black") // set text color to white
-              .text(
-                (d) => `${d.words} mots,
-              ${d.numPetals} pétales`
-              );
+              .style("fill", "black")
+              .text((d) => `${d.words} mots`);
+
+            text
+              .append("tspan") // Add a new <tspan> element for the petal text
+              .attr("x", 0) // Center the <tspan> horizontally
+              .attr("dy", "1.5rem") // Adjust the vertical position of the petal text
+              .style("text-anchor", "middle") // Center the text within the <tspan>
+              .text((d) => `${d.numPetals} pétales`);
 
             return flower;
           },
