@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { easeIn, motion } from "framer-motion";
 import { useModalContext } from "../ModalContext";
+import { easeBackInOut, easeBounceInOut } from "d3";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -17,6 +18,13 @@ const containerVariants = {
 const itemVariants = {
   hidden: { opacity: 0, y: -20 },
   visible: { opacity: 1, y: 0 },
+};
+const flowerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.7, delay: 0.2, ease: easeIn },
+  },
 };
 
 const Home = () => {
@@ -34,6 +42,9 @@ const Home = () => {
           <motion.img
             onClick={() => setShowModal(true)}
             className="wind-animation absolute left-4 top-0 h-8 w-8"
+            variants={flowerVariants}
+            initial="hidden"
+            animate="visible"
             src="/flower.svg"
             alt=""
             // style={{ transform: "translate(-50%, 50%)" }}
