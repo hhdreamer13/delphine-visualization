@@ -102,9 +102,8 @@ const Modal = ({ showModal, setShowModal }) => {
                 C'est dans cet esprit que la série "En sortant de l'école" prend
                 toute sa dimension. Bien plus qu'un simple divertissement, elle
                 insuffle potentiel, idées, vérité et liberté. La série ravive
-                nos rêves, tout comme le poème de Langston Hughes, et je sais
-                que je ne suis pas le seul à être touché par ces poésies animées
-                et leur pouvoir évocateur.
+                nos rêves, et je sais que je ne suis pas le seul à être touché
+                par ces poésies animées et leur pouvoir évocateur.
               </p>
               <p>
                 Lorsque j'ai commencé à travailler sur mon projet de

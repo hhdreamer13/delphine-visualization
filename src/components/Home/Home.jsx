@@ -3,11 +3,32 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useModalContext } from "../ModalContext";
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      delayChildren: 0.95,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: -20 },
+  visible: { opacity: 1, y: 0 },
+};
+
 const Home = () => {
   const { setShowModal } = useModalContext();
 
   return (
-    <div className="mb-40">
+    <motion.div
+      className="mb-40"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <div className="relative mx-auto mt-20 flex w-full flex-col items-center justify-center p-2 text-lg">
         <div className="relative">
           <motion.img
@@ -17,19 +38,24 @@ const Home = () => {
             alt=""
             // style={{ transform: "translate(-50%, 50%)" }}
           />
-          <h1 className="mb-4 text-4xl uppercase tracking-[1rem]">
+          <motion.h1
+            className="mb-4 text-4xl uppercase tracking-[1rem]"
+            variants={itemVariants}
+          >
             P AnimaVi<span className="tracking-tighter">z</span>
-          </h1>
+          </motion.h1>
         </div>
-        <h3 className="mb-2 text-2xl">
+        <motion.h3 className="mb-2 text-2xl" variants={itemVariants}>
           une visualisation poétique de données de la série d'animation
-        </h3>
-        <h3 className="text-2xl">En Sortant de l'École</h3>
+        </motion.h3>
+        <motion.h3 className="text-2xl" variants={itemVariants}>
+          En Sortant de l'École
+        </motion.h3>
       </div>
-      <div className="prose mt-10 text-justify text-lg">
-        <p className="text-slate-950 drop-shadow-lg">
-          {/* C'est quoi la série En sortant de l'école ? */}
-        </p>
+      <motion.div
+        className="prose mt-10 text-justify text-lg"
+        variants={itemVariants}
+      >
         <p>
           "En sortant de l'école" est une collection inspirante de courts
           métrages d'animation de 3 minutes, s'étalant sur 10 saisons de 2014 à
@@ -42,12 +68,11 @@ const Home = () => {
           de plusieurs poètes.
         </p>
         <p>
-          Ces poèmes prennent vie grâce à la créativité débordante de jeunes
-          réalisateurs et réalisatrices, tout juste sortis des écoles des
-          meilleures écoles d'animation françaises. Cette série hors du commun,
-          produite par Tant Mieux Production, une maison de production célèbre
-          pour cette série d'animation, vous invite à un voyage poétique et
-          visuellement éblouissant à travers la poésie et l'art.
+          Ces poèmes prennent vie grâce à la créativité de jeunes réalisateurs
+          et réalisatrices, tout juste sortis des meilleures écoles d'animation
+          françaises. Cette série hors du commun, produite par Tant Mieux
+          Production, vous invite à un voyage poétique et visuellement
+          éblouissant à travers la poésie et l'art.
         </p>
 
         <div className="mr-4 flex items-center justify-end">
@@ -132,8 +157,8 @@ const Home = () => {
             et du réalisateur.
           </li>
         </ul>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
