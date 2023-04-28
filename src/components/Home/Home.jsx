@@ -2,7 +2,6 @@
 import { Link } from "react-router-dom";
 import { easeIn, motion } from "framer-motion";
 import { useModalContext } from "../ModalContext";
-import { easeBackInOut, easeBounceInOut } from "d3";
 
 const containerVariants = {
   hidden: { opacity: 0 },
