@@ -41,7 +41,7 @@ const Modal = ({ showModal, setShowModal }) => {
           exit="hidden"
         >
           <motion.div
-            className="relative mx-auto my-0 flex w-4/5 flex-col rounded-2xl bg-red-50 px-5 py-16 text-center shadow-2xl lg:w-3/5"
+            className="relative mx-auto my-0 flex w-4/5 flex-col rounded-2xl bg-orange-50 px-5 py-16 text-center shadow-2xl lg:w-3/5"
             variants={modalAnimations}
           >
             <button

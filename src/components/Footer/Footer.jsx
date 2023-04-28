@@ -13,7 +13,7 @@ const Footer = () => {
           >
             <g
               transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-              fill="#374151"
+              fill="#000"
               stroke="none"
             >
               <path
@@ -103,7 +103,7 @@ const Footer = () => {
           >
             <g
               transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-              fill="#030712"
+              fill="#000"
               stroke="none"
             >
               <path
@@ -135,7 +135,7 @@ const Footer = () => {
           </svg>
         </div>
 
-        <p className="font-sans text-gray-600 drop-shadow-md">
+        <p className="font-sans text-black drop-shadow-md">
           Copyright © 2023 <br />
           All rights reserved
         </p>
