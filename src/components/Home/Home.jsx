@@ -168,7 +168,7 @@ const Home = () => {
         </p>
         <h3 className="mb-6">
           <Link to="/ville/petite" className="group no-underline">
-            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-md duration-300 hover:text-slate-950 ">
+            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300 hover:text-slate-950 ">
               Ville (petite et grande) <span className="opacity-0">hid</span>
               <img
                 className="absolute -left-1 -top-5 -z-10 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
@@ -187,7 +187,7 @@ const Home = () => {
         </p>
         <h3 className="mb-6">
           <Link to="/monde/petit" className="group no-underline">
-            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-md duration-300 hover:text-slate-950">
+            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300 hover:text-slate-950">
               Monde (petit et grand) <span className="opacity-0">hi</span>
               <img
                 className="absolute -left-1 -top-5 -z-10 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
@@ -205,7 +205,7 @@ const Home = () => {
         </p>
         <h3 className="mb-6">
           <Link to="/matrice" className="group no-underline">
-            <span className="grays font-sousTitre text-2xl text-slate-950 drop-shadow-md duration-300 hover:text-slate-950">
+            <span className="grays font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300 hover:text-slate-950">
               Matrice <span className="opacity-0">hi</span>
               <img
                 className="absolute -left-1 -top-5 -z-10 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
@@ -224,7 +224,7 @@ const Home = () => {
         </p>
         <h3 className="mb-6">
           <Link to="/galaxie" className="group no-underline">
-            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-md duration-300 hover:text-slate-950">
+            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300 hover:text-slate-950">
               Galaxie <span className="opacity-0">hid</span>
               <img
                 className="absolute -left-1 -top-5 -z-10 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
