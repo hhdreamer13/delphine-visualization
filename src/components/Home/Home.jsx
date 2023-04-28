@@ -120,7 +120,7 @@ const Home = () => {
               Traditionnelle
             </span>{" "}
             : Il s'agit d'animations dessinées à la main ou qui donnent
-            l'impression d'être dessinées sur papier, même si elles ont été
+            l'impression d'être dessinées à la main, même si elles ont été
             réalisées à l'aide d'un ordinateur. Elles conservent l'aspect
             classique et artistique du dessin traditionnel.
           </li>
@@ -162,9 +162,9 @@ const Home = () => {
           </li>
         </ul>
         <p>
-          Explorez les cinq catégories de visualisations disponibles, qui
-          utilisent les données mentionnées précédemment pour révéler différents
-          aspects de la série :
+          Explorez les cinq catégories de visualisations qui utilisent les
+          données mentionnées précédemment pour révéler différents aspects de la
+          série :
         </p>
         <div className="group">
           <h3 className="mb-4">

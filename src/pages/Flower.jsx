@@ -92,7 +92,7 @@ const filmExample = {
   director: "Caroline Lefevre",
   school: "EMCA",
   technique: "Traditionnelle",
-  palette: ["#4651a7", "#d9abc4", "#a53756", "#26203f", "#72a6eb"],
+  palette: ["#26203f", "#4651a7", "#72a6eb", "#a53756", "#d9abc4"],
   words: 267,
   poet: "Jacques Prévert",
   episode: 6,

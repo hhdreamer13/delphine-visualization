@@ -7,8 +7,8 @@
     "technique": "Papiers découpés",
     "palette": [
       "#21221f",
-      "#41577d",
       "#534e3e",
+      "#41577d",
       "#729789",
       "#d4be86"
     ],
@@ -25,8 +25,8 @@
     "school": "ENSAD",
     "technique": "Variée",
     "palette": [
-      "#24619c",
       "#3a0a60",
+      "#24619c",
       "#a3165c",
       "#d96ea1",
       "#e49242"
@@ -46,8 +46,8 @@
     "palette": [
       "#1a212b",
       "#31485a",
-      "#4493b7",
       "#906e61",
+      "#4493b7",
       "#bda6a9"
     ],
     "words": 130,
@@ -65,9 +65,9 @@
     "palette": [
       "#27353e",
       "#448b89",
-      "#7cc5d6",
       "#924d3c",
-      "#c59a64"
+      "#c59a64",
+      "#7cc5d6"
     ],
     "words": 254,
     "poet": "Jacques Prévert",
@@ -82,8 +82,8 @@
     "school": "Rubika",
     "technique": "Numérique",
     "palette": [
-      "#07394a",
       "#34140c",
+      "#07394a",
       "#7ba19d",
       "#fa435e",
       "#fdc425"
@@ -102,10 +102,10 @@
     "technique": "Traditionnelle",
     "palette": [
       "#26203f",
-      "#4651a7",
-      "#72a6eb",
       "#a53756",
-      "#d9abc4"
+      "#4651a7",
+      "#d9abc4",
+      "#72a6eb"
     ],
     "words": 267,
     "poet": "Jacques Prévert",
@@ -121,8 +121,8 @@
     "technique": "Traditionnelle",
     "palette": [
       "#000000",
-      "#5072c0",
       "#a57f54",
+      "#5072c0",
       "#e1d68e",
       "#e8a53b"
     ],
@@ -160,9 +160,9 @@
     "palette": [
       "#2f1d39",
       "#785075",
-      "#97bee4",
       "#c09f14",
-      "#d6a17e"
+      "#d6a17e",
+      "#97bee4"
     ],
     "words": 79,
     "poet": "Jacques Prévert",
@@ -178,10 +178,10 @@
     "technique": "Papiers découpés",
     "palette": [
       "#243341",
-      "#528481",
       "#7f3b48",
-      "#85a4c2",
-      "#af9557"
+      "#528481",
+      "#af9557",
+      "#85a4c2"
     ],
     "words": 370,
     "poet": "Jacques Prévert",
@@ -196,8 +196,8 @@
     "school": "Ste Geneviève",
     "technique": "Traditionnelle",
     "palette": [
-      "#3e76a9",
       "#493934",
+      "#3e76a9",
       "#c2182e",
       "#c6974b",
       "#d3bfac"
@@ -273,9 +273,9 @@
     "technique": "Traditionnelle",
     "palette": [
       "#36374f",
+      "#b75744",
       "#58ba48",
       "#86d8dc",
-      "#b75744",
       "#bfdc45"
     ],
     "words": 100,
@@ -312,8 +312,8 @@
     "palette": [
       "#241934",
       "#46426d",
-      "#848b9e",
       "#9d443c",
+      "#848b9e",
       "#d9b768"
     ],
     "words": 192,
@@ -330,8 +330,8 @@
     "technique": "Variée",
     "palette": [
       "#261b18",
-      "#52578b",
       "#6f5e2f",
+      "#52578b",
       "#a1955a",
       "#bbbba6"
     ],
@@ -369,9 +369,9 @@
     "palette": [
       "#20103d",
       "#26745d",
-      "#36cebe",
       "#a03a11",
-      "#c6c63b"
+      "#c6c63b",
+      "#36cebe"
     ],
     "words": 52,
     "poet": "Robert Desnos",
@@ -386,10 +386,10 @@
     "school": "La Poudrière",
     "technique": "Papiers découpés",
     "palette": [
-      "#1f619c",
       "#3e371e",
       "#858c4f",
       "#9c3e2e",
+      "#1f619c",
       "#bcc694"
     ],
     "words": 63,
@@ -424,8 +424,8 @@
     "school": "La Poudrière",
     "technique": "Papiers découpés",
     "palette": [
-      "#41764b",
       "#521d31",
+      "#41764b",
       "#b6a692",
       "#bb3633",
       "#ceac27"
@@ -463,8 +463,8 @@
     "technique": "Traditionnelle",
     "palette": [
       "#142e67",
-      "#4f79b9",
       "#87343f",
+      "#4f79b9",
       "#d893d0",
       "#e7dd78"
     ],
@@ -481,8 +481,8 @@
     "school": "ENSAD",
     "technique": "Numérique",
     "palette": [
-      "#1c205c",
       "#542e21",
+      "#1c205c",
       "#64764a",
       "#9a8875",
       "#c4cbc0"
@@ -502,8 +502,8 @@
     "palette": [
       "#212f33",
       "#734229",
-      "#96b4dc",
-      "#d6aa8a"
+      "#d6aa8a",
+      "#96b4dc"
     ],
     "words": 65,
     "poet": "Guillaume Apollinaire",
@@ -539,8 +539,8 @@
     "palette": [
       "#454339",
       "#4e98a6",
-      "#92c9cd",
       "#c56842",
+      "#92c9cd",
       "#d5c888"
     ],
     "words": 62,
@@ -558,8 +558,8 @@
     "palette": [
       "#2f3033",
       "#497484",
-      "#a8bc90",
       "#ab5c3f",
+      "#a8bc90",
       "#d0eaa2"
     ],
     "words": 111,
@@ -575,11 +575,11 @@
     "school": "EMCA",
     "technique": "Traditionnelle",
     "palette": [
-      "#2e9196",
       "#55432a",
+      "#2e9196",
       "#b4511f",
-      "#b5c225",
-      "#b8b186"
+      "#b8b186",
+      "#b5c225"
     ],
     "words": 71,
     "poet": "Guillaume Apollinaire",
@@ -595,8 +595,8 @@
     "technique": "Numérique",
     "palette": [
       "#212a26",
-      "#4a6d66",
       "#58462b",
+      "#4a6d66",
       "#95734f",
       "#acb28c"
     ],
@@ -634,8 +634,8 @@
     "palette": [
       "#322729",
       "#655c41",
-      "#8094b6",
       "#a6934f",
+      "#8094b6",
       "#d2c881"
     ],
     "words": 60,
@@ -728,8 +728,8 @@
     "technique": "Traditionnelle",
     "palette": [
       "#281e30",
-      "#505475",
       "#701735",
+      "#505475",
       "#9283ac",
       "#b82a51"
     ],
@@ -747,9 +747,9 @@
     "technique": "Numérique",
     "palette": [
       "#535137",
-      "#94bdc8",
       "#9c1e13",
       "#b3a443",
+      "#94bdc8",
       "#e7da99"
     ],
     "words": 17,
@@ -768,8 +768,8 @@
       "#1d1a22",
       "#3e4357",
       "#616a89",
-      "#8e9bc3",
-      "#bc3912"
+      "#bc3912",
+      "#8e9bc3"
     ],
     "words": 373,
     "poet": "Paul Éluard",
@@ -842,10 +842,10 @@
     "technique": "Traditionnelle",
     "palette": [
       "#5f7393",
-      "#8ad9d3",
       "#9dd066",
-      "#e77465",
-      "#e7e471"
+      "#8ad9d3",
+      "#e7e471",
+      "#e77465"
     ],
     "words": 79,
     "poet": "Paul Éluard",
@@ -879,8 +879,8 @@
     "school": "EMCA",
     "technique": "Traditionnelle",
     "palette": [
-      "#4b547b",
       "#583d3d",
+      "#4b547b",
       "#957f56",
       "#a48aac",
       "#ceab85"
@@ -899,9 +899,9 @@
     "technique": "Traditionnelle",
     "palette": [
       "#11306a",
+      "#a42655",
       "#4582a7",
       "#87e0c5",
-      "#a42655",
       "#e1db88"
     ],
     "words": 63,
@@ -917,11 +917,11 @@
     "school": "ENSAD",
     "technique": "Variée",
     "palette": [
-      "#53726e",
       "#5c2c33",
-      "#9794b8",
+      "#53726e",
       "#9e7630",
-      "#b3b271"
+      "#b3b271",
+      "#9794b8"
     ],
     "words": 74,
     "poet": "Paul Éluard",
@@ -938,8 +938,8 @@
     "palette": [
       "#1d2842",
       "#46505f",
-      "#77a69f",
       "#9c8065",
+      "#77a69f",
       "#c0ceb5"
     ],
     "words": 113,
@@ -956,10 +956,10 @@
     "technique": "Numérique",
     "palette": [
       "#3f53c9",
-      "#44f6d9",
+      "#e4a87f",
       "#4ca8e7",
       "#9dd0e9",
-      "#e4a87f"
+      "#44f6d9"
     ],
     "words": 60,
     "poet": "Paul Éluard",
@@ -996,8 +996,8 @@
       "#3c4354",
       "#5f7883",
       "#8aa2a2",
-      "#acd2a8",
-      "#b23d5e"
+      "#b23d5e",
+      "#acd2a8"
     ],
     "words": 91,
     "poet": "Claude Roy",
@@ -1090,8 +1090,8 @@
     "palette": [
       "#38312a",
       "#64605c",
-      "#7b9eaa",
       "#a08c74",
+      "#7b9eaa",
       "#c9b398"
     ],
     "words": 143,
@@ -1108,8 +1108,8 @@
     "technique": "Numérique",
     "palette": [
       "#142745",
-      "#4c619b",
       "#8c2628",
+      "#4c619b",
       "#93a7ca",
       "#e37754"
     ],
@@ -1127,8 +1127,8 @@
     "technique": "Numérique",
     "palette": [
       "#2f2c1f",
-      "#385aa3",
       "#7e7939",
+      "#385aa3",
       "#af0d13",
       "#d3b45e"
     ],
@@ -1166,8 +1166,8 @@
     "palette": [
       "#301c28",
       "#515162",
-      "#72889d",
       "#861925",
+      "#72889d",
       "#c07d72"
     ],
     "words": 260,
@@ -1203,10 +1203,10 @@
     "technique": "Papiers découpés",
     "palette": [
       "#46534a",
-      "#6c7ea6",
       "#a34c4d",
-      "#a3acdf",
-      "#cc9c7c"
+      "#6c7ea6",
+      "#cc9c7c",
+      "#a3acdf"
     ],
     "words": 106,
     "poet": "Claude Roy",
@@ -1260,9 +1260,9 @@
     "technique": "Traditionnelle",
     "palette": [
       "#70503f",
-      "#9ad9dd",
       "#bc9170",
       "#dad06c",
+      "#9ad9dd",
       "#ebd6a8"
     ],
     "words": 40,
@@ -1278,9 +1278,9 @@
     "school": "Émile Cohl",
     "technique": "Volume",
     "palette": [
-      "#2d62a4",
       "#562c23",
       "#986144",
+      "#2d62a4",
       "#c2ac73",
       "#e4dda5"
     ],
@@ -1297,8 +1297,8 @@
     "school": "La Poudrière",
     "technique": "Traditionnelle",
     "palette": [
-      "#406e6d",
       "#4a3b2d",
+      "#406e6d",
       "#6ba9ad",
       "#b87f46",
       "#e7d398"
@@ -1337,8 +1337,8 @@
     "palette": [
       "#3c1413",
       "#415269",
-      "#6dc6c0",
       "#89301d",
+      "#6dc6c0",
       "#d28d49"
     ],
     "words": 75,
@@ -1431,8 +1431,8 @@
     "technique": "Numérique",
     "palette": [
       "#413e29",
-      "#6b9246",
       "#855137",
+      "#6b9246",
       "#c79747",
       "#cad88c"
     ],
@@ -1449,11 +1449,11 @@
     "school": "La Poudrière",
     "technique": "Volume",
     "palette": [
-      "#0c799b",
       "#1f2e3e",
       "#5f7d81",
-      "#8dbcc8",
-      "#bb92a2"
+      "#0c799b",
+      "#bb92a2",
+      "#8dbcc8"
     ],
     "words": 64,
     "poet": "Jean Tardieu",
@@ -1470,9 +1470,9 @@
     "palette": [
       "#223b44",
       "#379faa",
+      "#ca7557",
       "#58d520",
-      "#b7ddb9",
-      "#ca7557"
+      "#b7ddb9"
     ],
     "words": 135,
     "poet": "Jean Tardieu",
@@ -1489,8 +1489,8 @@
     "palette": [
       "#2c1e30",
       "#50434d",
-      "#789cac",
       "#8c5752",
+      "#789cac",
       "#bb886a"
     ],
     "words": 214,
@@ -1525,8 +1525,8 @@
     "school": "EMCA",
     "technique": "Traditionnelle",
     "palette": [
-      "#335d5a",
       "#4b281b",
+      "#335d5a",
       "#6d8874",
       "#966245",
       "#c4a080"
@@ -1584,8 +1584,8 @@
     "palette": [
       "#26213c",
       "#515a7c",
-      "#899cbc",
       "#97434b",
+      "#899cbc",
       "#cc828a"
     ],
     "words": 97,
@@ -1602,10 +1602,10 @@
     "technique": "Traditionnelle",
     "palette": [
       "#2a1a25",
-      "#3c4c77",
       "#673a3c",
-      "#717f9c",
-      "#948c5d"
+      "#3c4c77",
+      "#948c5d",
+      "#717f9c"
     ],
     "words": 54,
     "poet": "Paul Verlaine",
@@ -1642,8 +1642,8 @@
       "#41564d",
       "#5a8682",
       "#778f56",
-      "#83c3b2",
-      "#b8514d"
+      "#b8514d",
+      "#83c3b2"
     ],
     "words": 50,
     "poet": "Paul Verlaine",
@@ -1677,10 +1677,10 @@
     "school": "EMCA",
     "technique": "Traditionnelle",
     "palette": [
-      "#1643cf",
       "#332f30",
       "#855853",
       "#b99088",
+      "#1643cf",
       "#e7d26a"
     ],
     "words": 79,
@@ -1697,8 +1697,8 @@
     "technique": "Traditionnelle",
     "palette": [
       "#204038",
-      "#4b9887",
       "#596756",
+      "#4b9887",
       "#c9846e",
       "#eeb0b4"
     ],
@@ -1717,9 +1717,9 @@
     "palette": [
       "#23226e",
       "#6c54a0",
-      "#9197e1",
       "#b01827",
-      "#ce717f"
+      "#ce717f",
+      "#9197e1"
     ],
     "words": 116,
     "poet": "Paul Verlaine",
@@ -1736,8 +1736,8 @@
     "palette": [
       "#2d3953",
       "#3d8c6c",
-      "#84bc97",
       "#af7647",
+      "#84bc97",
       "#f2ed95"
     ],
     "words": 36,
@@ -1753,9 +1753,9 @@
     "school": "Atelier de Sèvres",
     "technique": "Variée",
     "palette": [
-      "#2d7d40",
       "#2f2a17",
       "#67512a",
+      "#2d7d40",
       "#908d56",
       "#bcc093"
     ],
@@ -1811,8 +1811,8 @@
     "technique": "Numérique",
     "palette": [
       "#15100e",
-      "#4156bf",
       "#bab8a1",
+      "#4156bf",
       "#c13d3c",
       "#ddbb41"
     ],
@@ -1868,10 +1868,10 @@
     "technique": "Volume",
     "palette": [
       "#463b1e",
-      "#67a44b",
       "#826342",
-      "#9ac6c8",
-      "#bea782"
+      "#67a44b",
+      "#bea782",
+      "#9ac6c8"
     ],
     "words": 61,
     "poet": "Andrée Chedid",
@@ -1907,9 +1907,9 @@
     "palette": [
       "#3d2f56",
       "#4a8b54",
-      "#7cf4ab",
       "#b15b6e",
-      "#e5b28f"
+      "#e5b28f",
+      "#7cf4ab"
     ],
     "words": 54,
     "poet": "Andrée Chedid",
@@ -1963,8 +1963,8 @@
     "technique": "Numérique",
     "palette": [
       "#0e1874",
-      "#2453c4",
       "#b3112c",
+      "#2453c4",
       "#dfb19a",
       "#f0b725"
     ],
@@ -2003,8 +2003,8 @@
       "#27312e",
       "#4e585c",
       "#6b9094",
-      "#9acbc8",
-      "#bf6d5c"
+      "#bf6d5c",
+      "#9acbc8"
     ],
     "words": 48,
     "poet": "Claude Roy",
@@ -2076,10 +2076,10 @@
     "school": "ENSAD",
     "technique": "Traditionnelle",
     "palette": [
-      "#0a3f40",
-      "#216c73",
       "#392622",
+      "#0a3f40",
       "#6e5f51",
+      "#216c73",
       "#a59887"
     ],
     "words": 238,
@@ -2095,9 +2095,9 @@
     "school": "EMCA",
     "technique": "Variée",
     "palette": [
-      "#1c4e6e",
       "#252423",
       "#5d573a",
+      "#1c4e6e",
       "#6783a8",
       "#b09c68"
     ],
@@ -2117,8 +2117,8 @@
       "#1f1116",
       "#5a363f",
       "#a4785e",
-      "#b8c4e9",
-      "#dcab93"
+      "#dcab93",
+      "#b8c4e9"
     ],
     "words": 40,
     "poet": "Robert Desnos",
@@ -2135,8 +2135,8 @@
     "palette": [
       "#38272b",
       "#3e7a5c",
-      "#7286be",
       "#8e494c",
+      "#7286be",
       "#d19488"
     ],
     "words": 283,
@@ -2229,10 +2229,10 @@
     "technique": "Traditionnelle",
     "palette": [
       "#261f32",
-      "#545d88",
       "#713e1e",
-      "#8890b9",
-      "#a3866e"
+      "#545d88",
+      "#a3866e",
+      "#8890b9"
     ],
     "words": 63,
     "poet": "Pierrette Sartin",
@@ -2267,8 +2267,8 @@
     "technique": "Traditionnelle",
     "palette": [
       "#1e2e1e",
-      "#224296",
       "#746a1e",
+      "#224296",
       "#e9d38e",
       "#edd012"
     ],
@@ -2325,8 +2325,8 @@
     "palette": [
       "#56546b",
       "#7b7dab",
-      "#9da2c9",
       "#b8977f",
+      "#9da2c9",
       "#e1cfa2"
     ],
     "words": 126,
@@ -2363,9 +2363,9 @@
     "palette": [
       "#3d3e24",
       "#50846a",
-      "#77d7d6",
       "#c3bd7e",
-      "#d1681f"
+      "#d1681f",
+      "#77d7d6"
     ],
     "words": 64,
     "poet": "Bernard Lorraine",
@@ -2380,9 +2380,9 @@
     "school": "La Poudrière",
     "technique": "Volume",
     "palette": [
-      "#1f4a80",
       "#201d22",
       "#731a23",
+      "#1f4a80",
       "#807576",
       "#91811c"
     ],
@@ -2399,9 +2399,9 @@
     "school": "EMCA",
     "technique": "Variée",
     "palette": [
+      "#292439",
       "#20267f",
       "#2476b0",
-      "#292439",
       "#6ab2d2",
       "#d2a949"
     ],
@@ -2439,8 +2439,8 @@
     "palette": [
       "#484138",
       "#856057",
-      "#93b1c2",
       "#ab8879",
+      "#93b1c2",
       "#d1c88c"
     ],
     "words": 127,
@@ -2458,9 +2458,9 @@
     "palette": [
       "#512721",
       "#9d5745",
-      "#a3f1f7",
       "#be9481",
-      "#efd1a5"
+      "#efd1a5",
+      "#a3f1f7"
     ],
     "words": 50,
     "poet": "Andrée Chedid",

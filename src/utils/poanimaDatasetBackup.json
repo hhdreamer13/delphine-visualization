@@ -5,13 +5,7 @@
     "director": "Armelle Renac",
     "school": "Rubika",
     "technique": "Papiers découpés",
-    "palette": [
-      "#21221f",
-      "#41577d",
-      "#534e3e",
-      "#729789",
-      "#d4be86"
-    ],
+    "palette": ["#41577d", "#21221f", "#534e3e", "#d4be86", "#729789"],
     "words": 57,
     "poet": "Jacques Prévert",
     "episode": 1,
@@ -24,13 +18,7 @@
     "director": "Marion Lacourt",
     "school": "ENSAD",
     "technique": "Variée",
-    "palette": [
-      "#24619c",
-      "#3a0a60",
-      "#a3165c",
-      "#d96ea1",
-      "#e49242"
-    ],
+    "palette": ["#a3165c", "#3a0a60", "#d96ea1", "#24619c", "#e49242"],
     "words": 222,
     "poet": "Jacques Prévert",
     "episode": 2,
@@ -43,13 +31,7 @@
     "director": "Marie Larrivé, Camille Authouart ",
     "school": "ENSAD",
     "technique": "Volume",
-    "palette": [
-      "#1a212b",
-      "#31485a",
-      "#4493b7",
-      "#906e61",
-      "#bda6a9"
-    ],
+    "palette": ["#31485a", "#4493b7", "#906e61", "#1a212b", "#bda6a9"],
     "words": 130,
     "poet": "Jacques Prévert",
     "episode": 3,
@@ -62,13 +44,7 @@
     "director": "Lila Peuscet",
     "school": "EMCA",
     "technique": "Volume",
-    "palette": [
-      "#27353e",
-      "#448b89",
-      "#7cc5d6",
-      "#924d3c",
-      "#c59a64"
-    ],
+    "palette": ["#c59a64", "#27353e", "#7cc5d6", "#924d3c", "#448b89"],
     "words": 254,
     "poet": "Jacques Prévert",
     "episode": 4,
@@ -81,13 +57,7 @@
     "director": "Burcu Sankur, Geoffrey Godet",
     "school": "Rubika",
     "technique": "Numérique",
-    "palette": [
-      "#07394a",
-      "#34140c",
-      "#7ba19d",
-      "#fa435e",
-      "#fdc425"
-    ],
+    "palette": ["#fa435e", "#07394a", "#fdc425", "#34140c", "#7ba19d"],
     "words": 39,
     "poet": "Jacques Prévert",
     "episode": 5,
@@ -100,13 +70,7 @@
     "director": "Caroline Lefevre",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#26203f",
-      "#4651a7",
-      "#72a6eb",
-      "#a53756",
-      "#d9abc4"
-    ],
+    "palette": ["#4651a7", "#d9abc4", "#a53756", "#26203f", "#72a6eb"],
     "words": 267,
     "poet": "Jacques Prévert",
     "episode": 6,
@@ -119,13 +83,7 @@
     "director": "Marion Auvin",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#000000",
-      "#5072c0",
-      "#a57f54",
-      "#e1d68e",
-      "#e8a53b"
-    ],
+    "palette": ["#a57f54", "#e8a53b", "#000000", "#e1d68e", "#5072c0"],
     "words": 149,
     "poet": "Jacques Prévert",
     "episode": 7,
@@ -138,13 +96,7 @@
     "director": "Chenghua Yang",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#34312d",
-      "#7f7c73",
-      "#88b2ce",
-      "#d55c54",
-      "#e5ce87"
-    ],
+    "palette": ["#7f7c73", "#34312d", "#88b2ce", "#e5ce87", "#d55c54"],
     "words": 93,
     "poet": "Jacques Prévert",
     "episode": 8,
@@ -157,13 +109,7 @@
     "director": "Clément de Ruyter",
     "school": "Les Gobelins",
     "technique": "Numérique",
-    "palette": [
-      "#2f1d39",
-      "#785075",
-      "#97bee4",
-      "#c09f14",
-      "#d6a17e"
-    ],
+    "palette": ["#2f1d39", "#785075", "#97bee4", "#d6a17e", "#c09f14"],
     "words": 79,
     "poet": "Jacques Prévert",
     "episode": 9,
@@ -176,13 +122,7 @@
     "director": "Morgane Le Péchon",
     "school": "La Poudrière",
     "technique": "Papiers découpés",
-    "palette": [
-      "#243341",
-      "#528481",
-      "#7f3b48",
-      "#85a4c2",
-      "#af9557"
-    ],
+    "palette": ["#85a4c2", "#243341", "#af9557", "#7f3b48", "#528481"],
     "words": 370,
     "poet": "Jacques Prévert",
     "episode": 10,
@@ -195,13 +135,7 @@
     "director": "Anne Huynh",
     "school": "Ste Geneviève",
     "technique": "Traditionnelle",
-    "palette": [
-      "#3e76a9",
-      "#493934",
-      "#c2182e",
-      "#c6974b",
-      "#d3bfac"
-    ],
+    "palette": ["#3e76a9", "#d3bfac", "#493934", "#c2182e", "#c6974b"],
     "words": 64,
     "poet": "Jacques Prévert",
     "episode": 11,
@@ -214,13 +148,7 @@
     "director": "Marine Blin",
     "school": "La Poudrière",
     "technique": "Traditionnelle",
-    "palette": [
-      "#4a4722",
-      "#ab9833",
-      "#df6845",
-      "#e5b1a4",
-      "#efe348"
-    ],
+    "palette": ["#e5b1a4", "#ab9833", "#efe348", "#4a4722", "#df6845"],
     "words": 58,
     "poet": "Jacques Prévert",
     "episode": 12,
@@ -233,13 +161,7 @@
     "director": "Mélia Gilson",
     "school": "LISAA",
     "technique": "Papiers découpés",
-    "palette": [
-      "#221b1d",
-      "#503e3c",
-      "#825d54",
-      "#a68272",
-      "#cda998"
-    ],
+    "palette": ["#825d54", "#221b1d", "#cda998", "#503e3c", "#a68272"],
     "words": 124,
     "poet": "Jacques Prévert",
     "episode": 13,
@@ -252,13 +174,7 @@
     "director": "Marine Laclotte",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#443823",
-      "#755c37",
-      "#968a56",
-      "#c2b279",
-      "#d9c88d"
-    ],
+    "palette": ["#c2b279", "#755c37", "#443823", "#d9c88d", "#968a56"],
     "words": 222,
     "poet": "Robert Desnos",
     "episode": 1,
@@ -271,13 +187,7 @@
     "director": "Debora Cheyenne Cruchon",
     "school": "Les Gobelins",
     "technique": "Traditionnelle",
-    "palette": [
-      "#36374f",
-      "#58ba48",
-      "#86d8dc",
-      "#b75744",
-      "#bfdc45"
-    ],
+    "palette": ["#86d8dc", "#b75744", "#bfdc45", "#36374f", "#58ba48"],
     "words": 100,
     "poet": "Robert Desnos",
     "episode": 2,
@@ -290,13 +200,7 @@
     "director": "Raphaelle Stolz",
     "school": "Les Gobelins",
     "technique": "Traditionnelle",
-    "palette": [
-      "#6e2d1b",
-      "#a77954",
-      "#caa788",
-      "#e7ceaa",
-      "#e8b839"
-    ],
+    "palette": ["#a77954", "#e7ceaa", "#6e2d1b", "#caa788", "#e8b839"],
     "words": 190,
     "poet": "Robert Desnos",
     "episode": 3,
@@ -309,13 +213,7 @@
     "director": "Emma Vakarelova",
     "school": "La Poudrière",
     "technique": "Traditionnelle",
-    "palette": [
-      "#241934",
-      "#46426d",
-      "#848b9e",
-      "#9d443c",
-      "#d9b768"
-    ],
+    "palette": ["#848b9e", "#9d443c", "#d9b768", "#46426d", "#241934"],
     "words": 192,
     "poet": "Robert Desnos",
     "episode": 4,
@@ -328,13 +226,7 @@
     "director": "Justine Vuylsteker",
     "school": "ESAAT",
     "technique": "Variée",
-    "palette": [
-      "#261b18",
-      "#52578b",
-      "#6f5e2f",
-      "#a1955a",
-      "#bbbba6"
-    ],
+    "palette": ["#bbbba6", "#6f5e2f", "#a1955a", "#261b18", "#52578b"],
     "words": 140,
     "poet": "Robert Desnos",
     "episode": 5,
@@ -347,13 +239,7 @@
     "director": "Gabrielle Sibieude",
     "school": "L'Atelier",
     "technique": "Numérique",
-    "palette": [
-      "#322e41",
-      "#3e93a2",
-      "#bf3e40",
-      "#cb9eab",
-      "#d3a528"
-    ],
+    "palette": ["#bf3e40", "#3e93a2", "#322e41", "#d3a528", "#cb9eab"],
     "words": 46,
     "poet": "Robert Desnos",
     "episode": 6,
@@ -366,13 +252,7 @@
     "director": "Viviane Boyer Araujo",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#20103d",
-      "#26745d",
-      "#36cebe",
-      "#a03a11",
-      "#c6c63b"
-    ],
+    "palette": ["#a03a11", "#26745d", "#c6c63b", "#20103d", "#36cebe"],
     "words": 52,
     "poet": "Robert Desnos",
     "episode": 7,
@@ -385,13 +265,7 @@
     "director": "Charlotte Cambon",
     "school": "La Poudrière",
     "technique": "Papiers découpés",
-    "palette": [
-      "#1f619c",
-      "#3e371e",
-      "#858c4f",
-      "#9c3e2e",
-      "#bcc694"
-    ],
+    "palette": ["#3e371e", "#858c4f", "#bcc694", "#9c3e2e", "#1f619c"],
     "words": 63,
     "poet": "Robert Desnos",
     "episode": 8,
@@ -404,13 +278,7 @@
     "director": "Juliette Cuisinier",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#4e3539",
-      "#60725f",
-      "#77aa9d",
-      "#ab9867",
-      "#ded39c"
-    ],
+    "palette": ["#60725f", "#77aa9d", "#4e3539", "#ded39c", "#ab9867"],
     "words": 72,
     "poet": "Robert Desnos",
     "episode": 9,
@@ -423,13 +291,7 @@
     "director": "Alix Fizet",
     "school": "La Poudrière",
     "technique": "Papiers découpés",
-    "palette": [
-      "#41764b",
-      "#521d31",
-      "#b6a692",
-      "#bb3633",
-      "#ceac27"
-    ],
+    "palette": ["#521d31", "#b6a692", "#bb3633", "#41764b", "#ceac27"],
     "words": 293,
     "poet": "Robert Desnos",
     "episode": 10,
@@ -442,13 +304,7 @@
     "director": "Quentin Guichoux",
     "school": "L'Atelier",
     "technique": "Papiers découpés",
-    "palette": [
-      "#22243a",
-      "#755442",
-      "#8e8f86",
-      "#decaa2",
-      "#f1de40"
-    ],
+    "palette": ["#f1de40", "#22243a", "#755442", "#decaa2", "#8e8f86"],
     "words": 91,
     "poet": "Robert Desnos",
     "episode": 11,
@@ -461,13 +317,7 @@
     "director": "Kathleen Ponsard",
     "school": "L'Atelier",
     "technique": "Traditionnelle",
-    "palette": [
-      "#142e67",
-      "#4f79b9",
-      "#87343f",
-      "#d893d0",
-      "#e7dd78"
-    ],
+    "palette": ["#4f79b9", "#e7dd78", "#142e67", "#d893d0", "#87343f"],
     "words": 53,
     "poet": "Robert Desnos",
     "episode": 12,
@@ -480,13 +330,7 @@
     "director": "Anaïs Scheek-Lauriot",
     "school": "ENSAD",
     "technique": "Numérique",
-    "palette": [
-      "#1c205c",
-      "#542e21",
-      "#64764a",
-      "#9a8875",
-      "#c4cbc0"
-    ],
+    "palette": ["#64764a", "#9a8875", "#1c205c", "#542e21", "#c4cbc0"],
     "words": 111,
     "poet": "Robert Desnos",
     "episode": 13,
@@ -499,12 +343,7 @@
     "director": "Marie de Lapparent",
     "school": "EMCA",
     "technique": "Volume",
-    "palette": [
-      "#212f33",
-      "#734229",
-      "#96b4dc",
-      "#d6aa8a"
-    ],
+    "palette": ["#96b4dc", "#734229", "#d6aa8a", "#212f33"],
     "words": 65,
     "poet": "Guillaume Apollinaire",
     "episode": 1,
@@ -517,13 +356,7 @@
     "director": "Marjorie Caup",
     "school": "La Poudrière",
     "technique": "Traditionnelle",
-    "palette": [
-      "#1c2d2b",
-      "#46605d",
-      "#62462a",
-      "#867850",
-      "#aca281"
-    ],
+    "palette": ["#aca281", "#1c2d2b", "#867850", "#62462a", "#46605d"],
     "words": 130,
     "poet": "Guillaume Apollinaire",
     "episode": 2,
@@ -536,13 +369,7 @@
     "director": "Anne-Sophie Raimond",
     "school": "La Poudrière",
     "technique": "Papiers découpés",
-    "palette": [
-      "#454339",
-      "#4e98a6",
-      "#92c9cd",
-      "#c56842",
-      "#d5c888"
-    ],
+    "palette": ["#c56842", "#92c9cd", "#454339", "#4e98a6", "#d5c888"],
     "words": 62,
     "poet": "Guillaume Apollinaire",
     "episode": 3,
@@ -555,13 +382,7 @@
     "director": "Florent Grattery",
     "school": "ENSAD",
     "technique": "Traditionnelle",
-    "palette": [
-      "#2f3033",
-      "#497484",
-      "#a8bc90",
-      "#ab5c3f",
-      "#d0eaa2"
-    ],
+    "palette": ["#d0eaa2", "#ab5c3f", "#2f3033", "#497484", "#a8bc90"],
     "words": 111,
     "poet": "Guillaume Apollinaire",
     "episode": 4,
@@ -574,13 +395,7 @@
     "director": "Wen Fan et Mengshi Fang",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#2e9196",
-      "#55432a",
-      "#b4511f",
-      "#b5c225",
-      "#b8b186"
-    ],
+    "palette": ["#b4511f", "#2e9196", "#55432a", "#b8b186", "#b5c225"],
     "words": 71,
     "poet": "Guillaume Apollinaire",
     "episode": 5,
@@ -593,13 +408,7 @@
     "director": "Mathieu Gouriou",
     "school": "Les Gobelins",
     "technique": "Numérique",
-    "palette": [
-      "#212a26",
-      "#4a6d66",
-      "#58462b",
-      "#95734f",
-      "#acb28c"
-    ],
+    "palette": ["#acb28c", "#212a26", "#58462b", "#95734f", "#4a6d66"],
     "words": 141,
     "poet": "Guillaume Apollinaire",
     "episode": 6,
@@ -612,13 +421,7 @@
     "director": "Emilie Phuong",
     "school": "Les Gobelins",
     "technique": "Traditionnelle",
-    "palette": [
-      "#453526",
-      "#705a42",
-      "#96835c",
-      "#c2aa7a",
-      "#dbd7a4"
-    ],
+    "palette": ["#705a42", "#dbd7a4", "#c2aa7a", "#453526", "#96835c"],
     "words": 220,
     "poet": "Guillaume Apollinaire",
     "episode": 7,
@@ -631,13 +434,7 @@
     "director": "Hugo de Faucompret",
     "school": "Les Gobelins",
     "technique": "Traditionnelle",
-    "palette": [
-      "#322729",
-      "#655c41",
-      "#8094b6",
-      "#a6934f",
-      "#d2c881"
-    ],
+    "palette": ["#655c41", "#d2c881", "#a6934f", "#322729", "#8094b6"],
     "words": 60,
     "poet": "Guillaume Apollinaire",
     "episode": 8,
@@ -650,13 +447,7 @@
     "director": "Augustin Guichot",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#211a1e",
-      "#463231",
-      "#6e5350",
-      "#ab7e69",
-      "#ccad92"
-    ],
+    "palette": ["#6e5350", "#ccad92", "#211a1e", "#ab7e69", "#463231"],
     "words": 98,
     "poet": "Guillaume Apollinaire",
     "episode": 9,
@@ -669,13 +460,7 @@
     "director": "Charlie Belin",
     "school": "La Poudrière",
     "technique": "Traditionnelle",
-    "palette": [
-      "#17110f",
-      "#594e44",
-      "#8a7969",
-      "#b8a18c",
-      "#dcc7ad"
-    ],
+    "palette": ["#b8a18c", "#594e44", "#dcc7ad", "#8a7969", "#17110f"],
     "words": 135,
     "poet": "Guillaume Apollinaire",
     "episode": 10,
@@ -688,13 +473,7 @@
     "director": "Fabienne Wagenaar",
     "school": "La Poudrière",
     "technique": "Papiers découpés",
-    "palette": [
-      "#35251c",
-      "#5f3f2c",
-      "#846149",
-      "#af8564",
-      "#ccad91"
-    ],
+    "palette": ["#af8564", "#35251c", "#846149", "#ccad91", "#5f3f2c"],
     "words": 29,
     "poet": "Guillaume Apollinaire",
     "episode": 11,
@@ -707,13 +486,7 @@
     "director": "Loïc espuche",
     "school": "La Poudrière",
     "technique": "Traditionnelle",
-    "palette": [
-      "#1a201f",
-      "#47544e",
-      "#7a8e8d",
-      "#a29b2c",
-      "#c6ceb7"
-    ],
+    "palette": ["#47544e", "#a29b2c", "#1a201f", "#c6ceb7", "#7a8e8d"],
     "words": 55,
     "poet": "Guillaume Apollinaire",
     "episode": 12,
@@ -726,13 +499,7 @@
     "director": "Caroline Cherrier",
     "school": "Les Gobelins",
     "technique": "Traditionnelle",
-    "palette": [
-      "#281e30",
-      "#505475",
-      "#701735",
-      "#9283ac",
-      "#b82a51"
-    ],
+    "palette": ["#701735", "#9283ac", "#505475", "#b82a51", "#281e30"],
     "words": 92,
     "poet": "Guillaume Apollinaire",
     "episode": 13,
@@ -745,13 +512,7 @@
     "director": "Eugène Boitsov",
     "school": "La Poudrière",
     "technique": "Numérique",
-    "palette": [
-      "#535137",
-      "#94bdc8",
-      "#9c1e13",
-      "#b3a443",
-      "#e7da99"
-    ],
+    "palette": ["#94bdc8", "#535137", "#9c1e13", "#b3a443", "#e7da99"],
     "words": 17,
     "poet": "Paul Éluard",
     "episode": 1,
@@ -764,13 +525,7 @@
     "director": "Jon Boutin",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#1d1a22",
-      "#3e4357",
-      "#616a89",
-      "#8e9bc3",
-      "#bc3912"
-    ],
+    "palette": ["#3e4357", "#8e9bc3", "#1d1a22", "#bc3912", "#616a89"],
     "words": 373,
     "poet": "Paul Éluard",
     "episode": 2,
@@ -783,13 +538,7 @@
     "director": "Amaury Brun",
     "school": "Marie-Curie",
     "technique": "Traditionnelle",
-    "palette": [
-      "#020201",
-      "#3a361d",
-      "#6a6227",
-      "#958a2c",
-      "#bfaf2a"
-    ],
+    "palette": ["#958a2c", "#020201", "#3a361d", "#bfaf2a", "#6a6227"],
     "words": 57,
     "poet": "Paul Éluard",
     "episode": 3,
@@ -802,13 +551,7 @@
     "director": "Axel de Lafforest",
     "school": "Rubika",
     "technique": "Traditionnelle",
-    "palette": [
-      "#26292f",
-      "#454d53",
-      "#657875",
-      "#a27e68",
-      "#d1b39a"
-    ],
+    "palette": ["#a27e68", "#d1b39a", "#26292f", "#454d53", "#657875"],
     "words": 72,
     "poet": "Paul Éluard",
     "episode": 4,
@@ -821,13 +564,7 @@
     "director": "Pierre Grillère",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#2c2b3c",
-      "#4e5374",
-      "#668eae",
-      "#af4e89",
-      "#bd9e9b"
-    ],
+    "palette": ["#4e5374", "#668eae", "#2c2b3c", "#bd9e9b", "#af4e89"],
     "words": 74,
     "poet": "Paul Éluard",
     "episode": 5,
@@ -840,13 +577,7 @@
     "director": "Johanna Huck",
     "school": "Émile Cohl",
     "technique": "Traditionnelle",
-    "palette": [
-      "#5f7393",
-      "#8ad9d3",
-      "#9dd066",
-      "#e77465",
-      "#e7e471"
-    ],
+    "palette": ["#e7e471", "#8ad9d3", "#e77465", "#9dd066", "#5f7393"],
     "words": 79,
     "poet": "Paul Éluard",
     "episode": 6,
@@ -859,13 +590,7 @@
     "director": "Léa Krawczyk",
     "school": "La Poudrière",
     "technique": "Traditionnelle",
-    "palette": [
-      "#4d3a31",
-      "#5b8e8d",
-      "#987a5e",
-      "#cb4f2b",
-      "#cda685"
-    ],
+    "palette": ["#cb4f2b", "#4d3a31", "#cda685", "#5b8e8d", "#987a5e"],
     "words": 71,
     "poet": "Paul Éluard",
     "episode": 7,
@@ -878,13 +603,7 @@
     "director": "Camille Monnier",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#4b547b",
-      "#583d3d",
-      "#957f56",
-      "#a48aac",
-      "#ceab85"
-    ],
+    "palette": ["#a48aac", "#957f56", "#4b547b", "#ceab85", "#583d3d"],
     "words": 37,
     "poet": "Paul Éluard",
     "episode": 8,
@@ -897,13 +616,7 @@
     "director": "Clélia Nguyen",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#11306a",
-      "#4582a7",
-      "#87e0c5",
-      "#a42655",
-      "#e1db88"
-    ],
+    "palette": ["#4582a7", "#a42655", "#87e0c5", "#11306a", "#e1db88"],
     "words": 63,
     "poet": "Paul Éluard",
     "episode": 9,
@@ -916,13 +629,7 @@
     "director": "Aurore Peuffier",
     "school": "ENSAD",
     "technique": "Variée",
-    "palette": [
-      "#53726e",
-      "#5c2c33",
-      "#9794b8",
-      "#9e7630",
-      "#b3b271"
-    ],
+    "palette": ["#b3b271", "#5c2c33", "#9794b8", "#9e7630", "#53726e"],
     "words": 74,
     "poet": "Paul Éluard",
     "episode": 10,
@@ -935,13 +642,7 @@
     "director": "Nicolas Rolland",
     "school": "La Poudrière",
     "technique": "Numérique",
-    "palette": [
-      "#1d2842",
-      "#46505f",
-      "#77a69f",
-      "#9c8065",
-      "#c0ceb5"
-    ],
+    "palette": ["#1d2842", "#77a69f", "#c0ceb5", "#9c8065", "#46505f"],
     "words": 113,
     "poet": "Paul Éluard",
     "episode": 11,
@@ -954,13 +655,7 @@
     "director": "Arthur Sotto",
     "school": "EMCA",
     "technique": "Numérique",
-    "palette": [
-      "#3f53c9",
-      "#44f6d9",
-      "#4ca8e7",
-      "#9dd0e9",
-      "#e4a87f"
-    ],
+    "palette": ["#3f53c9", "#9dd0e9", "#e4a87f", "#44f6d9", "#4ca8e7"],
     "words": 60,
     "poet": "Paul Éluard",
     "episode": 12,
@@ -973,13 +668,7 @@
     "director": "Robin Vouters",
     "school": "Atelier de Sèvres",
     "technique": "Traditionnelle",
-    "palette": [
-      "#1a2122",
-      "#44453d",
-      "#716450",
-      "#977e64",
-      "#beae8e"
-    ],
+    "palette": ["#716450", "#1a2122", "#beae8e", "#44453d", "#977e64"],
     "words": 92,
     "poet": "Paul Éluard",
     "episode": 13,
@@ -992,13 +681,7 @@
     "director": "Etienne Baillieu",
     "school": "La Poudrière",
     "technique": "Traditionnelle",
-    "palette": [
-      "#3c4354",
-      "#5f7883",
-      "#8aa2a2",
-      "#acd2a8",
-      "#b23d5e"
-    ],
+    "palette": ["#3c4354", "#8aa2a2", "#5f7883", "#acd2a8", "#b23d5e"],
     "words": 91,
     "poet": "Claude Roy",
     "episode": 1,
@@ -1011,13 +694,7 @@
     "director": "Inès Bernard-Espina",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#2c2937",
-      "#574d57",
-      "#916e63",
-      "#b8917e",
-      "#d8b6a1"
-    ],
+    "palette": ["#d8b6a1", "#574d57", "#b8917e", "#916e63", "#2c2937"],
     "words": 112,
     "poet": "Claude Roy",
     "episode": 2,
@@ -1030,13 +707,7 @@
     "director": "Gaëtan Borde",
     "school": "Rubika",
     "technique": "Numérique",
-    "palette": [
-      "#4e1314",
-      "#896653",
-      "#a10a20",
-      "#c6b011",
-      "#d4b98e"
-    ],
+    "palette": ["#4e1314", "#d4b98e", "#896653", "#c6b011", "#a10a20"],
     "words": 94,
     "poet": "Claude Roy",
     "episode": 3,
@@ -1049,13 +720,7 @@
     "director": "Mélody Boulissière",
     "school": "La Poudrière",
     "technique": "Traditionnelle",
-    "palette": [
-      "#4d3a3d",
-      "#587292",
-      "#a66b2b",
-      "#bc808a",
-      "#d6beb1"
-    ],
+    "palette": ["#d6beb1", "#a66b2b", "#4d3a3d", "#587292", "#bc808a"],
     "words": 48,
     "poet": "Claude Roy",
     "episode": 4,
@@ -1068,13 +733,7 @@
     "director": "Cynthia Calvi",
     "school": "EMCA",
     "technique": "Numérique",
-    "palette": [
-      "#112027",
-      "#614136",
-      "#bd3b24",
-      "#cbb599",
-      "#cf972e"
-    ],
+    "palette": ["#614136", "#cbb599", "#cf972e", "#112027", "#bd3b24"],
     "words": 115,
     "poet": "Claude Roy",
     "episode": 5,
@@ -1087,13 +746,7 @@
     "director": "Clémentine Campos",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#38312a",
-      "#64605c",
-      "#7b9eaa",
-      "#a08c74",
-      "#c9b398"
-    ],
+    "palette": ["#38312a", "#a08c74", "#64605c", "#7b9eaa", "#c9b398"],
     "words": 143,
     "poet": "Claude Roy",
     "episode": 6,
@@ -1106,13 +759,7 @@
     "director": "Roxane Campoy",
     "school": "Georges Méliès",
     "technique": "Numérique",
-    "palette": [
-      "#142745",
-      "#4c619b",
-      "#8c2628",
-      "#93a7ca",
-      "#e37754"
-    ],
+    "palette": ["#93a7ca", "#142745", "#e37754", "#8c2628", "#4c619b"],
     "words": 229,
     "poet": "Claude Roy",
     "episode": 7,
@@ -1125,13 +772,7 @@
     "director": "Natalia Chernysheva",
     "school": "La Poudrière",
     "technique": "Numérique",
-    "palette": [
-      "#2f2c1f",
-      "#385aa3",
-      "#7e7939",
-      "#af0d13",
-      "#d3b45e"
-    ],
+    "palette": ["#385aa3", "#af0d13", "#2f2c1f", "#d3b45e", "#7e7939"],
     "words": 121,
     "poet": "Claude Roy",
     "episode": 8,
@@ -1144,13 +785,7 @@
     "director": "Aude David",
     "school": "ENSAD",
     "technique": "Traditionnelle",
-    "palette": [
-      "#4c4336",
-      "#846d57",
-      "#af9676",
-      "#cdbb97",
-      "#e9d8b5"
-    ],
+    "palette": ["#4c4336", "#cdbb97", "#af9676", "#846d57", "#e9d8b5"],
     "words": 94,
     "poet": "Claude Roy",
     "episode": 9,
@@ -1163,13 +798,7 @@
     "director": "Adeline Faye",
     "school": "La Poudrière",
     "technique": "Volume",
-    "palette": [
-      "#301c28",
-      "#515162",
-      "#72889d",
-      "#861925",
-      "#c07d72"
-    ],
+    "palette": ["#861925", "#72889d", "#301c28", "#c07d72", "#515162"],
     "words": 260,
     "poet": "Claude Roy",
     "episode": 10,
@@ -1182,13 +811,7 @@
     "director": "Kevin Gachet-Thaï",
     "school": "ESAAT",
     "technique": "Papiers découpés",
-    "palette": [
-      "#252c2b",
-      "#563f2f",
-      "#7b624b",
-      "#a5845a",
-      "#caac92"
-    ],
+    "palette": ["#252c2b", "#caac92", "#563f2f", "#7b624b", "#a5845a"],
     "words": 92,
     "poet": "Claude Roy",
     "episode": 11,
@@ -1201,13 +824,7 @@
     "director": "Lucas Malbrun",
     "school": "ENSAD",
     "technique": "Papiers découpés",
-    "palette": [
-      "#46534a",
-      "#6c7ea6",
-      "#a34c4d",
-      "#a3acdf",
-      "#cc9c7c"
-    ],
+    "palette": ["#a3acdf", "#a34c4d", "#cc9c7c", "#46534a", "#6c7ea6"],
     "words": 106,
     "poet": "Claude Roy",
     "episode": 12,
@@ -1220,13 +837,7 @@
     "director": "Jean-Baptiste Peltier",
     "school": "ENSAD",
     "technique": "Traditionnelle",
-    "palette": [
-      "#0f1010",
-      "#282d36",
-      "#4a5163",
-      "#6c91ad",
-      "#b06e5c"
-    ],
+    "palette": ["#282d36", "#6c91ad", "#b06e5c", "#0f1010", "#4a5163"],
     "words": 140,
     "poet": "Claude Roy",
     "episode": 13,
@@ -1239,13 +850,7 @@
     "director": "Rosalie Benevello",
     "school": "La Poudrière",
     "technique": "Papiers découpés",
-    "palette": [
-      "#1b242b",
-      "#4c6165",
-      "#6a3027",
-      "#a87f5a",
-      "#d2bc9a"
-    ],
+    "palette": ["#d2bc9a", "#6a3027", "#a87f5a", "#1b242b", "#4c6165"],
     "words": 126,
     "poet": "Jean Tardieu",
     "episode": 1,
@@ -1258,13 +863,7 @@
     "director": "Alix Boiron Albrespy",
     "school": "L'Atelier",
     "technique": "Traditionnelle",
-    "palette": [
-      "#70503f",
-      "#9ad9dd",
-      "#bc9170",
-      "#dad06c",
-      "#ebd6a8"
-    ],
+    "palette": ["#ebd6a8", "#70503f", "#bc9170", "#dad06c", "#9ad9dd"],
     "words": 40,
     "poet": "Jean Tardieu",
     "episode": 2,
@@ -1277,13 +876,7 @@
     "director": "Céline Brengou",
     "school": "Émile Cohl",
     "technique": "Volume",
-    "palette": [
-      "#2d62a4",
-      "#562c23",
-      "#986144",
-      "#c2ac73",
-      "#e4dda5"
-    ],
+    "palette": ["#c2ac73", "#986144", "#e4dda5", "#2d62a4", "#562c23"],
     "words": 140,
     "poet": "Jean Tardieu",
     "episode": 3,
@@ -1296,13 +889,7 @@
     "director": "Matthieu Gerard-Tulane",
     "school": "La Poudrière",
     "technique": "Traditionnelle",
-    "palette": [
-      "#406e6d",
-      "#4a3b2d",
-      "#6ba9ad",
-      "#b87f46",
-      "#e7d398"
-    ],
+    "palette": ["#e7d398", "#4a3b2d", "#6ba9ad", "#b87f46", "#406e6d"],
     "words": 69,
     "poet": "Jean Tardieu",
     "episode": 4,
@@ -1315,13 +902,7 @@
     "director": "Jeanne Girard",
     "school": "Pivaut",
     "technique": "Traditionnelle",
-    "palette": [
-      "#2a3734",
-      "#475a55",
-      "#7b9080",
-      "#92792b",
-      "#d9c463"
-    ],
+    "palette": ["#7b9080", "#2a3734", "#475a55", "#d9c463", "#92792b"],
     "words": 87,
     "poet": "Jean Tardieu",
     "episode": 5,
@@ -1334,13 +915,7 @@
     "director": "Judith Herbeth",
     "school": "Georges Méliès",
     "technique": "Variée",
-    "palette": [
-      "#3c1413",
-      "#415269",
-      "#6dc6c0",
-      "#89301d",
-      "#d28d49"
-    ],
+    "palette": ["#d28d49", "#89301d", "#3c1413", "#415269", "#6dc6c0"],
     "words": 75,
     "poet": "Jean Tardieu",
     "episode": 6,
@@ -1353,13 +928,7 @@
     "director": "Nan Huang",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#4b4a63",
-      "#8383a6",
-      "#abad4d",
-      "#aca8ca",
-      "#cbcd70"
-    ],
+    "palette": ["#aca8ca", "#cbcd70", "#4b4a63", "#8383a6", "#abad4d"],
     "words": 39,
     "poet": "Jean Tardieu",
     "episode": 7,
@@ -1372,13 +941,7 @@
     "director": "Isis Leterrier",
     "school": "EMCA",
     "technique": "Volume",
-    "palette": [
-      "#3b2011",
-      "#6a3d22",
-      "#a06639",
-      "#d29a5a",
-      "#ecc594"
-    ],
+    "palette": ["#a06639", "#d29a5a", "#6a3d22", "#3b2011", "#ecc594"],
     "words": 56,
     "poet": "Jean Tardieu",
     "episode": 8,
@@ -1391,13 +954,7 @@
     "director": "Eva Lusbaronian",
     "school": "Les Gobelins",
     "technique": "Traditionnelle",
-    "palette": [
-      "#432329",
-      "#6d5c66",
-      "#a82537",
-      "#bdaa8e",
-      "#d47880"
-    ],
+    "palette": ["#bdaa8e", "#a82537", "#432329", "#d47880", "#6d5c66"],
     "words": 107,
     "poet": "Jean Tardieu",
     "episode": 9,
@@ -1410,13 +967,7 @@
     "director": "Mathilde Roy",
     "school": "La Poudrière",
     "technique": "Traditionnelle",
-    "palette": [
-      "#3b332c",
-      "#745f51",
-      "#929983",
-      "#c99f55",
-      "#d8b8a5"
-    ],
+    "palette": ["#745f51", "#d8b8a5", "#3b332c", "#c99f55", "#929983"],
     "words": 96,
     "poet": "Jean Tardieu",
     "episode": 10,
@@ -1429,13 +980,7 @@
     "director": "Marine Varguy",
     "school": "Les Gobelins",
     "technique": "Numérique",
-    "palette": [
-      "#413e29",
-      "#6b9246",
-      "#855137",
-      "#c79747",
-      "#cad88c"
-    ],
+    "palette": ["#413e29", "#cad88c", "#6b9246", "#855137", "#c79747"],
     "words": 79,
     "poet": "Jean Tardieu",
     "episode": 11,
@@ -1448,13 +993,7 @@
     "director": "Iulia Voitova",
     "school": "La Poudrière",
     "technique": "Volume",
-    "palette": [
-      "#0c799b",
-      "#1f2e3e",
-      "#5f7d81",
-      "#8dbcc8",
-      "#bb92a2"
-    ],
+    "palette": ["#1f2e3e", "#8dbcc8", "#0c799b", "#5f7d81", "#bb92a2"],
     "words": 64,
     "poet": "Jean Tardieu",
     "episode": 12,
@@ -1467,13 +1006,7 @@
     "director": "Lingxi Zhang and Jihua Zhu",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#223b44",
-      "#379faa",
-      "#58d520",
-      "#b7ddb9",
-      "#ca7557"
-    ],
+    "palette": ["#58d520", "#ca7557", "#379faa", "#b7ddb9", "#223b44"],
     "words": 135,
     "poet": "Jean Tardieu",
     "episode": 13,
@@ -1486,13 +1019,7 @@
     "director": "Anna Bolshakova",
     "school": "Émile Cohl",
     "technique": "Papiers découpés",
-    "palette": [
-      "#2c1e30",
-      "#50434d",
-      "#789cac",
-      "#8c5752",
-      "#bb886a"
-    ],
+    "palette": ["#2c1e30", "#bb886a", "#789cac", "#50434d", "#8c5752"],
     "words": 214,
     "poet": "Paul Verlaine",
     "episode": 1,
@@ -1505,13 +1032,7 @@
     "director": "Jérémie Cousin",
     "school": "La Poudrière",
     "technique": "Traditionnelle",
-    "palette": [
-      "#15163e",
-      "#243383",
-      "#475aa3",
-      "#9c8fa8",
-      "#ad0e36"
-    ],
+    "palette": ["#243383", "#ad0e36", "#9c8fa8", "#475aa3", "#15163e"],
     "words": 182,
     "poet": "Paul Verlaine",
     "episode": 2,
@@ -1524,13 +1045,7 @@
     "director": "Clarissa d'Orival",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#335d5a",
-      "#4b281b",
-      "#6d8874",
-      "#966245",
-      "#c4a080"
-    ],
+    "palette": ["#c4a080", "#335d5a", "#966245", "#4b281b", "#6d8874"],
     "words": 80,
     "poet": "Paul Verlaine",
     "episode": 3,
@@ -1543,13 +1058,7 @@
     "director": "Astrid Guinet",
     "school": "ENSAD",
     "technique": "Traditionnelle",
-    "palette": [
-      "#171244",
-      "#322a70",
-      "#544794",
-      "#7364bf",
-      "#b384c7"
-    ],
+    "palette": ["#7364bf", "#171244", "#322a70", "#544794", "#b384c7"],
     "words": 125,
     "poet": "Paul Verlaine",
     "episode": 4,
@@ -1562,13 +1071,7 @@
     "director": "Nina Heckel",
     "school": "Émile Cohl",
     "technique": "Variée",
-    "palette": [
-      "#43382d",
-      "#6a5c51",
-      "#8e1936",
-      "#917f71",
-      "#cf9956"
-    ],
+    "palette": ["#6a5c51", "#43382d", "#917f71", "#cf9956", "#8e1936"],
     "words": 102,
     "poet": "Paul Verlaine",
     "episode": 5,
@@ -1581,13 +1084,7 @@
     "director": "Raphaël Jouzeau",
     "school": "Atelier de Sèvres",
     "technique": "Traditionnelle",
-    "palette": [
-      "#26213c",
-      "#515a7c",
-      "#899cbc",
-      "#97434b",
-      "#cc828a"
-    ],
+    "palette": ["#515a7c", "#899cbc", "#26213c", "#cc828a", "#97434b"],
     "words": 97,
     "poet": "Paul Verlaine",
     "episode": 6,
@@ -1600,13 +1097,7 @@
     "director": "Maksim Litvinov",
     "school": "La Poudrière",
     "technique": "Traditionnelle",
-    "palette": [
-      "#2a1a25",
-      "#3c4c77",
-      "#673a3c",
-      "#717f9c",
-      "#948c5d"
-    ],
+    "palette": ["#948c5d", "#3c4c77", "#717f9c", "#673a3c", "#2a1a25"],
     "words": 54,
     "poet": "Paul Verlaine",
     "episode": 7,
@@ -1619,13 +1110,7 @@
     "director": "Jean-Baptiste Marchand",
     "school": "Estienne",
     "technique": "Papiers découpés",
-    "palette": [
-      "#312045",
-      "#534b8e",
-      "#d13843",
-      "#dc8b76",
-      "#e6b7cd"
-    ],
+    "palette": ["#534b8e", "#dc8b76", "#e6b7cd", "#d13843", "#312045"],
     "words": 45,
     "poet": "Paul Verlaine",
     "episode": 8,
@@ -1638,13 +1123,7 @@
     "director": "Aurélie Monteix",
     "school": "La Poudrière",
     "technique": "Numérique",
-    "palette": [
-      "#41564d",
-      "#5a8682",
-      "#778f56",
-      "#83c3b2",
-      "#b8514d"
-    ],
+    "palette": ["#5a8682", "#41564d", "#83c3b2", "#b8514d", "#778f56"],
     "words": 50,
     "poet": "Paul Verlaine",
     "episode": 9,
@@ -1657,13 +1136,7 @@
     "director": "Nathanaël Perron",
     "school": "Rubika",
     "technique": "Traditionnelle",
-    "palette": [
-      "#020202",
-      "#351e29",
-      "#3e4a99",
-      "#9b3548",
-      "#c28b99"
-    ],
+    "palette": ["#020202", "#9b3548", "#351e29", "#c28b99", "#3e4a99"],
     "words": 120,
     "poet": "Paul Verlaine",
     "episode": 10,
@@ -1676,13 +1149,7 @@
     "director": "Ariane Teillet",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#1643cf",
-      "#332f30",
-      "#855853",
-      "#b99088",
-      "#e7d26a"
-    ],
+    "palette": ["#332f30", "#e7d26a", "#b99088", "#855853", "#1643cf"],
     "words": 79,
     "poet": "Paul Verlaine",
     "episode": 11,
@@ -1695,13 +1162,7 @@
     "director": "Emilie Tronche",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#204038",
-      "#4b9887",
-      "#596756",
-      "#c9846e",
-      "#eeb0b4"
-    ],
+    "palette": ["#204038", "#4b9887", "#c9846e", "#eeb0b4", "#596756"],
     "words": 103,
     "poet": "Paul Verlaine",
     "episode": 12,
@@ -1714,13 +1175,7 @@
     "director": "Valentine Vendroux",
     "school": "Atelier de Sèvres",
     "technique": "Traditionnelle",
-    "palette": [
-      "#23226e",
-      "#6c54a0",
-      "#9197e1",
-      "#b01827",
-      "#ce717f"
-    ],
+    "palette": ["#b01827", "#ce717f", "#23226e", "#6c54a0", "#9197e1"],
     "words": 116,
     "poet": "Paul Verlaine",
     "episode": 13,
@@ -1733,13 +1188,7 @@
     "director": "Maša Avramovic",
     "school": "La Poudrière",
     "technique": "Traditionnelle",
-    "palette": [
-      "#2d3953",
-      "#3d8c6c",
-      "#84bc97",
-      "#af7647",
-      "#f2ed95"
-    ],
+    "palette": ["#3d8c6c", "#f2ed95", "#84bc97", "#af7647", "#2d3953"],
     "words": 36,
     "poet": "Andrée Chedid",
     "episode": 1,
@@ -1752,13 +1201,7 @@
     "director": "Marie Deboissy",
     "school": "Atelier de Sèvres",
     "technique": "Variée",
-    "palette": [
-      "#2d7d40",
-      "#2f2a17",
-      "#67512a",
-      "#908d56",
-      "#bcc093"
-    ],
+    "palette": ["#67512a", "#908d56", "#2f2a17", "#2d7d40", "#bcc093"],
     "words": 133,
     "poet": "Andrée Chedid",
     "episode": 2,
@@ -1771,13 +1214,7 @@
     "director": "Jaimeen Desai",
     "school": "La Poudrière",
     "technique": "Traditionnelle",
-    "palette": [
-      "#2e2027",
-      "#42609f",
-      "#b22e2b",
-      "#d87a47",
-      "#eec38a"
-    ],
+    "palette": ["#2e2027", "#d87a47", "#42609f", "#b22e2b", "#eec38a"],
     "words": 38,
     "poet": "Andrée Chedid",
     "episode": 3,
@@ -1790,13 +1227,7 @@
     "director": "Héloïse Ferlay",
     "school": "ENSAD",
     "technique": "Volume",
-    "palette": [
-      "#3f1d12",
-      "#763620",
-      "#b35a26",
-      "#d79547",
-      "#edcd8c"
-    ],
+    "palette": ["#763620", "#edcd8c", "#3f1d12", "#d79547", "#b35a26"],
     "words": 84,
     "poet": "Andrée Chedid",
     "episode": 4,
@@ -1809,13 +1240,7 @@
     "director": "Capucine Gougelet",
     "school": "ENSAD",
     "technique": "Numérique",
-    "palette": [
-      "#15100e",
-      "#4156bf",
-      "#bab8a1",
-      "#c13d3c",
-      "#ddbb41"
-    ],
+    "palette": ["#4156bf", "#ddbb41", "#15100e", "#c13d3c", "#bab8a1"],
     "words": 35,
     "poet": "Andrée Chedid",
     "episode": 5,
@@ -1828,13 +1253,7 @@
     "director": "Salomé Hammann",
     "school": "Atelier de Sèvres",
     "technique": "Traditionnelle",
-    "palette": [
-      "#2d297a",
-      "#579a5e",
-      "#6b6fc1",
-      "#dc6e44",
-      "#eee5a2"
-    ],
+    "palette": ["#579a5e", "#6b6fc1", "#eee5a2", "#dc6e44", "#2d297a"],
     "words": 48,
     "poet": "Andrée Chedid",
     "episode": 6,
@@ -1847,13 +1266,7 @@
     "director": "Raphaëlle Martinez",
     "school": "ENSAD",
     "technique": "Papiers découpés",
-    "palette": [
-      "#37393f",
-      "#667579",
-      "#8a1b2a",
-      "#b07142",
-      "#c59490"
-    ],
+    "palette": ["#37393f", "#b07142", "#667579", "#8a1b2a", "#c59490"],
     "words": 59,
     "poet": "Andrée Chedid",
     "episode": 7,
@@ -1866,13 +1279,7 @@
     "director": "Lara Mattelart",
     "school": "EMCA",
     "technique": "Volume",
-    "palette": [
-      "#463b1e",
-      "#67a44b",
-      "#826342",
-      "#9ac6c8",
-      "#bea782"
-    ],
+    "palette": ["#9ac6c8", "#67a44b", "#463b1e", "#bea782", "#826342"],
     "words": 61,
     "poet": "Andrée Chedid",
     "episode": 8,
@@ -1885,13 +1292,7 @@
     "director": "Emilie Mereghetti",
     "school": "ENSAD",
     "technique": "Traditionnelle",
-    "palette": [
-      "#0a084f",
-      "#0b0b7f",
-      "#313c8b",
-      "#5f6199",
-      "#8b88b0"
-    ],
+    "palette": ["#0a084f", "#313c8b", "#5f6199", "#8b88b0", "#0b0b7f"],
     "words": 78,
     "poet": "Andrée Chedid",
     "episode": 9,
@@ -1904,13 +1305,7 @@
     "director": "Islena Neira",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#3d2f56",
-      "#4a8b54",
-      "#7cf4ab",
-      "#b15b6e",
-      "#e5b28f"
-    ],
+    "palette": ["#e5b28f", "#3d2f56", "#b15b6e", "#7cf4ab", "#4a8b54"],
     "words": 54,
     "poet": "Andrée Chedid",
     "episode": 10,
@@ -1923,13 +1318,7 @@
     "director": "Daniella Schnitzer",
     "school": "La Poudrière",
     "technique": "Variée",
-    "palette": [
-      "#50363d",
-      "#917597",
-      "#b76b22",
-      "#e8b22e",
-      "#efdaa1"
-    ],
+    "palette": ["#efdaa1", "#50363d", "#e8b22e", "#917597", "#b76b22"],
     "words": 20,
     "poet": "Andrée Chedid",
     "episode": 11,
@@ -1942,13 +1331,7 @@
     "director": "Camille Scudier",
     "school": "EESAB",
     "technique": "Volume",
-    "palette": [
-      "#292518",
-      "#494530",
-      "#6b654e",
-      "#a09778",
-      "#abd2e4"
-    ],
+    "palette": ["#a09778", "#494530", "#abd2e4", "#6b654e", "#292518"],
     "words": 51,
     "poet": "Andrée Chedid",
     "episode": 12,
@@ -1961,13 +1344,7 @@
     "director": "Mitchelle Tamariz",
     "school": "La Poudrière",
     "technique": "Numérique",
-    "palette": [
-      "#0e1874",
-      "#2453c4",
-      "#b3112c",
-      "#dfb19a",
-      "#f0b725"
-    ],
+    "palette": ["#f0b725", "#2453c4", "#b3112c", "#0e1874", "#dfb19a"],
     "words": 28,
     "poet": "Andrée Chedid",
     "episode": 13,
@@ -1980,13 +1357,7 @@
     "director": "Martin Bonnin",
     "school": "L'Atelier",
     "technique": "Traditionnelle",
-    "palette": [
-      "#5e5847",
-      "#927d64",
-      "#c2a979",
-      "#cb9c38",
-      "#e1db98"
-    ],
+    "palette": ["#c2a979", "#5e5847", "#cb9c38", "#927d64", "#e1db98"],
     "words": 59,
     "poet": "Andrée Chedid",
     "episode": 1,
@@ -1999,13 +1370,7 @@
     "director": "Gaspar Chabaud",
     "school": "La Poudrière",
     "technique": "Traditionnelle",
-    "palette": [
-      "#27312e",
-      "#4e585c",
-      "#6b9094",
-      "#9acbc8",
-      "#bf6d5c"
-    ],
+    "palette": ["#27312e", "#9acbc8", "#6b9094", "#bf6d5c", "#4e585c"],
     "words": 48,
     "poet": "Claude Roy",
     "episode": 2,
@@ -2018,13 +1383,7 @@
     "director": "Martin Clerget",
     "school": "Émile Cohl",
     "technique": "Traditionnelle",
-    "palette": [
-      "#111931",
-      "#1a2f53",
-      "#214a83",
-      "#2677ce",
-      "#74d5e9"
-    ],
+    "palette": ["#1a2f53", "#2677ce", "#214a83", "#74d5e9", "#111931"],
     "words": 46,
     "poet": "Renée Vivien",
     "episode": 3,
@@ -2037,13 +1396,7 @@
     "director": "Hugo Galvier",
     "school": "La Poudrière",
     "technique": "Traditionnelle",
-    "palette": [
-      "#030302",
-      "#453842",
-      "#585c81",
-      "#9e5149",
-      "#caad87"
-    ],
+    "palette": ["#9e5149", "#caad87", "#030302", "#585c81", "#453842"],
     "words": 85,
     "poet": "Charles Baudelaire",
     "episode": 4,
@@ -2056,13 +1409,7 @@
     "director": "Ada Hernaez Altamirano",
     "school": "Les Gobelins",
     "technique": "Traditionnelle",
-    "palette": [
-      "#192830",
-      "#1b4f9a",
-      "#2b8ecb",
-      "#67bbd2",
-      "#9bd9e0"
-    ],
+    "palette": ["#67bbd2", "#192830", "#2b8ecb", "#1b4f9a", "#9bd9e0"],
     "words": 31,
     "poet": "Philippe Soupault",
     "episode": 5,
@@ -2075,13 +1422,7 @@
     "director": "Shih-Yen Huang",
     "school": "ENSAD",
     "technique": "Traditionnelle",
-    "palette": [
-      "#0a3f40",
-      "#216c73",
-      "#392622",
-      "#6e5f51",
-      "#a59887"
-    ],
+    "palette": ["#216c73", "#6e5f51", "#a59887", "#0a3f40", "#392622"],
     "words": 238,
     "poet": "Blaise Cendrars",
     "episode": 6,
@@ -2094,13 +1435,7 @@
     "director": "Lola Khattou",
     "school": "EMCA",
     "technique": "Variée",
-    "palette": [
-      "#1c4e6e",
-      "#252423",
-      "#5d573a",
-      "#6783a8",
-      "#b09c68"
-    ],
+    "palette": ["#5d573a", "#252423", "#b09c68", "#1c4e6e", "#6783a8"],
     "words": 147,
     "poet": "Francis Ponge",
     "episode": 7,
@@ -2113,13 +1448,7 @@
     "director": "Juliette Laboria",
     "school": "ENSAD",
     "technique": "Traditionnelle",
-    "palette": [
-      "#1f1116",
-      "#5a363f",
-      "#a4785e",
-      "#b8c4e9",
-      "#dcab93"
-    ],
+    "palette": ["#b8c4e9", "#1f1116", "#a4785e", "#5a363f", "#dcab93"],
     "words": 40,
     "poet": "Robert Desnos",
     "episode": 8,
@@ -2132,13 +1461,7 @@
     "director": "Heloïse Le Bail",
     "school": "ENSAD",
     "technique": "Traditionnelle",
-    "palette": [
-      "#38272b",
-      "#3e7a5c",
-      "#7286be",
-      "#8e494c",
-      "#d19488"
-    ],
+    "palette": ["#3e7a5c", "#7286be", "#38272b", "#d19488", "#8e494c"],
     "words": 283,
     "poet": "Jean de La Fontaine",
     "episode": 9,
@@ -2151,13 +1474,7 @@
     "director": "Marie-Sarah Ouwe Missi Oukem",
     "school": "EMCA",
     "technique": "Volume",
-    "palette": [
-      "#382317",
-      "#6b4a35",
-      "#9c865f",
-      "#ae7213",
-      "#d1ba90"
-    ],
+    "palette": ["#382317", "#d1ba90", "#9c865f", "#6b4a35", "#ae7213"],
     "words": 87,
     "poet": "Anne Hébert",
     "episode": 10,
@@ -2170,13 +1487,7 @@
     "director": "Emeline Perrin",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#050504",
-      "#1d1816",
-      "#2d2723",
-      "#423a34",
-      "#544a43"
-    ],
+    "palette": ["#2d2723", "#544a43", "#050504", "#423a34", "#1d1816"],
     "words": 156,
     "poet": "Arthur Rimbaud",
     "episode": 11,
@@ -2189,13 +1500,7 @@
     "director": "Lise Remon",
     "school": "ENSAD",
     "technique": "Traditionnelle",
-    "palette": [
-      "#231b13",
-      "#41382e",
-      "#605446",
-      "#8a7c6b",
-      "#cf8315"
-    ],
+    "palette": ["#605446", "#231b13", "#8a7c6b", "#cf8315", "#41382e"],
     "words": 112,
     "poet": "Claude Roy",
     "episode": 12,
@@ -2208,13 +1513,7 @@
     "director": "David Store",
     "school": "Atelier de Sèvres",
     "technique": "Traditionnelle",
-    "palette": [
-      "#2c2c2d",
-      "#6f5224",
-      "#707290",
-      "#bd964e",
-      "#bdbebf"
-    ],
+    "palette": ["#6f5224", "#707290", "#bdbebf", "#2c2c2d", "#bd964e"],
     "words": 69,
     "poet": "Maurice Carême",
     "episode": 13,
@@ -2227,13 +1526,7 @@
     "director": "Mohammad Babakoohi",
     "school": "La Poudrière",
     "technique": "Traditionnelle",
-    "palette": [
-      "#261f32",
-      "#545d88",
-      "#713e1e",
-      "#8890b9",
-      "#a3866e"
-    ],
+    "palette": ["#261f32", "#545d88", "#8890b9", "#a3866e", "#713e1e"],
     "words": 63,
     "poet": "Pierrette Sartin",
     "episode": 1,
@@ -2246,13 +1539,7 @@
     "director": "Arthur Catteau",
     "school": "ESAAT",
     "technique": "Numérique",
-    "palette": [
-      "#563c33",
-      "#7a564b",
-      "#957263",
-      "#b39078",
-      "#d4bf9c"
-    ],
+    "palette": ["#7a564b", "#d4bf9c", "#563c33", "#b39078", "#957263"],
     "words": 247,
     "poet": "Charles Vildrac",
     "episode": 2,
@@ -2265,13 +1552,7 @@
     "director": "Julie Daravan Chea",
     "school": "La Poudrière",
     "technique": "Traditionnelle",
-    "palette": [
-      "#1e2e1e",
-      "#224296",
-      "#746a1e",
-      "#e9d38e",
-      "#edd012"
-    ],
+    "palette": ["#746a1e", "#edd012", "#224296", "#1e2e1e", "#e9d38e"],
     "words": 60,
     "poet": "Esther Granek",
     "episode": 3,
@@ -2284,13 +1565,7 @@
     "director": "Violeta Cortes",
     "school": "Atelier de Sèvres",
     "technique": "Traditionnelle",
-    "palette": [
-      "#0a0176",
-      "#2c30c7",
-      "#8284e3",
-      "#f0ab37",
-      "#f5db98"
-    ],
+    "palette": ["#8284e3", "#f0ab37", "#0a0176", "#f5db98", "#2c30c7"],
     "words": 56,
     "poet": "Jean-François Chabrun",
     "episode": 4,
@@ -2303,13 +1578,7 @@
     "director": "Aliénor Doublet",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#4d4e3d",
-      "#8c9a64",
-      "#a9665a",
-      "#bcb681",
-      "#e5cca6"
-    ],
+    "palette": ["#bcb681", "#4d4e3d", "#8c9a64", "#e5cca6", "#a9665a"],
     "words": 64,
     "poet": "Philippe Soupault",
     "episode": 5,
@@ -2322,13 +1591,7 @@
     "director": "Léa Dutter",
     "school": "ESAAT",
     "technique": "Traditionnelle",
-    "palette": [
-      "#56546b",
-      "#7b7dab",
-      "#9da2c9",
-      "#b8977f",
-      "#e1cfa2"
-    ],
+    "palette": ["#7b7dab", "#e1cfa2", "#56546b", "#b8977f", "#9da2c9"],
     "words": 126,
     "poet": "Alfred de Musset",
     "episode": 6,
@@ -2341,13 +1604,7 @@
     "director": "Florian Genthial",
     "school": "Atelier de Sèvres",
     "technique": "Traditionnelle",
-    "palette": [
-      "#361619",
-      "#583947",
-      "#7e1c1e",
-      "#a15758",
-      "#d29687"
-    ],
+    "palette": ["#361619", "#d29687", "#583947", "#a15758", "#7e1c1e"],
     "words": 90,
     "poet": "Jacques Charpentreau",
     "episode": 7,
@@ -2360,13 +1617,7 @@
     "director": "Thibault Llonch",
     "school": "La Poudrière",
     "technique": "Numérique",
-    "palette": [
-      "#3d3e24",
-      "#50846a",
-      "#77d7d6",
-      "#c3bd7e",
-      "#d1681f"
-    ],
+    "palette": ["#c3bd7e", "#3d3e24", "#d1681f", "#50846a", "#77d7d6"],
     "words": 64,
     "poet": "Bernard Lorraine",
     "episode": 8,
@@ -2379,13 +1630,7 @@
     "director": "Katya Mikheeva",
     "school": "La Poudrière",
     "technique": "Volume",
-    "palette": [
-      "#1f4a80",
-      "#201d22",
-      "#731a23",
-      "#807576",
-      "#91811c"
-    ],
+    "palette": ["#1f4a80", "#201d22", "#91811c", "#807576", "#731a23"],
     "words": 42,
     "poet": "Andrée Chedid",
     "episode": 9,
@@ -2398,13 +1643,7 @@
     "director": "Baptiste Ratajski",
     "school": "EMCA",
     "technique": "Variée",
-    "palette": [
-      "#20267f",
-      "#2476b0",
-      "#292439",
-      "#6ab2d2",
-      "#d2a949"
-    ],
+    "palette": ["#20267f", "#6ab2d2", "#d2a949", "#2476b0", "#292439"],
     "words": 43,
     "poet": "Frédéric Kiesel",
     "episode": 10,
@@ -2417,13 +1656,7 @@
     "director": "Cécile Robineau",
     "school": "La Poudrière",
     "technique": "Papiers découpés",
-    "palette": [
-      "#3d2419",
-      "#77462b",
-      "#827c64",
-      "#b99e5e",
-      "#dbd77e"
-    ],
+    "palette": ["#3d2419", "#b99e5e", "#77462b", "#dbd77e", "#827c64"],
     "words": 44,
     "poet": "Robert Desnos",
     "episode": 11,
@@ -2436,13 +1669,7 @@
     "director": "Charlotte Saunders",
     "school": "EMCA",
     "technique": "Traditionnelle",
-    "palette": [
-      "#484138",
-      "#856057",
-      "#93b1c2",
-      "#ab8879",
-      "#d1c88c"
-    ],
+    "palette": ["#856057", "#d1c88c", "#484138", "#93b1c2", "#ab8879"],
     "words": 127,
     "poet": "Robert Desnos",
     "episode": 12,
@@ -2455,13 +1682,7 @@
     "director": "Léon Verde",
     "school": "ECV Bordeaux",
     "technique": "Traditionnelle",
-    "palette": [
-      "#512721",
-      "#9d5745",
-      "#a3f1f7",
-      "#be9481",
-      "#efd1a5"
-    ],
+    "palette": ["#9d5745", "#efd1a5", "#a3f1f7", "#be9481", "#512721"],
     "words": 50,
     "poet": "Andrée Chedid",
     "episode": 13,
