@@ -56,22 +56,22 @@ const Modal = ({ showModal, setShowModal }) => {
                 Dédié à Delphine Maury
               </h3>
               <p>
-                En 2015, lors du festival bisannuel de cinéma d'animation de
+                En 2015, lors du festival bisannuel de cinéma d'animation à
                 Téhéran en Iran, j'ai découvert pour la première fois la série
                 "En sortant de l'école". La poésie et la littérature m'ont
-                toujours passionné, et la poésie française en particulier. J'ai
-                trois petits livres bilingues (français et persan) des poèmes de
-                Jacques Prévert, Robert Desnos et Paul Verlaine, qui m'ont
-                accompagné depuis plus de 15 ans.
+                toujours passionné, et notamment la poésie française. Depuis
+                plus de 15 ans, j'ai trois petits livres bilingues (français et
+                persan) des poèmes de Jacques Prévert, Robert Desnos et Paul
+                Verlaine qui m'accompagnent.
               </p>
               <p>
                 Ces poèmes ont été mes compagnons dans les moments de joie, de
-                déprime, d'amour et de stress. Ils m'ont aidé à surmonter les
-                difficultés. Lorsque j'ai vu ces poèmes animés à l'écran, avec
-                leurs couleurs vives et leurs mots prononcés par des comédiens,
-                ils m'ont redonné une nouvelle vie, celle que j'avais perdue
-                dans le quotidien. En réalité, j'avais perdu mes rêves, et ce
-                poème de Langston Hughes les représente si bien :
+                tristesse, d'amour et de stress. Lorsque j'ai vu ces poèmes
+                animés à l'écran, avec leurs couleurs vives et leurs mots
+                prononcés par des comédiens, j'ai retrouvé une nouvelle vie,
+                celle que j'avais perdue dans le quotidien. En réalité, j'avais
+                perdu mes rêves, et ce poème de Langston Hughes les représente
+                si bien :
               </p>
               <blockquote className="mt-2 font-body italic">
                 Rêves
@@ -100,10 +100,9 @@ const Modal = ({ showModal, setShowModal }) => {
 
               <p>
                 C'est dans cet esprit que la série "En sortant de l'école" prend
-                toute sa dimension. Bien plus qu'un simple divertissement, elle
-                insuffle potentiel, idées, vérité et liberté. La série ravive
-                nos rêves, et je sais que je ne suis pas le seul à être touché
-                par ces poésies animées et leur pouvoir évocateur.
+                tout son sens. La série ravive nos rêves, et je sais que je ne
+                suis pas le seul à être touché par ces poésies animées et leur
+                impact émotionnel.
               </p>
               <p>
                 Lorsque j'ai commencé à travailler sur ce projet de
@@ -112,16 +111,20 @@ const Modal = ({ showModal, setShowModal }) => {
                 intéressé, c'est la liberté offerte par ce type de projet. On ne
                 dessine pas simplement des visualisations, on exprime ce que
                 l'on ressent et ce que la série pourrait nous faire ressentir,
-                et moi je n'ai que l'amour pour cette série.
+                et pour ma part, je ne ressens que de l'amour pour cette série.
               </p>
-
               <p>
-                En célébrant le 50e anniversaire de Delphine, j'aimerais lui
-                dédier ce projet. Son travail a eu un impact profond sur ma vie
-                et sur celle de nombreuses autres personnes qui ont été touchées
-                par la série "En sortant de l'école" et les poésies animées
-                qu'elle a produites. Merci, Delphine, pour tout ce que tu as
-                fait et joyeux anniversaire !
+                Delphine est une personne d'une gentillesse immense et, sans
+                entrer dans les détails de ses innombrables gestes généreux,
+                incroyablement inspirante. Son travail a eu un impact profond
+                sur ma vie et sur celle de nombreuses autres personnes qui ont
+                été touchées par la série "En sortant de l'école" et les poésies
+                animées qu'elle a produites. En célébrant le 50e anniversaire de
+                Delphine, j'aimerais lui dédier le projet "PoAnimaViz".
+              </p>
+              <p>
+                Merci, Delphine, pour tout ce que tu as fait et joyeux
+                anniversaire !
               </p>
               <div className="flex justify-end">
                 <h3>Hooman</h3>
