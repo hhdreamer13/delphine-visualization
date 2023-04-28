@@ -87,17 +87,17 @@ const legendData = [
 ];
 
 const filmExample = {
-  id: 902,
-  title: "Le Hibou et l'hirondelle",
-  director: "Gaspar Chabaud",
-  school: "La Poudrière",
+  id: 106,
+  title: "Âne dormant",
+  director: "Caroline Lefevre",
+  school: "EMCA",
   technique: "Traditionnelle",
-  palette: ["#27312e", "#9acbc8", "#6b9094", "#bf6d5c", "#4e585c"],
-  words: 48,
-  poet: "Claude Roy",
-  episode: 2,
-  season: 9,
-  year: 2022,
+  palette: ["#4651a7", "#d9abc4", "#a53756", "#26203f", "#72a6eb"],
+  words: 267,
+  poet: "Jacques Prévert",
+  episode: 6,
+  season: 1,
+  year: 2014,
 };
 
 const FlowerWrapper = () => {
@@ -146,7 +146,7 @@ const FlowerWrapper = () => {
       </div>
       <div className="prose text-justify text-lg">
         <h3 className="mb-5 text-3xl">
-          Poésie florale des techniques, poèmes et palettes
+          Poésie florale des techniques, mots et palettes
         </h3>
         <p>
           Cette visualisation présente un affichage floral unique pour
@@ -166,7 +166,7 @@ const FlowerWrapper = () => {
           {flowerPetalPaths.map((petal, index) => (
             <div
               key={index}
-              className="flex h-40 w-32 flex-col items-center justify-center gap-10 text-sm"
+              className="flex h-44 w-32 flex-col items-center justify-center text-sm"
             >
               <svg
                 className="h-24 w-16"
@@ -180,7 +180,7 @@ const FlowerWrapper = () => {
                   <path d={petal.path} />
                 </g>
               </svg>
-              <p className="mt-0">{petal.technique}</p>
+              <p className="mt-4">{petal.technique}</p>
             </div>
           ))}
         </div>
@@ -227,7 +227,7 @@ const FlowerWrapper = () => {
                   filter={`url(#blurAndSaturation-${index})`}
                 />
               </svg>
-              <p className="mt-0">La couleur {index + 1}</p>
+              <p className="mt-0">Couleur {index + 1}</p>
             </div>
           ))}
         </div>
