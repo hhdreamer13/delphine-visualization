@@ -40,8 +40,8 @@ function App() {
           </div>
           <div>
             <p className="w-60 text-center">
-              Mais il est possible que vous puissiez tenter le mode paysage pour
-              quelques aperçus.
+              Mais il est possible que vous puissiez avoir quelques aperçus en
+              mode paysage.
             </p>
           </div>
         </div>
