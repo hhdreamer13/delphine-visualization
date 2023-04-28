@@ -149,10 +149,11 @@ const LegendFlower = ({ data }) => {
               .text((d) => `${d.words} mots`);
 
             text
-              .append("tspan") // Add a new <tspan> element for the petal text
-              .attr("x", 0) // Center the <tspan> horizontally
-              .attr("dy", "1.5rem") // Adjust the vertical position of the petal text
-              .style("text-anchor", "middle") // Center the text within the <tspan>
+              .append("tspan")
+              .attr("x", 0)
+              .attr("y", 100)
+              // .attr("dy", "1.5rem")
+              .style("text-anchor", "middle")
               .text((d) => `${d.numPetals} pétales`);
 
             return flower;

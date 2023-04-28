@@ -166,18 +166,19 @@ const FlowerWrapper = () => {
           {flowerPetalPaths.map((petal, index) => (
             <div
               key={index}
-              className="flex h-48 w-32 flex-col items-center justify-center gap-10 text-sm"
+              className="flex h-40 w-32 flex-col items-center justify-center gap-10 text-sm"
             >
               <svg
-                className="h-16 w-16"
+                className="h-24 w-16"
                 viewBox="0 0 110 110"
                 preserveAspectRatio="xMidYMid meet"
                 fill="none"
                 stroke="black"
                 strokeWidth="3"
-                transform="rotate(228)"
               >
-                <path d={petal.path} />
+                <g transform="rotate(228, 55, 55)">
+                  <path d={petal.path} />
+                </g>
               </svg>
               <p className="mt-0">{petal.technique}</p>
             </div>
