@@ -10,6 +10,9 @@ const containerVariants = {
     transition: {
       delayChildren: 0.95,
       staggerChildren: 0.1,
+      duration: 0.7,
+      delay: 0.2,
+      ease: easeIn,
     },
   },
 };

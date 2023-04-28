@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -30,11 +31,14 @@ function App() {
             alt="Rotate phone icon"
             className="animate-rotate-phone h-24 w-24"
           />
-          <p className="mt-6 text-lg font-semibold">
-            Veuillez tourner votre téléphone
-          </p>
+          <div>
+            <p className="w-60 text-center">Un grand écran, c'est mieux !</p>
+            <p className="w-60 text-center">
+              Mais essayez le mode paysage pour une découverte.
+            </p>
+          </div>
         </div>
-        <div className="">
+        <div className="hidden sm:block">
           <Footer />
         </div>
       </div>
