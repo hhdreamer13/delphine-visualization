@@ -167,15 +167,15 @@ const Home = () => {
           aspects de la série :
         </p>
         <h3 className="mb-6">
-          <Link to="/ville/petite" className="group no-underline">
-            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300 hover:text-slate-950 ">
+          <Link to="/ville/petite" className="group relative no-underline">
+            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300">
               Ville (petite et grande) <span className="opacity-0">hid</span>
-              <img
-                className="absolute -left-1 -top-5 -z-10 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
-                src="/brush2.png"
-                alt=""
-              />
             </span>{" "}
+            <img
+              className="absolute -left-1 -top-5 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
+              src="/brush2.png"
+              alt=""
+            />
           </Link>
         </h3>
         <p>
@@ -186,15 +186,15 @@ const Home = () => {
           détail.
         </p>
         <h3 className="mb-6">
-          <Link to="/monde/petit" className="group no-underline">
-            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300 hover:text-slate-950">
+          <Link to="/monde/petit" className="group relative no-underline">
+            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300">
               Monde (petit et grand) <span className="opacity-0">hi</span>
-              <img
-                className="absolute -left-1 -top-5 -z-10 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
-                src="/brush2.png"
-                alt=""
-              />
             </span>{" "}
+            <img
+              className="absolute -left-1 -top-5 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
+              src="/brush2.png"
+              alt=""
+            />
           </Link>
         </h3>
         <p>
@@ -204,15 +204,15 @@ const Home = () => {
           lequel chaque élément est associé à la série de manière unique.
         </p>
         <h3 className="mb-6">
-          <Link to="/matrice" className="group no-underline">
-            <span className="grays font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300 hover:text-slate-950">
+          <Link to="/matrice" className="group relative no-underline">
+            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300">
               Matrice <span className="opacity-0">hi</span>
-              <img
-                className="absolute -left-1 -top-5 -z-10 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
-                src="/brush2.png"
-                alt=""
-              />
             </span>{" "}
+            <img
+              className="absolute -left-1 -top-5 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
+              src="/brush2.png"
+              alt=""
+            />
           </Link>
         </h3>
         <p>
@@ -223,15 +223,15 @@ const Home = () => {
           les œuvres.
         </p>
         <h3 className="mb-6">
-          <Link to="/galaxie" className="group no-underline">
-            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300 hover:text-slate-950">
+          <Link to="/galaxie" className="group relative no-underline">
+            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300">
               Galaxie <span className="opacity-0">hid</span>
-              <img
-                className="absolute -left-1 -top-5 -z-10 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
-                src="/brush2.png"
-                alt=""
-              />
             </span>{" "}
+            <img
+              className="absolute -left-1 -top-5 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
+              src="/brush2.png"
+              alt=""
+            />
           </Link>
         </h3>
         <p>
@@ -243,15 +243,15 @@ const Home = () => {
           interagissant avec les nœuds.
         </p>
         <h3 className="mb-6">
-          <Link to="/fleur" className="group no-underline">
-            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-md duration-300 hover:text-slate-950">
+          <Link to="/fleur" className="group relative no-underline">
+            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-md duration-300">
               Fleur <span className="opacity-0">hid</span>
-              <img
-                className="absolute -left-1 -top-5 -z-10 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
-                src="/brush2.png"
-                alt=""
-              />
             </span>{" "}
+            <img
+              className="absolute -left-1 -top-5 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
+              src="/brush2.png"
+              alt=""
+            />
           </Link>
         </h3>
         <p>
