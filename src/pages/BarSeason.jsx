@@ -72,8 +72,8 @@ const BarSeasonWrapper = () => {
         <p>
           Bienvenue dans "La Petite Ville", une visualisation sous forme de
           graphique en barres, où chaque épisode de la série "En sortant de
-          l'école" se transforme en un bâtiment pittoresque d'une ville animée
-          par les saisons.
+          l'école" se transforme en un bâtiment pittoresque d'une charmante
+          petite ville animée par les saisons.
         </p>
         <ul className="custom-bullet">
           <li>

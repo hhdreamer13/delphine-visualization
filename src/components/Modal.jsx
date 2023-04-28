@@ -41,7 +41,7 @@ const Modal = ({ showModal, setShowModal }) => {
           exit="hidden"
         >
           <motion.div
-            className="relative mx-auto my-0 flex w-3/5 flex-col rounded-2xl bg-base-300 px-5 py-16 text-center shadow-2xl"
+            className="relative mx-auto my-0 flex w-4/5 flex-col rounded-2xl bg-red-50 px-5 py-16 text-center shadow-2xl lg:w-3/5"
             variants={modalAnimations}
           >
             <button
@@ -68,7 +68,7 @@ const Modal = ({ showModal, setShowModal }) => {
                 Ces poèmes ont été mes compagnons dans les moments de joie, de
                 déprime, d'amour et de stress. Ils m'ont aidé à surmonter les
                 difficultés. Lorsque j'ai vu ces poèmes animés à l'écran, avec
-                leurs couleurs vives et leurs mots prononcés par des acteurs,
+                leurs couleurs vives et leurs mots prononcés par des comédiens,
                 ils m'ont redonné une nouvelle vie, celle que j'avais perdue
                 dans le quotidien. En réalité, j'avais perdu mes rêves, et ce
                 poème de Langston Hughes les représente si bien :
@@ -106,17 +106,17 @@ const Modal = ({ showModal, setShowModal }) => {
                 par ces poésies animées et leur pouvoir évocateur.
               </p>
               <p>
-                Lorsque j'ai commencé à travailler sur mon projet de
-                visualisation de données, j'ai immédiatement été fasciné par
-                l'authenticité et la créativité que cela pouvait apporter. Ce
-                qui m'a le plus intéressé, c'est la liberté offerte par ce type
-                de projet. On ne dessine pas simplement des visualisations, on
-                exprime ce que l'on ressent et ce que le film pourrait nous
-                faire ressentir, en s'appuyant sur ses spécificités cachées.
+                Lorsque j'ai commencé à travailler sur ce projet de
+                visualisation de données, j'ai été fasciné par l'authenticité et
+                la créativité que cela pouvait apporter. Ce qui m'a le plus
+                intéressé, c'est la liberté offerte par ce type de projet. On ne
+                dessine pas simplement des visualisations, on exprime ce que
+                l'on ressent et ce que la série pourrait nous faire ressentir,
+                et moi je n'ai que l'amour pour cette série.
               </p>
 
               <p>
-                En célébrant le 50e anniversaire de Delphine, je tiens à lui
+                En célébrant le 50e anniversaire de Delphine, j'aimerais lui
                 dédier ce projet. Son travail a eu un impact profond sur ma vie
                 et sur celle de nombreuses autres personnes qui ont été touchées
                 par la série "En sortant de l'école" et les poésies animées

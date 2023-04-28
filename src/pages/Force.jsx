@@ -29,22 +29,22 @@ const ForceWrapper = () => {
         </p>
         <ul className="custom-bullet">
           <li>
-            Les écoles d'animation: Représentées par des nœuds chatoyants, elles
-            scintillent au sein du réseau, éclairant les chemins de la
+            les écoles d'animation : représentées par des nœuds chatoyants,
+            elles scintillent au sein du réseau, éclairant les chemins de la
             créativité et de l'innovation.
           </li>
           <li>
-            Les films d'animation: Tels des satellites, ces nœuds plus petits
+            les films d'animation : tels des satellites, ces nœuds plus petits
             orbitent autour de leurs écoles respectives, témoignant de la
             richesse et de la diversité des œuvres de la série.
           </li>
           <li>
-            Les techniques artistiques: Les couleurs flamboyantes des petits
-            nœuds illustrent les différentes techniques d'animation utilisées
-            dans les films, illuminant la toile de leurs nuances variées.
+            Les couleurs : la couleur des petits nœuds illustrent la technique
+            principale utilisée dans le film, et les cercles plus grands,
+            scintillent de la couleur des écoles.
           </li>
         </ul>
-        Pour naviguer dans cet univers enchanteur :
+        Pour naviguer dans cette galaxie lointaine :
         <ol className="">
           <li className="">
             Survolez les nœuds avec votre souris pour révéler les mystères de
@@ -62,10 +62,10 @@ const ForceWrapper = () => {
           </li>
         </ol>
         <p>
-          Plongez dans ce voyage cosmique et découvrez les écoles et les
-          techniques qui ont sculpté le monde de cette série à travers les
-          années. Dans cette odyssée céleste, chaque étoile est une porte
-          ouverte sur l'infini des possibilités créatives et artistiques.
+          Dans ce voyage cosmique, vous découvrez les écoles et les techniques
+          qui ont sculpté le monde de la série à travers les années. Dans cette
+          odyssée céleste, chaque étoile est une porte ouverte sur l'infini des
+          possibilités créatives et artistiques.
         </p>
       </div>
     </div>

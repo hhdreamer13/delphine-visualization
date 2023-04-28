@@ -67,3 +67,27 @@ h3 {
   background-position: center;
   background-size: contain;
 }
+.brush-underline {
+  /* display: inline-block; */
+  position: relative;
+}
+
+.brush-underline span {
+  position: relative;
+  z-index: 1;
+}
+
+.brush-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -12px;
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/brush.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 200% 300%;
+  z-index: 0;
+  opacity: 0.7;
+}

@@ -61,10 +61,18 @@ const RadialAllWrapper = () => {
         <p>
           Dans cette visualisation, chaque segment du cercle représente un
           épisode, et sa couleur correspond à la technique d'animation utilisée.
-          Admirez les nuances vives et distinctes qui symbolisent les
-          différentes techniques et illustrent la richesse artistique de la
-          série.
         </p>
+        <ul className="custom-bullet">
+          <li>
+            <span>chaque segment :</span> un épisode
+          </li>
+          <li>
+            <span>couleurs :</span> les technique utilisé
+          </li>
+          <li>
+            <span>hauteur des segments :</span> nombre de mots du poème adapté
+          </li>
+        </ul>
         <p>Pour explorer "Le Grand Monde", suivez ces étapes :</p>
         <ol>
           <li>

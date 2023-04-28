@@ -22,22 +22,32 @@ const HeatmapWrapper = () => {
           Les Écoles et Techniques à travers les saisons
         </h3>
         <p>
-          Plongez dans un monde de créativité et de diversité en explorant la
-          Matrice d'Animation, une visualisation captivante qui met en lumière
-          les différentes écoles et techniques d'animation utilisées dans chaque
-          épisode des 10 saisons de la série "En sortant de l'école". Comme un
-          vitrail révélant un monde coloré et riche en détails, cette
-          représentation graphique vous invite à explorer l'univers créatif des
-          artistes derrière la série.
+          La Matrice, comme un vitrail révélant un monde coloré et riche en
+          détails, vous invite à explorer l'univers créatif des artistes
+          derrière la série. Une visualisation qui met en lumière les
+          différentes écoles d'animation où le réalisateur a été diplômé et
+          techniques d'animation utilisées dans chaque épisode des 10 saisons de
+          la série "En sortant de l'école".
         </p>
         <p>
           La Matrice est organisée en colonnes et lignes, où chaque colonne
           représente un épisode et chaque ligne représente une saison. Les cases
           colorées illustrent les écoles ou les techniques d'animation
-          employées, selon le mode de visualisation choisi. Pour explorer cette
-          visualisation, suivez ces étapes :
+          employées, selon le mode de visualisation choisi.
         </p>
-        <p>Voici comment naviguer dans cette visualisation fascinante :</p>
+        <ul className="custom-bullet">
+          <li>
+            <span>chaque colonne :</span> le numéro d'épisode
+          </li>
+          <li>
+            <span>chaque ligne :</span> le numéro de la saison
+          </li>
+          <li>
+            <span>les couleurs :</span> selon le button bascule, soit l'école
+            soit technique
+          </li>
+        </ul>
+        <p>Voici comment naviguer dans cette visualisation :</p>
         <ol>
           <li>
             Passez votre souris sur les cases pour afficher les détails de
@@ -55,11 +65,11 @@ const HeatmapWrapper = () => {
           <li>Cliquez à nouveau pour désélectionner.</li>
         </ol>
         <p>
-          La Matrice d'Animation offre une perspective unique sur la richesse et
-          la diversité des écoles et techniques d'animation qui ont contribué à
+          La Matrice offre une perspective unique sur la richesse et la
+          diversité des écoles et techniques d'animation qui ont contribué à
           donner vie à la série "En sortant de l'école". Prenez le temps
-          d'explorer cette visualisation et découvrez les trésors cachés et les
-          histoires qui se cachent derrière chaque case colorée.
+          d'explorer cette visualisation et découvrez les trésors cachés
+          derrière chaque case colorée.
         </p>
       </div>
     </div>

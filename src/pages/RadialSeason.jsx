@@ -69,35 +69,25 @@ const RadialSeasonWrapper = () => {
       <div className="prose text-justify text-lg">
         <h3 className="my-5 text-3xl">Un tour du monde saisonnier</h3>
         <p>
-          "Le Petit Monde" est une visualisation circulaire unique qui met en
-          lumière les différentes saisons de la série "En sortant de l'école".
-          En explorant cet univers artistique, les épisodes sont présentés selon
+          "Le Petit Monde" est une visualisation circulaire qui met en lumière
+          les différentes saisons de la série "En sortant de l'école". En
+          explorant cet univers artistique, les épisodes sont présentés selon
           les techniques d'animation et les poètes.
         </p>
         <p>
           Dans cette visualisation, les couleurs vives et variées illustrent les
           techniques d'animation utilisées dans chaque épisode, offrant un
-          spectacle visuel époustouflant :
+          spectacle visuel époustouflant.
         </p>
         <ul className="custom-bullet">
           <li>
-            Traditionnelle : l'art délicat de l'animation dessinée à la main
+            <span>chaque segment :</span> un épisode
           </li>
           <li>
-            Numérique : la modernité et la précision de l'animation assistée par
-            ordinateur
+            <span>couleurs :</span> les technique utilisé
           </li>
           <li>
-            Papiers découpés : l'ingéniosité de l'animation à partir d'éléments
-            de papier découpé
-          </li>
-          <li>
-            Volume : l'authenticité de l'animation en trois dimensions avec des
-            objets réels ou des maquettes
-          </li>
-          <li>
-            Variée : l'audace de la combinaison de différentes techniques
-            d'animation
+            <span>hauteur des segments :</span> nombre de mots du poème adapté
           </li>
         </ul>
         <p>
@@ -114,19 +104,14 @@ const RadialSeasonWrapper = () => {
             Admirez le cercle se transformer pour ne montrer que les épisodes de
             la saison choisie.
           </li>
-          <li>
-            Survolez un segment pour obtenir un aperçu de l'épisode, y compris
-            le nombre de mots et la technique d'animation employée.
-          </li>
+          <li>Survolez un segment pour obtenir un aperçu de l'épisode.</li>
         </ol>
         <p>
           Avec "Le Petit Monde", vous pourrez vous immerger dans la richesse des
           techniques d'animation et apprécier la manière dont elles sont
           utilisées pour donner vie aux œuvres de chaque poète. La variété des
           couleurs et des styles d'animation crée un tableau vivant et dynamique
-          qui célèbre l'art et la poésie. Laissez-vous envoûter par cette
-          expérience artistique unique et explorez les multiples facettes de
-          l'univers de la série "En sortant de l'école".
+          qui célèbre l'art et la poésie.
         </p>
       </div>
     </div>

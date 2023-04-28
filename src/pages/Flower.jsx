@@ -121,7 +121,7 @@ const FlowerWrapper = () => {
     <div className="mx-auto my-20 mb-40 flex w-full flex-col items-center justify-center">
       <div id="" className="prose w-full">
         <h2 className="mb-4 text-center text-3xl uppercase tracking-widest drop-shadow-md">
-          Les Fleures
+          Les Fleurs
         </h2>
       </div>
       <div className="flex w-full justify-center text-center">
@@ -149,8 +149,7 @@ const FlowerWrapper = () => {
           Poésie florale des techniques, poèmes et palettes
         </h3>
         <p>
-          Inspirée par le travail de Shirley Wu et son projet "Film Flowers",
-          cette visualisation présente un affichage floral unique pour
+          Cette visualisation présente un affichage floral unique pour
           représenter les poèmes adaptés en film d'animation. Chaque fleur
           symbolise un épisode, avec des pétales et des couleurs reflétant les
           techniques d'animation et les palettes de couleurs spécifiques de
@@ -158,11 +157,10 @@ const FlowerWrapper = () => {
         </p>
         <p className="text-slate-950 drop-shadow-md">Pétales</p>
         <p>
-          Chaque pétale représente une technique d'animation spécifique utilisée
-          dans l'épisode.La forme des pétales indique la technique utilisée. La
-          combinaison unique des pétales forme un motif de fleur distinct pour
-          chaque épisode, mettant en évidence la diversité des techniques
-          d'animation.
+          La forme de chaque pétale représente une technique d'animation
+          spécifique utilisée dans l'épisode. La combinaison unique des pétales
+          forme un motif de fleur distinct pour chaque épisode, mettant en
+          évidence la diversité des techniques d'animation.
         </p>
         <div id="flower-petal-container" className="flex gap-2">
           {flowerPetalPaths.map((petal, index) => (
@@ -255,12 +253,13 @@ const FlowerWrapper = () => {
           </li>
         </ol>
         <p>
-          En explorant les "Film Flowers", vous pouvez apprécier la richesse des
+          Inspirée par le projet de Shirley Wu (le livre "Data Sketches"), la
+          visualisation "Les Fleurs" vous aide à apprécier la richesse des
           techniques d'animation et comprendre comment elles sont réparties
           entre les épisodes pour chaque saison. Les couleurs vives et
-          distinctes des pétales et de l'arrière-plan facilitent
-          l'identification des techniques utilisées et rendent la visualisation
-          encore plus attrayante.
+          distinctes de l'arrière-plan facilitent l'identification des
+          techniques utilisées et rendent la visualisation encore plus
+          attrayante.
         </p>
       </div>
     </div>
