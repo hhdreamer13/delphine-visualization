@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="absolute bottom-0 w-full p-4">
-      <div className="flex items-center justify-center gap-4">
+      <div className="group flex items-center justify-center gap-4">
         <div className="relative">
           <svg
             version="1.0"
@@ -93,7 +93,7 @@ const Footer = () => {
             </g>
           </svg>
           <svg
-            className="absolute bottom-0 left-0 opacity-0 duration-1000 hover:opacity-100"
+            className="absolute bottom-0 left-0 opacity-0 duration-1000 group-hover:opacity-100"
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"
             width="50.000000pt"

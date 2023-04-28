@@ -166,101 +166,111 @@ const Home = () => {
           utilisent les données mentionnées précédemment pour révéler différents
           aspects de la série :
         </p>
-        <h3 className="mb-6">
-          <Link to="/ville/petite" className="group relative no-underline">
-            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300">
-              Ville (petite et grande) <span className="opacity-0">hid</span>
-            </span>{" "}
-            <img
-              className="absolute -left-1 -top-5 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
-              src="/brush2.png"
-              alt=""
-            />
-          </Link>
-        </h3>
-        <p>
-          Les épisodes de la série En Sortant de l'école sont représentés sous
-          forme urbaine (graphique en barres), où chaque bâtiment (barre)
-          correspond à un épisode. Les petites et grandes villes illustrent des
-          perspectives différentes sur la série, montrant divers niveaux de
-          détail.
-        </p>
-        <h3 className="mb-6">
-          <Link to="/monde/petit" className="group relative no-underline">
-            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300">
-              Monde (petit et grand) <span className="opacity-0">hi</span>
-            </span>{" "}
-            <img
-              className="absolute -left-1 -top-5 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
-              src="/brush2.png"
-              alt=""
-            />
-          </Link>
-        </h3>
-        <p>
-          Les épisodes sont présentés sous la forme d'un monde imaginaire
-          (graphique radial), où chaque élément correspond à un épisode de la
-          série. Les petits et grands mondes dépeignent un univers animé, dans
-          lequel chaque élément est associé à la série de manière unique.
-        </p>
-        <h3 className="mb-6">
-          <Link to="/matrice" className="group relative no-underline">
-            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300">
-              Matrice <span className="opacity-0">hi</span>
-            </span>{" "}
-            <img
-              className="absolute -left-1 -top-5 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
-              src="/brush2.png"
-              alt=""
-            />
-          </Link>
-        </h3>
-        <p>
-          Dans cette visualisation, une matrice de données (comme un heatmap)
-          est présentée, chaque cellule représentant un épisode de la série.
-          Cette visualisation met en lumière les liens entre les différents
-          épisodes, les écoles et les techniques, facilitant la navigation entre
-          les œuvres.
-        </p>
-        <h3 className="mb-6">
-          <Link to="/galaxie" className="group relative no-underline">
-            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300">
-              Galaxie <span className="opacity-0">hid</span>
-            </span>{" "}
-            <img
-              className="absolute -left-1 -top-5 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
-              src="/brush2.png"
-              alt=""
-            />
-          </Link>
-        </h3>
-        <p>
-          Les épisodes sont représentés sous forme d'étoiles dans une galaxie.
-          Chaque épisode scintille avec la couleur correspondant à la technique
-          d'animation employée, et vous invite à un voyage à travers les
-          différentes écoles. Dans cette représentation, il est possible
-          d'explorer les différentes techniques d'animation et les écoles en
-          interagissant avec les nœuds.
-        </p>
-        <h3 className="mb-6">
-          <Link to="/fleur" className="group relative no-underline">
-            <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-md duration-300">
-              Fleur <span className="opacity-0">hid</span>
-            </span>{" "}
-            <img
-              className="absolute -left-1 -top-5 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
-              src="/brush2.png"
-              alt=""
-            />
-          </Link>
-        </h3>
-        <p>
-          Admirez les épisodes sous la forme de fleurs aux pétales multicolores.
-          Chaque fleur représente un épisode, et ses pétales symbolisent les
-          techniques d'animation et les palettes de couleurs utilisées. En
-          survolant chaque fleur, découvrez le nom de l'épisode et du
-          réalisateur.
-        </p>
+        <div className="group">
+          <h3 className="mb-4">
+            <Link to="/ville/petite" className="relative no-underline">
+              <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300">
+                Ville (petite et grande) <span className="opacity-0">hid</span>
+              </span>{" "}
+              <img
+                className="absolute -left-1 -top-5 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
+                src="/brush2.png"
+                alt=""
+              />
+            </Link>
+          </h3>
+          <p>
+            Les épisodes de la série En Sortant de l'école sont représentés sous
+            forme urbaine (graphique en barres), où chaque bâtiment (barre)
+            correspond à un épisode. Les petites et grandes villes illustrent
+            des perspectives différentes sur la série, montrant divers niveaux
+            de détail.
+          </p>
+        </div>
+        <div className="group">
+          <h3 className="mb-4">
+            <Link to="/monde/petit" className="relative no-underline">
+              <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300">
+                Monde (petit et grand) <span className="opacity-0">hi</span>
+              </span>{" "}
+              <img
+                className="absolute -left-1 -top-5 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
+                src="/brush2.png"
+                alt=""
+              />
+            </Link>
+          </h3>
+          <p>
+            Les épisodes sont présentés sous la forme d'un monde imaginaire
+            (graphique radial), où chaque élément correspond à un épisode de la
+            série. Les petits et grands mondes dépeignent un univers animé, dans
+            lequel chaque élément est associé à la série de manière unique.
+          </p>
+        </div>
+        <div className="group">
+          <h3 className="mb-4">
+            <Link to="/matrice" className="relative no-underline">
+              <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300">
+                Matrice <span className="opacity-0">hi</span>
+              </span>{" "}
+              <img
+                className="absolute -left-1 -top-5 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
+                src="/brush2.png"
+                alt=""
+              />
+            </Link>
+          </h3>
+          <p>
+            Dans cette visualisation, une matrice de données (comme un heatmap)
+            est présentée, chaque cellule représentant un épisode de la série.
+            Cette visualisation met en lumière les liens entre les différents
+            épisodes, les écoles et les techniques, facilitant la navigation
+            entre les œuvres.
+          </p>
+        </div>
+        <div className="group">
+          <h3 className="mb-4">
+            <Link to="/galaxie" className="relative no-underline">
+              <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-sm duration-300">
+                Galaxie <span className="opacity-0">hi</span>
+              </span>{" "}
+              <img
+                className="absolute -left-1 -top-5 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
+                src="/brush2.png"
+                alt=""
+              />
+            </Link>
+          </h3>
+          <p>
+            Les épisodes sont représentés sous forme d'étoiles dans une galaxie.
+            Chaque épisode scintille avec la couleur correspondant à la
+            technique d'animation employée, et vous invite à un voyage à travers
+            les différentes écoles. Dans cette représentation, il est possible
+            d'explorer les différentes techniques d'animation et les écoles en
+            interagissant avec les nœuds.
+          </p>
+        </div>
+        <div className="group">
+          <h3 className="mb-4">
+            <Link to="/fleur" className="relative no-underline">
+              <span className="font-sousTitre text-2xl text-slate-950 drop-shadow-md duration-300">
+                Fleur <span className="opacity-0">hid</span>
+              </span>{" "}
+              <img
+                className="absolute -left-1 -top-5 inline h-4 w-80 opacity-100 grayscale duration-500 group-hover:grayscale-0"
+                src="/brush2.png"
+                alt=""
+              />
+            </Link>
+          </h3>
+          <p>
+            Admirez les épisodes sous la forme de fleurs aux pétales
+            multicolores. Chaque fleur représente un épisode, et ses pétales
+            symbolisent les techniques d'animation et les palettes de couleurs
+            utilisées. En survolant chaque fleur, découvrez le nom de l'épisode
+            et du réalisateur.
+          </p>
+        </div>
       </motion.div>
     </motion.div>
   );
