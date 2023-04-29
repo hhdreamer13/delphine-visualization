@@ -58,20 +58,22 @@ const TitleWordsRadialSeason = ({ data: filteredData }) => {
     -height / 2
   );
 
-  const throttledUpdateTooltip = throttle(updateTooltip, 1000);
+  // const throttledUpdateTooltip = throttle(updateTooltip, 1000);
 
   const handleMouseOver = useCallback(
     (event, d) => {
-      // d3.select(event.target).transition().duration(200);
-      // .style("scale", "0.97");
-      // .style("opacity", "0.9");
+      d3.select(event.target)
+        .transition()
+        .duration(200)
+        .style("scale", "0.97")
+        .style("opacity", "0.9");
       // .style("stroke-width", "2")
 
       tooltipRef.current.style.display = "inline-block";
 
-      throttledUpdateTooltip(event, d);
+      updateTooltip(event, d);
     },
-    [throttledUpdateTooltip]
+    [updateTooltip]
   );
 
   const handleMouseMove = useCallback(
@@ -82,9 +84,11 @@ const TitleWordsRadialSeason = ({ data: filteredData }) => {
   );
 
   const handleMouseLeave = useCallback(() => {
-    // d3.select(event.target).transition().duration(200);
-    // .style("scale", "1");
-    // .style("opacity", "1");
+    d3.select(event.target)
+      .transition()
+      .duration(200)
+      .style("scale", "1")
+      .style("opacity", "1");
 
     // .style("stroke", "none")
     // .style("stroke-width", "0");
