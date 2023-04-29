@@ -21,6 +21,7 @@ const TitleWordsRadialSeason = ({ data: filteredData }) => {
   const svgRef = useRef(null);
   const radialBarRef = useRef(null);
   const tooltipRef = useRef(null);
+  // eslint-disable-next-line no-unused-vars
   const [update, setUpdate] = useState(false);
 
   useEffect(() => {
