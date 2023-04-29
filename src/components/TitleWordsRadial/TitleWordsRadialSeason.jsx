@@ -1,4 +1,4 @@
-import { useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import * as d3 from "d3";
 import d3ColorExtractor from "../../utils/d3ColorExtractor";
 import drawTitleWordsRadialSeason from "./drawTitleWordsRadialSeason";
@@ -22,24 +22,37 @@ const TitleWordsRadialSeason = ({ data: filteredData }) => {
   const radialBarRef = useRef(null);
   const tooltipRef = useRef(null);
 
+  const [isFirstRender, setIsFirstRender] = useState(true);
+  useEffect(() => {
+    if (isFirstRender) {
+      setIsFirstRender(false);
+    }
+  }, [isFirstRender]);
+
   useEffect(
-    () =>
-      drawTitleWordsRadialSeason(
-        svgRef,
-        radialBarRef,
-        filteredData,
-        xScale,
-        yScale,
-        techniColor,
-        width,
-        height,
-        innerRadius,
-        handleMouseOver,
-        handleMouseMove,
-        handleMouseLeave
-      ),
+    () => {
+      const timeoutId = setTimeout(() => {
+        drawTitleWordsRadialSeason(
+          svgRef,
+          radialBarRef,
+          filteredData,
+          xScale,
+          yScale,
+          techniColor,
+          width,
+          height,
+          innerRadius,
+          handleMouseOver,
+          handleMouseMove,
+          handleMouseLeave
+        );
+      }, 500);
+      return () => clearTimeout(timeoutId);
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [
       filteredData,
+      isFirstRender,
       // handleMouseOver,
       // handleMouseMove,
       // handleMouseLeave,
