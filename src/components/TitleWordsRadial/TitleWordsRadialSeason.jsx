@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useEffect, useRef, useCallback } from "react";
 import * as d3 from "d3";
 import d3ColorExtractor from "../../utils/d3ColorExtractor";
 import drawTitleWordsRadialSeason from "./drawTitleWordsRadialSeason";
@@ -21,46 +21,6 @@ const TitleWordsRadialSeason = ({ data: filteredData }) => {
   const svgRef = useRef(null);
   const radialBarRef = useRef(null);
   const tooltipRef = useRef(null);
-
-  const [isFirstRender, setIsFirstRender] = useState(true);
-  useEffect(() => {
-    if (isFirstRender) {
-      setIsFirstRender(false);
-    }
-  }, [isFirstRender]);
-
-  useEffect(
-    () => {
-      const timeoutId = setTimeout(() => {
-        drawTitleWordsRadialSeason(
-          svgRef,
-          radialBarRef,
-          filteredData,
-          xScale,
-          yScale,
-          techniColor,
-          width,
-          height,
-          innerRadius,
-          handleMouseOver,
-          handleMouseMove,
-          handleMouseLeave
-        );
-      }, 500);
-      return () => clearTimeout(timeoutId);
-    },
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [
-      filteredData,
-      isFirstRender,
-      // handleMouseOver,
-      // handleMouseMove,
-      // handleMouseLeave,
-      // xScale,
-      // yScale,
-      // techniColor,
-    ]
-  );
 
   // Color array based on techniques
   const colorRange = d3ColorExtractor(d3.interpolateInferno, 5);
@@ -121,13 +81,41 @@ const TitleWordsRadialSeason = ({ data: filteredData }) => {
   const handleMouseLeave = useCallback(() => {
     d3.select(event.target).style("scale", "1");
     d3.select(event.target).style("opacity", "1");
-    tooltipRef.current.style.display = "none";
 
     // .style("stroke", "none")
     // .style("stroke-width", "0");
 
     // tooltipRef.current.style.opacity = 0;
+    tooltipRef.current.style.display = "none";
   }, []);
+
+  useEffect(
+    () =>
+      drawTitleWordsRadialSeason(
+        svgRef,
+        radialBarRef,
+        filteredData,
+        xScale,
+        yScale,
+        techniColor,
+        width,
+        height,
+        innerRadius,
+        handleMouseOver,
+        handleMouseMove,
+        handleMouseLeave
+      ),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [
+      tooltipRef,
+      handleMouseOver,
+      handleMouseMove,
+      handleMouseLeave,
+      xScale,
+      yScale,
+      techniColor,
+    ]
+  );
 
   return (
     <div className="flex">
