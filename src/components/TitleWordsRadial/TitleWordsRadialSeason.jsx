@@ -1,6 +1,5 @@
 import { useEffect, useRef, useCallback } from "react";
 import * as d3 from "d3";
-import { throttle } from "lodash";
 import d3ColorExtractor from "../../utils/d3ColorExtractor";
 import drawTitleWordsRadialSeason from "./drawTitleWordsRadialSeason";
 import radialTooltip from "./radialTooltip";
@@ -22,6 +21,33 @@ const TitleWordsRadialSeason = ({ data: filteredData }) => {
   const svgRef = useRef(null);
   const radialBarRef = useRef(null);
   const tooltipRef = useRef(null);
+
+  useEffect(
+    () =>
+      drawTitleWordsRadialSeason(
+        svgRef,
+        radialBarRef,
+        filteredData,
+        xScale,
+        yScale,
+        techniColor,
+        width,
+        height,
+        innerRadius,
+        handleMouseOver,
+        handleMouseMove,
+        handleMouseLeave
+      ),
+    [
+      filteredData,
+      // handleMouseOver,
+      // handleMouseMove,
+      // handleMouseLeave,
+      // xScale,
+      // yScale,
+      // techniColor,
+    ]
+  );
 
   // Color array based on techniques
   const colorRange = d3ColorExtractor(d3.interpolateInferno, 5);
@@ -62,14 +88,10 @@ const TitleWordsRadialSeason = ({ data: filteredData }) => {
 
   const handleMouseOver = useCallback(
     (event, d) => {
-      d3.select(event.target)
-        .transition()
-        .duration(200)
-        .style("scale", "0.97")
-        .style("opacity", "0.9");
-      // .style("stroke-width", "2")
-
       tooltipRef.current.style.display = "inline-block";
+      d3.select(event.target).style("scale", "0.97");
+      d3.select(event.target).style("opacity", "0.9");
+      // .style("stroke-width", "2")
 
       updateTooltip(event, d);
     },
@@ -84,45 +106,15 @@ const TitleWordsRadialSeason = ({ data: filteredData }) => {
   );
 
   const handleMouseLeave = useCallback(() => {
-    d3.select(event.target)
-      .transition()
-      .duration(200)
-      .style("scale", "1")
-      .style("opacity", "1");
+    d3.select(event.target).style("scale", "1");
+    d3.select(event.target).style("opacity", "1");
+    tooltipRef.current.style.display = "none";
 
     // .style("stroke", "none")
     // .style("stroke-width", "0");
 
     // tooltipRef.current.style.opacity = 0;
-    tooltipRef.current.style.display = "none";
   }, []);
-
-  useEffect(
-    () =>
-      drawTitleWordsRadialSeason(
-        svgRef,
-        radialBarRef,
-        filteredData,
-        xScale,
-        yScale,
-        techniColor,
-        width,
-        height,
-        innerRadius,
-        handleMouseOver,
-        handleMouseMove,
-        handleMouseLeave
-      ),
-    [
-      filteredData,
-      handleMouseOver,
-      handleMouseMove,
-      handleMouseLeave,
-      xScale,
-      yScale,
-      techniColor,
-    ]
-  );
 
   return (
     <div className="flex">
