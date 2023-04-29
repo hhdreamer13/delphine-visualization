@@ -1,4 +1,4 @@
-import { useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import * as d3 from "d3";
 import d3ColorExtractor from "../../utils/d3ColorExtractor";
 import drawTitleWordsRadialSeason from "./drawTitleWordsRadialSeason";
@@ -21,6 +21,12 @@ const TitleWordsRadialSeason = ({ data: filteredData }) => {
   const svgRef = useRef(null);
   const radialBarRef = useRef(null);
   const tooltipRef = useRef(null);
+  const [update, setUpdate] = useState(false);
+
+  useEffect(() => {
+    // Force an initial update
+    setUpdate((prevUpdate) => !prevUpdate);
+  }, []);
 
   // Color array based on techniques
   const colorRange = d3ColorExtractor(d3.interpolateInferno, 5);
@@ -105,12 +111,13 @@ const TitleWordsRadialSeason = ({ data: filteredData }) => {
         handleMouseMove,
         handleMouseLeave
       ),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
     [
       tooltipRef,
       handleMouseOver,
       handleMouseMove,
       handleMouseLeave,
+      filteredData,
       xScale,
       yScale,
       techniColor,
