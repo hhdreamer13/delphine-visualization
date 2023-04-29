@@ -117,7 +117,7 @@ const EpisodeWordsBarChart = ({ data, width }) => {
       </svg>
       <div
         ref={tooltipRef}
-        className="absolute w-40 whitespace-pre-line rounded-md border border-slate-900 bg-white p-1 text-xs opacity-0 shadow-lg"
+        className="absolute z-10 w-40 whitespace-pre-line rounded-md border border-slate-900 bg-white p-1 text-xs opacity-0 shadow-lg"
       ></div>
     </div>
   );
