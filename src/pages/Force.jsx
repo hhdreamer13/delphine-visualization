@@ -44,7 +44,7 @@ const ForceWrapper = () => {
             scintillent de la couleur des écoles.
           </li>
         </ul>
-        Pour naviguer dans cette galaxie lointaine :
+        <p>Pour naviguer dans cette galaxie lointaine :</p>
         <ol className="">
           <li className="">
             Survolez les nœuds avec votre souris pour révéler les mystères de

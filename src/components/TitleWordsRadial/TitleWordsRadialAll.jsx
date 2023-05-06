@@ -1,4 +1,4 @@
-import { useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import * as d3 from "d3";
 import { throttle } from "lodash";
 import d3ColorExtractor from "../../utils/d3ColorExtractor";
@@ -22,6 +22,14 @@ const TitleWordsRadialAll = ({ data }) => {
   const svgRef = useRef(null);
   const radialBarRef = useRef(null);
   const tooltipRef = useRef(null);
+
+  // eslint-disable-next-line no-unused-vars
+  const [update, setUpdate] = useState(false);
+
+  useEffect(() => {
+    // Force an initial update
+    setUpdate((prevUpdate) => !prevUpdate);
+  }, []);
 
   // Color array based on techniques
   const colorRange = d3ColorExtractor(d3.interpolateInferno, 5);
