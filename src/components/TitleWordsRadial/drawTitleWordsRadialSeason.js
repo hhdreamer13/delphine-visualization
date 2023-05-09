@@ -111,8 +111,9 @@ const drawTitleWordsRadialSeason = (
         .attr("alignment-baseline", "middle")
         .style("font-size", "15px")
         .attr("opacity", "1")
-        .attr("transform", `translate(${width / 2 + 10},${height / 2})`)
-        .text("Saison :");
+        .attr("transform", `translate(${width / 2 + 14},${height / 2})`)
+        .text("Saison :")
+        .style("font-family", "Delius");
     }
 
     // Dynamic center text (number)
@@ -125,14 +126,15 @@ const drawTitleWordsRadialSeason = (
         .transition()
         .duration(500)
         .attr("opacity", "0")
-        .attr("transform", `translate(${width / 2 + 15},${height / 2 + 20})`)
+        .attr("transform", `translate(${width / 2 + 20},${height / 2 + 20})`)
         .on("end", () => {
           dynamicCenterText
             .text(filteredData[0].season)
+            .style("font-family", "Delius")
             .transition()
             .duration(500)
             .attr("opacity", "1")
-            .attr("transform", `translate(${width / 2 + 15},${height / 2})`);
+            .attr("transform", `translate(${width / 2 + 20},${height / 2})`);
         });
     } else {
       d3.select(svgRef.current)
@@ -195,7 +197,8 @@ const drawTitleWordsRadialSeason = (
           textArc.centroid(d)[1]
         })`;
       })
-      .text((d) => `E ${d.episode}`);
+      .text((d) => `E ${d.episode}`)
+      .style("font-family", "Delius");
 
     // Re-calculate the center of each bar
     titlesGroup.selectAll("text").each(function (d) {
