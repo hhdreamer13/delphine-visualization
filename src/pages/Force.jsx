@@ -19,7 +19,7 @@ const ForceWrapper = () => {
       <div className="relative m-10">
         <SchoolForce data={data} />
         <div
-          className="absolute -bottom-10 right-[77px] hidden w-28 rotate-180 flex-col items-center justify-center p-0 hue-rotate-180 saturate-200 md:flex"
+          className="absolute -bottom-10 right-[77px] hidden w-28 rotate-180 flex-col items-center justify-center p-0 -hue-rotate-90 saturate-150 lg:flex"
           title="Les nœuds sont déplaçables"
         >
           <Lottie animationData={draggable} loop autoplay speed={0.1} />

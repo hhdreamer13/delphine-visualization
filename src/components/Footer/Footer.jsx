@@ -9,7 +9,7 @@ const Footer = () => {
               src="/pixel.png"
               alt="heart"
               title="d'amour"
-              className="h-7 w-7 grayscale transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:grayscale-0"
+              className="h-7 w-7 grayscale transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:grayscale-0 group-hover:saturate-150"
             />
           </span>
           par Hooman
