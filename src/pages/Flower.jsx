@@ -199,9 +199,18 @@ const FlowerWrapper = () => {
           Les couleurs derrière les fleurs
         </p>
         <p>
-          Chaque fleur est dessinée sur cinq cercles colorés qui représentent la
-          palette des couleurs du film. Les couleurs choisies ajoutent une
-          dimension intéressante à la visualisation.
+          Chaque fleur est soigneusement dessinée sur un ensemble de cinq
+          cercles colorés qui représentent la palette des couleurs spécifique du
+          film auquel elle est associée. Ces couleurs, apportent non seulement
+          une dimension esthétique à la visualisation, mais reflètent également
+          les choix artistiques et l'atmosphère qui caractérisent chaque film.
+          L'incorporation de ces palettes de couleurs permet d'apporter une
+          dimension supplémentaire à la compréhension du projet, en mettant en
+          lumière les nuances visuelles uniques qui distinguent les films les
+          uns des autres et leur confèrent une identité propre. Ainsi, en plus
+          de la diversité des formes de pétales représentant les techniques
+          d'animation, les palettes de couleurs contribuent également à enrichir
+          la représentation visuelle et à mieux comprendre l'âme de chaque film.
         </p>
         <div id="color-palette-circles" className="flex">
           {filmExample.palette.map((color, index) => (

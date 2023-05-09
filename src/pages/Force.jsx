@@ -2,6 +2,8 @@
 import { useEffect } from "react";
 import SchoolForce from "../components/SchoolForce/SchoolForce";
 import data from "../utils/poanimaDataset.json";
+import Lottie from "lottie-react";
+import draggable from "../assets/91007-pinview.json";
 
 const ForceWrapper = () => {
   useEffect(() => {
@@ -14,8 +16,15 @@ const ForceWrapper = () => {
           La galaxie
         </h2>
       </div>
-      <div className="m-10">
+      <div className="relative m-10">
         <SchoolForce data={data} />
+        <div
+          className="absolute -bottom-10 right-[77px] flex w-28 rotate-180 flex-col items-center justify-center p-0 hue-rotate-180 saturate-200"
+          title="Les nœuds sont déplaçables"
+        >
+          <Lottie animationData={draggable} loop autoplay speed={0.1} />
+          {/* <p className="animate-pulse">déplaçable</p> */}
+        </div>
       </div>
       <div className="prose -ml-16 text-justify text-lg">
         <h3 className="my-5 text-3xl">
