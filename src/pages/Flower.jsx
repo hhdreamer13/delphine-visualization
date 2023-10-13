@@ -263,13 +263,16 @@ const FlowerWrapper = () => {
           </li>
         </ol>
         <p>
-          Inspirée par le projet de Shirley Wu (le livre "Data Sketches"), la
-          visualisation "Les Fleurs" vous aide à apprécier la richesse des
-          techniques d'animation et comprendre comment elles sont réparties
-          entre les épisodes pour chaque saison. Les couleurs vives et
-          distinctes de l'arrière-plan facilitent l'identification des
-          techniques utilisées et rendent la visualisation encore plus
-          attrayante.
+          Inspirée par le projet "Film Flowers" de Shirley Wu (le livre "
+          <a href="https://www.datasketch.es/" rel="noreferrer" target="_blank">
+            Data Sketches
+          </a>
+          " par Nadieh Bremer et Shirley Wu ), la visualisation "Les Fleurs"
+          vous aide à apprécier la richesse des techniques d'animation et
+          comprendre comment elles sont réparties entre les épisodes pour chaque
+          saison. Les couleurs vives et distinctes de l'arrière-plan facilitent
+          l'identification des techniques utilisées et rendent la visualisation
+          encore plus attrayante.
         </p>
       </div>
     </div>
