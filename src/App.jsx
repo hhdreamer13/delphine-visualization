@@ -29,8 +29,10 @@ function App() {
           <p className="w-60 text-center">
             Les visualisations du site sont mieux adaptées aux ordinateurs
             plutôt qu'aux téléphones. <br />
-            (The visualizations on the site are better suited for computers
-            rather than phones.)
+            <span className="italic text-slate-400">
+              (The visualizations on the site are better suited for computers
+              rather than phones.)
+            </span>
           </p>
 
           <div className="w-20">
@@ -46,7 +48,9 @@ function App() {
               Mais il est possible que vous puissiez avoir quelques aperçus en
               mode paysage.
               <br />
-              (But you might be able to get some previews in landscape mode.)
+              <span className="italic text-slate-400">
+                (But you might be able to get some previews in landscape mode.)
+              </span>
             </p>
           </div>
         </div>
