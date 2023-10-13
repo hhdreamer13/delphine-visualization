@@ -28,8 +28,11 @@ function App() {
           <h2 className="mb-14 text-2xl uppercase">PoAnimaViz</h2>
           <p className="w-60 text-center">
             Les visualisations du site sont mieux adaptées aux ordinateurs
-            plutôt qu'aux téléphones.
+            plutôt qu'aux téléphones. <br />
+            (The visualizations on the site are better suited for computers
+            rather than phones.)
           </p>
+
           <div className="w-20">
             <Lottie
               animationData={responsiveSwitch}
@@ -42,6 +45,8 @@ function App() {
             <p className="w-60 text-center">
               Mais il est possible que vous puissiez avoir quelques aperçus en
               mode paysage.
+              <br />
+              (But you might be able to get some previews in landscape mode.)
             </p>
           </div>
         </div>
