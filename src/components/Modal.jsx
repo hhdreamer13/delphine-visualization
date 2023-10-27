@@ -53,79 +53,44 @@ const Modal = ({ showModal, setShowModal }) => {
 
             <div className="prose mx-auto text-justify">
               <h3 className="mb-6 text-center text-2xl">
-                Dédié à Delphine Maury
+                À Afsaneh, mon étoile éternelle,
               </h3>
               <p>
-                En 2015, lors du festival bisannuel de cinéma d'animation à
-                Téhéran en Iran, j'ai découvert pour la première fois la série
-                "En sortant de l'école". La poésie et la littérature m'ont
-                toujours passionné, et notamment la poésie française. Depuis
-                plus de 15 ans, j'ai trois petits livres bilingues (français et
-                persan) des poèmes de Jacques Prévert, Robert Desnos et Paul
-                Verlaine qui m'accompagnent.
+                Dans ce monde virtuel où tout est éphémère, je tenais à créer un
+                espace immuable, une cachette secrète pour abriter mon amour
+                inébranlable pour toi. Chaque ligne de code, chaque pixel sur
+                cet écran, est une brique dans le sanctuaire que j'ai édifié en
+                ton honneur. Comme le poète trouve sa muse dans l'éclat d'un
+                sourire, j'ai trouvé la mienne en toi. Ton nom, Afsaneh, est
+                gravé non seulement dans les mémoires de cet espace digital mais
+                aussi, et surtout, au plus profond de mon être. Il est
+                l'ingrédient secret dans chaque projet, le souffle qui anime
+                chaque œuvre.
               </p>
               <p>
-                Ces poèmes ont été mes compagnons dans les moments de joie, de
-                tristesse, d'amour et de stress. Lorsque j'ai vu ces poèmes
-                animés à l'écran, avec leurs couleurs vives et leurs mots
-                prononcés par des comédiens, j'ai retrouvé une nouvelle vie,
-                celle que j'avais perdue dans le quotidien. En réalité, j'avais
-                perdu mes rêves, et ce poème de Langston Hughes les représente
-                si bien :
+                Ton influence est telle que même en ton absence, tu es partout.
+                Dans chaque croquis, dans chaque ligne de texte, il y a un écho
+                de toi, une trace indélébile de ce que nous avons partagé. Et
+                dans ces moments où la solitude me pèse, où l'écran devant moi
+                semble trop grand et le monde trop petit, je me réfugie dans cet
+                espace secret. Ici, tu es à jamais à mes côtés. Ce message
+                restera caché, connu de moi seul, jusqu'au jour où le destin
+                décidera peut-être de révéler son existence. Mais qu'il soit lu
+                ou non, sache que mon amour pour toi demeure éternel, comme une
+                étoile qui, même disparue, continue de briller dans la nuit. Et
+                pour sceller ces mots, je t'offre ce poème de Robert Desnos, un
+                écho de mes propres rêves :
               </p>
               <blockquote className="mt-2 font-body italic">
-                Rêves
+                J'ai tant rêvé de toi que tu perds ta réalité.
                 <br />
+                Est-il encore temps d'atteindre ce corps vivant
                 <br />
-                Accrochez-vous aux rêves
+                Et de baiser sur cette bouche la naissance
                 <br />
-                Car si les rêves meurent
-                <br />
-                La vie est un oiseau aux ailes brisées
-                <br />
-                Qui ne peut voler.
-                <br />
-                <br />
-                Accrochez-vous aux rêves
-                <br />
-                Car lorsque les rêves s'en vont
-                <br />
-                La vie est un champ stérile
-                <br />
-                Paralysée par la neige.
-                <br />
-                <br />
-                <span className="">- Langston Hughes</span>
+                De la voix qui m'est chère ?
               </blockquote>
-
-              <p>
-                C'est dans cet esprit que la série "En sortant de l'école" prend
-                tout son sens. La série ravive nos rêves, et je sais que je ne
-                suis pas le seul à être touché par ces poésies animées et leur
-                impact émotionnel.
-              </p>
-              <p>
-                Lorsque j'ai commencé à travailler sur ce projet de
-                visualisation de données, j'ai été fasciné par l'authenticité et
-                la créativité que cela pouvait apporter. Ce qui m'a le plus
-                intéressé, c'est la liberté offerte par ce type de projet. On ne
-                dessine pas simplement des visualisations, on exprime ce que
-                l'on ressent et ce que la série pourrait nous faire ressentir,
-                et pour ma part, je ne ressens que de l'amour pour cette série.
-              </p>
-              <p>
-                Delphine est une personne d'une gentillesse immense et, sans
-                entrer dans les détails de ses innombrables gestes généreux,
-                incroyablement inspirante. Son travail a eu un impact profond
-                sur ma vie et sur celle de nombreuses autres personnes qui ont
-                été touchées par la série "En sortant de l'école" et les poésies
-                animées qu'elle a produites. En célébrant le 50e anniversaire de
-                Delphine, j'aimerais lui dédier le projet "PoAnimaViz".
-              </p>
-              <p>
-                Merci, Delphine, pour tout ce que tu as fait et joyeux
-                anniversaire !
-              </p>
+              <p>Avec tout mon amour, toujours et à jamais,</p>
               <div className="flex justify-end">
                 <h3>Hooman</h3>
               </div>
