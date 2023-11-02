@@ -1,7 +1,16 @@
-[
-  { "name": "Traditionnelle", "color": "#1b0c41" },
-  { "name": "Numérique", "color": "#721a6e" },
-  { "name": "Papiers découpés", "color": "#c63d4d" },
-  { "name": "Volume", "color": "#f8890c" },
-  { "name": "Variée", "color": "#f1ef75" }
-]
+{
+  "fr": [
+    { "name": "Traditionnelle", "color": "#1b0c41" },
+    { "name": "Numérique", "color": "#721a6e" },
+    { "name": "Papiers découpés", "color": "#c63d4d" },
+    { "name": "Volume", "color": "#f8890c" },
+    { "name": "Variée", "color": "#f1ef75" }
+  ],
+  "en": [
+    { "name": "Traditional", "color": "#1b0c41" },
+    { "name": "Digital", "color": "#721a6e" },
+    { "name": "Cut-out", "color": "#c63d4d" },
+    { "name": "Stop Motion", "color": "#f8890c" },
+    { "name": "Mixed", "color": "#f1ef75" }
+  ]
+}

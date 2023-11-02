@@ -72,7 +72,7 @@ const calculateGridPos = (i, layout) => {
 
 // The component starts from here
 
-const LegendFlower = ({ data }) => {
+const LegendFlower = ({ data, language }) => {
   const svgRef = useRef(null);
 
   // eslint-disable-next-line no-unused-vars
@@ -146,7 +146,9 @@ const LegendFlower = ({ data }) => {
               .style("font-size", ".7em")
               .style("font-family", "Delius")
               .style("fill", "black")
-              .text((d) => `${d.words} mots`);
+              .text(
+                (d) => `${d.words} ${language === "fr" ? "mots" : "words"}`
+              );
 
             text
               .append("tspan")
@@ -154,7 +156,10 @@ const LegendFlower = ({ data }) => {
               .attr("y", 100)
               // .attr("dy", "1.5rem")
               .style("text-anchor", "middle")
-              .text((d) => `${d.numPetals} pétales`);
+              .text(
+                (d) =>
+                  `${d.numPetals} ${language === "fr" ? "pétales" : "petals"}`
+              );
 
             return flower;
           },

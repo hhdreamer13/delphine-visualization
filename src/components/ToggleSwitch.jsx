@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ToggleButton = ({ initialValue = false, onChange }) => {
+const ToggleButton = ({ initialValue = false, onChange, language }) => {
   const [isChecked, setIsChecked] = useState(initialValue);
 
   const handleClick = (value) => {
@@ -20,7 +20,7 @@ const ToggleButton = ({ initialValue = false, onChange }) => {
             : "bg-slate-900 text-white"
         }`}
       >
-        Écoles
+        {language === "fr" ? "Écoles" : "Schools"}
       </button>
       <button
         onClick={() => handleClick(true)}

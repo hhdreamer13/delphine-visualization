@@ -11,7 +11,7 @@ const width = 600;
 const height = 450;
 const margin = { top: 5, right: 5, bottom: 20, left: 35 };
 
-const SeasonEpisodeHeatmaps = ({ data }) => {
+const SeasonEpisodeHeatmaps = ({ data, language }) => {
   // References
   const svgRef = useRef(null);
   const xAxisRef = useRef(null);
@@ -65,7 +65,7 @@ const SeasonEpisodeHeatmaps = ({ data }) => {
     return {
       name: technique,
       count: techniquesCounts[technique] || 0,
-      color: technicolor.find((t) => t.name === technique).color,
+      color: technicolor["fr"].find((t) => t.name === technique).color,
     };
   });
 
@@ -227,6 +227,7 @@ const SeasonEpisodeHeatmaps = ({ data }) => {
     <div>
       <div className="flex justify-end">
         <ToggleSwitch
+          language={language}
           checked={chartVar === "school"}
           onChange={() => {
             if (chartVar === "school") {
@@ -265,7 +266,8 @@ const SeasonEpisodeHeatmaps = ({ data }) => {
             }
           >
             <LegendInteractive
-              obj={techniquesObj}
+              obj={technicolor[language]}
+              objLabel="techniques"
               onLegendClick={handleTechniqueLegendClick}
               selected={selectedTechnique}
             />

@@ -8,7 +8,7 @@ import technicolor from "../../utils/techniqueColors.json";
 const width = 600;
 const height = 450;
 
-const SchoolForce = ({ data }) => {
+const SchoolForce = ({ data, language }) => {
   const ref = useRef(null);
 
   const schools = _.map(_.uniqBy(data, "school"), (school, i) => ({
@@ -37,7 +37,7 @@ const SchoolForce = ({ data }) => {
     return {
       name: technique,
       count: techniquesCounts[technique] || 0,
-      color: technicolor.find((t) => t.name === technique).color,
+      color: technicolor["fr"].find((t) => t.name === technique).color,
     };
   });
 
@@ -74,7 +74,7 @@ const SchoolForce = ({ data }) => {
       const filmNode = data.find((film) => `data-${film.id}` === d.id);
       if (filmNode) {
         const technique = filmNode.technique; // Assuming the technique is stored in the 'technique' property of each film object
-        return technicolor.find((tech) => tech.name === technique).color;
+        return technicolor["fr"].find((tech) => tech.name === technique).color;
       }
     }
   };
@@ -256,6 +256,7 @@ Nombre de films: ${filmCount}`;
     }
 
     ref.current.appendChild(svg.node());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
 
   return (
@@ -267,7 +268,7 @@ Nombre de films: ${filmCount}`;
         </div>
       </div>
       <div className="mt-8 flex">
-        {techniquesObj.map((item) => (
+        {technicolor[language].map((item) => (
           <div key={item.name} className="mx-2 font-body drop-shadow-md">
             <span
               className={"mr-1 inline-block h-3 w-3 rounded-xl"}

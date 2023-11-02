@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion, AnimatePresence } from "framer-motion";
 import { VscClose } from "react-icons/vsc";
+import { modalTranslations as translations } from "../translations/modalPage";
+import { useLanguageContext } from "../utils/languageContext";
 
 const backdropAnimations = {
   hidden: { opacity: 0 },
@@ -30,6 +32,9 @@ const modalAnimations = {
 };
 
 const Modal = ({ showModal, setShowModal }) => {
+  const { language } = useLanguageContext();
+  const t = translations[language];
+
   return (
     <AnimatePresence mode="wait">
       {showModal && (
@@ -52,45 +57,13 @@ const Modal = ({ showModal, setShowModal }) => {
             </button>
 
             <div className="prose mx-auto text-justify">
-              <h3 className="mb-6 text-center text-2xl">
-                À Afsaneh, mon étoile éternelle,
-              </h3>
-              <p>
-                Dans ce monde virtuel où tout est éphémère, je tenais à créer un
-                espace immuable, une cachette secrète pour abriter mon amour
-                inébranlable pour toi. Chaque ligne de code, chaque pixel sur
-                cet écran, est une brique dans le sanctuaire que j'ai édifié en
-                ton honneur. Comme le poète trouve sa muse dans l'éclat d'un
-                sourire, j'ai trouvé la mienne en toi. Ton nom, Afsaneh, est
-                gravé non seulement dans les mémoires de cet espace digital mais
-                aussi, et surtout, au plus profond de mon être. Il est
-                l'ingrédient secret dans chaque projet, le souffle qui anime
-                chaque œuvre.
-              </p>
-              <p>
-                Ton influence est telle que même en ton absence, tu es partout.
-                Dans chaque croquis, dans chaque ligne de texte, il y a un écho
-                de toi, une trace indélébile de ce que nous avons partagé. Et
-                dans ces moments où la solitude me pèse, où l'écran devant moi
-                semble trop grand et le monde trop petit, je me réfugie dans cet
-                espace secret. Ici, tu es à jamais à mes côtés. Ce message
-                restera caché, connu de moi seul, jusqu'au jour où le destin
-                décidera peut-être de révéler son existence. Mais qu'il soit lu
-                ou non, sache que mon amour pour toi demeure éternel, comme une
-                étoile qui, même disparue, continue de briller dans la nuit. Et
-                pour sceller ces mots, je t'offre ce poème de Robert Desnos, un
-                écho de mes propres rêves :
-              </p>
-              <blockquote className="mt-2 font-body italic">
-                J'ai tant rêvé de toi que tu perds ta réalité.
-                <br />
-                Est-il encore temps d'atteindre ce corps vivant
-                <br />
-                Et de baiser sur cette bouche la naissance
-                <br />
-                De la voix qui m'est chère ?
+              <h3 className="mb-6 text-center text-2xl">{t.title}</h3>
+              <p>{t.paragraph1}</p>
+              <p>{t.paragraph2}</p>
+              <blockquote className="mt-2 whitespace-pre font-body italic">
+                {t.quote}
               </blockquote>
-              <p>Avec tout mon amour, toujours et à jamais,</p>
+              <p>{t.ending}</p>
               <div className="flex justify-end">
                 <h3>Hooman</h3>
               </div>

@@ -4,6 +4,8 @@ import FlowerAnimation from "../components/FlowerAnimation/FlowerAnimation";
 import data from "../utils/poanimaDataset.json";
 import flowerPetalPaths from "../utils/flowerPetalPaths.json";
 import LegendFlower from "../components/FlowerAnimation/LegendFlower";
+import { flowerTranslations as translations } from "../translations/flowerPage";
+import { useLanguageContext } from "../utils/languageContext";
 
 const seasonsObj = [
   { number: 1, name: "1. Prévert", color: "#FEC89A" }, // pastel apricot
@@ -101,6 +103,9 @@ const filmExample = {
 };
 
 const FlowerWrapper = () => {
+  const { language } = useLanguageContext();
+  const t = translations[language];
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -121,12 +126,12 @@ const FlowerWrapper = () => {
     <div className="mx-auto my-20 mb-40 flex w-full flex-col items-center justify-center">
       <div id="" className="prose w-full">
         <h2 className="mb-4 text-center text-3xl uppercase tracking-widest drop-shadow-md">
-          Les Fleurs
+          {t.title}
         </h2>
       </div>
       <div className="flex w-full justify-center text-center">
         <label htmlFor="season-select" className="py-1">
-          <p>Choisissez une saison :</p>
+          <p>{t.selectSeason}</p>
         </label>
         <select
           id="season-select"
@@ -145,23 +150,10 @@ const FlowerWrapper = () => {
         <FlowerAnimation data={filteredData} />
       </div>
       <div className="prose text-justify text-lg">
-        <h3 className="mb-5 text-3xl">
-          Poésie florale des techniques, mots et palettes
-        </h3>
-        <p>
-          Cette visualisation présente un affichage floral unique pour
-          représenter les poèmes adaptés en film d'animation. Chaque fleur
-          symbolise un épisode, avec des pétales et des couleurs reflétant les
-          techniques d'animation et les palettes de couleurs spécifiques de
-          chaque film.
-        </p>
-        <p className="text-slate-950 drop-shadow-md">Pétales</p>
-        <p>
-          La forme de chaque pétale représente une technique d'animation
-          spécifique utilisée dans l'épisode. La combinaison unique des pétales
-          forme un motif de fleur distinct pour chaque épisode, mettant en
-          évidence la diversité des techniques d'animation.
-        </p>
+        <h3 className="mb-5 text-3xl">{t.subtitle}</h3>
+        <p>{t.introParagraph}</p>
+        <p className="text-slate-950 drop-shadow-md">{t.petalSectionTitle}</p>
+        <p>{t.petalParagraph}</p>
         <div id="flower-petal-container" className="flex gap-2">
           {flowerPetalPaths.map((petal, index) => (
             <div
@@ -180,38 +172,19 @@ const FlowerWrapper = () => {
                   <path d={petal.path} />
                 </g>
               </svg>
-              <p className="mt-4">{petal.technique}</p>
+              <p className="mt-4">{petal.technique[language]}</p>
             </div>
           ))}
         </div>
-        <p className="text-slate-950 drop-shadow-md">Nombre de pétales</p>
-        <p>
-          Le nombre total de pétales dans chaque fleur reflète le nombre de mots
-          des poèmes adaptés. Plus il y a de pétales, plus le poème est long et
-          riche en contenu. Le nombre de pétales est calculé à l'aide d'une
-          échelle quantitative basée sur l'étendue du nombre de mots dans les
-          poèmes, avec une plage allant de 5 à 13 pétales.
-        </p>
+        <p className="text-slate-950 drop-shadow-md">{t.petalCountTitle}</p>
+        <p>{t.petalCountParagraph}</p>
         <div className="-ml-20 h-48">
-          <LegendFlower data={legendData} />
+          <LegendFlower data={legendData} language={language} />
         </div>
         <p className="mt-14 text-slate-950 drop-shadow-md">
-          Les couleurs derrière les fleurs
+          {t.colorsBehindFlowers}
         </p>
-        <p>
-          Chaque fleur est soigneusement dessinée sur un ensemble de cinq
-          cercles colorés qui représentent la palette des couleurs spécifique du
-          film auquel elle est associée. Ces couleurs, apportent non seulement
-          une dimension esthétique à la visualisation, mais reflètent également
-          les choix artistiques et l'atmosphère qui caractérisent chaque film.
-          L'incorporation de ces palettes de couleurs permet d'apporter une
-          dimension supplémentaire à la compréhension du projet, en mettant en
-          lumière les nuances visuelles uniques qui distinguent les films les
-          uns des autres et leur confèrent une identité propre. Ainsi, en plus
-          de la diversité des formes de pétales représentant les techniques
-          d'animation, les palettes de couleurs contribuent également à enrichir
-          la représentation visuelle et à mieux comprendre l'âme de chaque film.
-        </p>
+        <p>{t.colorPaletteText}</p>
         <div id="color-palette-circles" className="flex">
           {filmExample.palette.map((color, index) => (
             <div key={index} className="h-32 w-32 text-center text-sm">
@@ -236,44 +209,19 @@ const FlowerWrapper = () => {
                   filter={`url(#blurAndSaturation-${index})`}
                 />
               </svg>
-              <p className="mt-0">Couleur {index + 1}</p>
+              <p className="mt-0">
+                {t.colorLabel} {index + 1}
+              </p>
             </div>
           ))}
         </div>
-        <p className="mt-20">Pour explorer ce jardin enchanteur :</p>
+        <p className="mt-20">{t.exploreGarden}</p>
         <ol>
-          <li>
-            Utilisez le menu déroulant "Choisissez une saison" situé au-dessus
-            de la visualisation. Les fleurs affichées représenteront uniquement
-            les épisodes de la saison sélectionnée.
-          </li>
-
-          <li>
-            Observez les fleurs et leurs pétales pour apprécier la variété des
-            techniques d'animation utilisées dans chaque épisode. Les teintes
-            chatoyantes qui entourent chaque fleur illustrent les palettes de
-            couleurs utilisées dans les épisodes.
-          </li>
-          <li>
-            En survolant chaque fleur avec la souris, vous verrez apparaître une
-            fenêtre contextuelle qui dévoile le nom de l'épisode ainsi que le
-            nom du réalisateur ou de la réalisatrice. Vous pourrez ainsi mieux
-            connaître les artistes talentueux à l'origine de ces œuvres d'art
-            animées.
-          </li>
+          {t.steps.map((step, i) => {
+            return <li key={i}>{step}</li>;
+          })}
         </ol>
-        <p>
-          Inspirée par le projet "Film Flowers" de Shirley Wu (le livre "
-          <a href="https://www.datasketch.es/" rel="noreferrer" target="_blank">
-            Data Sketches
-          </a>
-          " par Nadieh Bremer et Shirley Wu ), la visualisation "Les Fleurs"
-          vous aide à apprécier la richesse des techniques d'animation et
-          comprendre comment elles sont réparties entre les épisodes pour chaque
-          saison. Les couleurs vives et distinctes de l'arrière-plan facilitent
-          l'identification des techniques utilisées et rendent la visualisation
-          encore plus attrayante.
-        </p>
+        <p>{t.inspiredBy}</p>
       </div>
     </div>
   );

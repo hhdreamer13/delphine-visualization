@@ -5,21 +5,26 @@ import dataset from "../utils/poanimaDataset.json";
 import TitleWordsRadialAll from "../components/TitleWordsRadial/TitleWordsRadialAll";
 import Legend from "../components/Legend";
 import techniqueColors from "../utils/techniqueColors.json";
+import { radialAllTranslations as translations } from "../translations/radialPages";
+import { useLanguageContext } from "../utils/languageContext";
 
 const RadialAllWrapper = () => {
   const [data, setData] = useState(dataset);
+
+  const { language } = useLanguageContext();
+  const t = translations[language];
 
   return (
     <div className="mx-auto my-20 mb-40 flex w-full flex-col items-center justify-center">
       <div id="description" className="prose mb-10 w-full">
         <h2 className="text-center text-3xl uppercase tracking-widest drop-shadow-md">
-          Le Grand Monde
+          {t.title}
         </h2>
       </div>
 
       <div className="mx-auto flex w-full justify-center">
         <div className="mt-20 hidden w-40 lg:block">
-          <Legend obj={techniqueColors} />
+          <Legend obj={techniqueColors[language]} />
         </div>
 
         <div id="chart-container">
@@ -32,72 +37,38 @@ const RadialAllWrapper = () => {
             onClick={() => setData(_.sortBy(data, (d) => d.words))}
             className="btn-outline btn-sm btn my-2 w-28 font-normal normal-case"
           >
-            Croissant
+            {t.buttons.ascending}
           </button>
           <button
             onClick={() => setData(dataset)}
             className="btn-secondary btn-sm btn my-2 w-28 font-normal normal-case"
           >
-            Réinitialiser
+            {t.buttons.reset}
           </button>
           <button
             onClick={() => setData(_.sortBy(data, (d) => d.words).reverse())}
             className="btn-outline btn-sm btn my-2 w-28 font-normal normal-case"
           >
-            Décroissant
+            {t.buttons.descending}
           </button>
         </div>
       </div>
       <div className="prose text-justify text-lg">
-        <h3 className="my-5 text-3xl">Un tour du monde des épisodes</h3>
-        <p>
-          "Le Grand Monde" est une visualisation circulaire qui présente les
-          épisodes de la série "En sortant de l'école" en mettant l'accent sur
-          les techniques d'animation. Ce monde coloré et dynamique vous offre un
-          aperçu étonnant des méthodes artistiques utilisées dans chaque
-          épisode, vous permettant d'apprécier leur diversité et leur
-          inventivité.
-        </p>
-        <p>
-          Dans cette visualisation, chaque segment du cercle représente un
-          épisode, et sa couleur correspond à la technique d'animation utilisée.
-        </p>
+        <h3 className="my-5 text-3xl">{t.subtitle}</h3>
+        <p>{t.paragraph1}</p>
+        <p>{t.paragraph2}</p>
         <ul className="custom-bullet">
-          <li>
-            <span>chaque segment :</span> un épisode
-          </li>
-          <li>
-            <span>couleurs :</span> les technique utilisé
-          </li>
-          <li>
-            <span>hauteur des segments :</span> nombre de mots du poème adapté
-          </li>
+          {t.bullets.map((bullet, i) => {
+            return <li key={i}>{bullet}</li>;
+          })}
         </ul>
-        <p>Pour explorer "Le Grand Monde", suivez ces étapes :</p>
+        <p>{t.stepsTitle}</p>
         <ol>
-          <li>
-            Survolez un segment avec votre curseur pour obtenir des informations
-            détaillées sur l'épisode.
-          </li>
-          <li>
-            Utilisez les boutons en haut à droite pour trier les épisodes par
-            nombre de mots croissant, décroissant ou pour réinitialiser
-            l'affichage.
-          </li>
-          <li>
-            Consultez la légende à gauche pour identifier les techniques
-            d'animation représentées par les différentes couleurs.
-          </li>
+          {t.steps.map((step, i) => {
+            return <li key={i}>{step}</li>;
+          })}
         </ol>
-        <p>
-          En parcourant "Le Grand Monde", vous pourrez apprécier la variété des
-          techniques d'animation et comprendre comment elles sont réparties
-          entre les épisodes. Les couleurs vives et distinctes facilitent
-          l'identification des techniques utilisées et rendent la visualisation
-          encore plus attrayante. Embarquez pour un voyage fascinant à travers
-          l'art et l'animation et découvrez les trésors cachés de la série "En
-          sortant de l'école".
-        </p>
+        <p>{t.paragraph3}</p>
       </div>
     </div>
   );

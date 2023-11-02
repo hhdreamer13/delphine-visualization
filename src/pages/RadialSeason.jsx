@@ -5,6 +5,8 @@ import TitleWordsRadialSeason from "../components/TitleWordsRadial/TitleWordsRad
 import techniqueObj from "../utils/techniqueColors.json";
 import Legend from "../components/Legend";
 import LegendInteractiveSeason from "../components/LegendInteractiveSeason";
+import { radialSeasonTranslations as translations } from "../translations/radialPages";
+import { useLanguageContext } from "../utils/languageContext";
 
 const seasonsObj = [
   { number: 1, name: "1. Prévert", color: "#FEC89A" }, // pastel apricot
@@ -20,6 +22,8 @@ const seasonsObj = [
 ];
 
 const RadialSeasonWrapper = () => {
+  const { language } = useLanguageContext();
+  const t = translations[language];
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -47,18 +51,20 @@ const RadialSeasonWrapper = () => {
     <div className="mx-auto my-20 mb-40 flex w-full flex-col items-center justify-center">
       <div id="description" className="prose mb-1 w-full">
         <h2 className="text-center text-3xl uppercase tracking-widest drop-shadow-md">
-          Le Petit Monde
+          {t.title}
         </h2>
       </div>
       <div className="flex w-full justify-center">
         <div className="mt-20 hidden w-40 lg:block">
-          <Legend obj={techniqueObj} />
+          <Legend obj={techniqueObj[language]} language={language} />
         </div>
         <div className="">
           <TitleWordsRadialSeason data={filteredData} />
         </div>
         <div className="mt-20 w-40">
-          <p className="-m-1 w-28 rounded-lg border p-2 font-bold">Saisons :</p>
+          <p className="-m-1 w-28 rounded-lg border p-2 font-bold">
+            {t.legendTitle}
+          </p>
           <LegendInteractiveSeason
             obj={seasonsObj}
             onLegendClick={handleSeasonClick}
@@ -67,52 +73,21 @@ const RadialSeasonWrapper = () => {
         </div>
       </div>
       <div className="prose text-justify text-lg">
-        <h3 className="my-5 text-3xl">Un tour du monde saisonnier</h3>
-        <p>
-          "Le Petit Monde" est une visualisation circulaire qui met en lumière
-          les différentes saisons de la série "En sortant de l'école". En
-          explorant cet univers artistique, les épisodes sont présentés selon
-          les techniques d'animation et les poètes.
-        </p>
-        <p>
-          Dans cette visualisation, les couleurs vives et variées illustrent les
-          techniques d'animation utilisées dans chaque épisode, offrant un
-          spectacle visuel époustouflant.
-        </p>
+        <h3 className="my-5 text-3xl">{t.subtitle}</h3>
+        <p>{t.paragraph1}</p>
+        <p>{t.paragraph2}</p>
         <ul className="custom-bullet">
-          <li>
-            <span>chaque segment :</span> un épisode
-          </li>
-          <li>
-            <span>couleurs :</span> les technique utilisé
-          </li>
-          <li>
-            <span>hauteur des segments :</span> nombre de mots du poème adapté
-          </li>
+          {t.bullets.map((bullet, i) => {
+            return <li key={i}>{bullet}</li>;
+          })}
         </ul>
-        <p>
-          Pour explorer les épisodes en fonction des saisons et des poètes, et
-          découvrir comment les techniques d'animation sont mises en œuvre pour
-          rendre hommage à leur art, suivez ces étapes :
-        </p>
+        <p>{t.stepsTitle}</p>
         <ol>
-          <li>
-            Sélectionnez une saison en cliquant sur le nom du poète dans la
-            légende interactive à droite de la visualisation.
-          </li>
-          <li>
-            Admirez le cercle se transformer pour ne montrer que les épisodes de
-            la saison choisie.
-          </li>
-          <li>Survolez un segment pour obtenir un aperçu de l'épisode.</li>
+          {t.steps.map((step, i) => {
+            return <li key={i}>{step}</li>;
+          })}
         </ol>
-        <p>
-          Avec "Le Petit Monde", vous pourrez vous immerger dans la richesse des
-          techniques d'animation et apprécier la manière dont elles sont
-          utilisées pour donner vie aux œuvres de chaque poète. La variété des
-          couleurs et des styles d'animation crée un tableau vivant et dynamique
-          qui célèbre l'art et la poésie.
-        </p>
+        <p>{t.paragraph3}</p>
       </div>
     </div>
   );

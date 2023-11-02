@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import data from "../utils/poanimaDataset.json";
 import LegendInteractiveSeason from "../components/LegendInteractiveSeason";
 import EpisodeWordsBarChart from "../components/EpisodeWordsBarChart/EpisodeWordsBarChart";
+import { barSeasonTranslations as translations } from "../translations/barPages";
+import { useLanguageContext } from "../utils/languageContext";
 
 const seasonsObj = [
   { number: 1, name: "1. Prévert", color: "#FEC89A" }, // pastel apricot
@@ -18,6 +20,9 @@ const seasonsObj = [
 ];
 
 const BarSeasonWrapper = () => {
+  const { language } = useLanguageContext();
+  const t = translations[language];
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -44,7 +49,7 @@ const BarSeasonWrapper = () => {
     <div className="mx-auto my-20 mb-40 flex w-full flex-col items-center justify-center">
       <div id="description" className="prose mb-20 w-full ">
         <h2 className="text-center text-3xl uppercase tracking-widest drop-shadow-md">
-          La Petite Ville
+          {t.title}
         </h2>
       </div>
       <div className="mx-auto flex w-full justify-center">
@@ -53,9 +58,8 @@ const BarSeasonWrapper = () => {
         </div>
         <div className="ml-4 w-40">
           <p className="-ml-1 w-28 rounded-lg border p-2 font-bold">
-            Saisons :
+            {t.seasonsLabel}
           </p>
-
           <LegendInteractiveSeason
             obj={seasonsObj}
             onLegendClick={handleSeasonClick}
@@ -63,51 +67,26 @@ const BarSeasonWrapper = () => {
           />
         </div>
       </div>
-      {/* <img className="mb-4 w-[710px] rotate-180" src="/Spectral.png" alt="" /> */}
       <div className="prose text-justify text-lg">
-        <h3 className="my-4 text-3xl">
-          Une charmante petite ville pour chaque saison
-        </h3>
-
-        <p>
-          Bienvenue dans "La Petite Ville", une visualisation sous forme de
-          graphique en barres, où chaque épisode de la série "En sortant de
-          l'école" se transforme en un bâtiment pittoresque d'une charmante
-          petite ville animée par les saisons.
-        </p>
+        <h3 className="my-4 text-3xl">{t.subtitle}</h3>
+        <p>{t.description1}</p>
         <ul className="custom-bullet">
           <li>
-            <span>chaque barre :</span> une histoire poétique animée
+            <span>{t.listItem1}</span>
           </li>
           <li>
-            <span>hauteur des barres :</span> nombre de mots du poème adapté
+            <span>{t.listItem2}</span>
           </li>
           <li>
-            <span>couleurs :</span> du bleu au rouge, reflétant l'évolution du
-            nombre de mots
+            <span>{t.listItem3}</span>
           </li>
         </ul>
-        <p>
-          Sélectionnez un poète (un thème) dans la légende interactive pour vous
-          aventurer dans les épisodes d'une saison dédiée et percevoir les
-          variations narratives et artistiques qui la caractérisent.
-        </p>
+        <p>{t.instructions1}</p>
         <ol>
-          <li>Choisissez un poète dans la légende enchanteresse</li>
-          <li>Contemplez les épisodes de la saison en question</li>
-          <li>
-            Baladez le curseur sur une barre pour dévoiler les secrets de
-            l'épisode
-          </li>
+          {t.instructionList.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
         </ol>
-        <p>
-          "Le Petit Monde" permet de se concentrer sur les épisodes d'une saison
-          en particulier, offrant ainsi une perspective plus approfondie sur les
-          variations narratives et artistiques à l'intérieur d'une saison. Les
-          couleurs des barres représentent l'augmentation du nombre de mots dans
-          l'épisode, permettant de visualiser la densité narrative des
-          adaptations pour chaque saison individuellement.
-        </p>
       </div>
     </div>
   );
