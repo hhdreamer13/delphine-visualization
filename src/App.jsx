@@ -10,10 +10,15 @@ import AllRoutes from "./routes/AllRoutes";
 import Footer from "./components/Footer/Footer";
 import { ModalProvider } from "./components/ModalContext";
 import responsiveSwitch from "./assets/6051-responsive-preview.json";
+import { useLanguageContext } from "./utils/languageContext";
+import { mobileTranslations as translations } from "./translations/mobilePage";
 
 const router = createBrowserRouter(createRoutesFromElements(AllRoutes()));
 
 function App() {
+  const { language } = useLanguageContext();
+  const t = translations[language];
+
   return (
     <>
       <div className="relative min-h-screen">
@@ -26,14 +31,7 @@ function App() {
         </div>
         <div className="flex h-screen flex-col items-center justify-center gap-8 sm:hidden">
           <h2 className="mb-14 text-2xl uppercase">PoAnimaViz</h2>
-          <p className="w-60 text-center">
-            Les visualisations du site sont mieux adaptées aux ordinateurs
-            plutôt qu'aux téléphones. <br />
-            <span className="italic text-slate-400">
-              (The visualizations on the site are better suited for computers
-              rather than phones.)
-            </span>
-          </p>
+          <p className="w-60 text-center">{t.text1}</p>
 
           <div className="w-20">
             <Lottie
@@ -44,14 +42,7 @@ function App() {
             />
           </div>
           <div>
-            <p className="w-60 text-center">
-              Mais il est possible que vous puissiez avoir quelques aperçus en
-              mode paysage.
-              <br />
-              <span className="italic text-slate-400">
-                (But you might be able to get some previews in landscape mode.)
-              </span>
-            </p>
+            <p className="w-60 text-center">{t.text2}</p>
           </div>
         </div>
         <div className="hidden sm:block">
