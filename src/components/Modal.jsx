@@ -60,12 +60,15 @@ const Modal = ({ showModal, setShowModal }) => {
               <h3 className="mb-6 text-center text-2xl">{t.title}</h3>
               <p>{t.paragraph1}</p>
               <p>{t.paragraph2}</p>
-              <blockquote className="mt-2 whitespace-pre font-body italic">
+              <blockquote className="mt-2 whitespace-pre-line font-body italic">
                 {t.quote}
               </blockquote>
+              <p>{t.paragraph3}</p>
+              <p>{t.paragraph4}</p>
+              <p>{t.paragraph5}</p>
               <p>{t.ending}</p>
               <div className="flex justify-end">
-                <h3>Hooman</h3>
+                <h3>{t.name}</h3>
               </div>
             </div>
           </motion.div>
